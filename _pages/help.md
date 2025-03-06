@@ -16,7 +16,7 @@ permalink: /help/
 * Auf GitHub könnt ihr auch viele Beispiele finden, damit kann man sehr gut erlernen, wie der Syntax für die Einbettung von Bildern ist, Überschriften aussehen oder Referenzen gebaut werden 
 * Bitte benennt eure Datein sauber und ladet sie sauber hoch!
 * Testet die ladbaren Dimensionen
-* "<script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>" muss nur einmal ausgeführt werden
+* "script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script" muss nur einmal ausgeführt werden
 * Wenn wer eine gute index.html baut oder weiß wie das besser geht freue ich mich &rarr; ist die Landing Page bzw. das was passiert wenn man auf den Titel klickt
 * Finde dieses Autor Ding ganz cool und man kann flexibel DInge hinzufügen oder wegmachen &rarr; macht das natürlich so wie ihr das füllt ...
 * Fügt selbst gerne noch Dinge hinzu :) 
