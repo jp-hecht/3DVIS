@@ -13,3 +13,5 @@ main:
     url: /Marlene/
   - title: "About"
     url: /about/
+  - title: "Hilfe!"
+    url: /help/
