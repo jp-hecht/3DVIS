@@ -1,11 +1,15 @@
 
-title: 3D
-subtitle: Visualisierung
+title: "3D - Visualisierung"
+title_separator: "-"
+# subtitle: Visualisierung
 email: jp.hecht@web.de
 description: >- # this means to ignore newlines until "baseurl:"
   This is a website reporting our progress of the university project in 3D visualization from the HafenCity University Hamburg.
 minimal_mistakes_skin: dirt
 #search: true
+
+
+locale: "de-DE"
 
 # Build settings
 markdown: kramdown
