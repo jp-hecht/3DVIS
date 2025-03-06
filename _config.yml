@@ -1,5 +1,6 @@
 
-title: "3D - Visualisierung"
+# title: "3D - Visualisierung"
+title: "3D&nbsp;&nbsp;<br>Visualisierung"
 title_separator: "-"
 # subtitle: Visualisierung
 email: jp.hecht@web.de
@@ -16,7 +17,7 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 3 # amount of posts to show
+paginate: 0 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
