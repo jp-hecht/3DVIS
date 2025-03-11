@@ -42,6 +42,27 @@ header:
     style="width: 100%; height: 40vh;">
 </model-viewer>
 
+<model-viewer 
+    src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
+    alt="3D model"
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    ar
+    style="width: 100%; height: 40vh;">
+</model-viewer>
+<model-viewer 
+    src="{{ site.url }}{{ site.baseurl }}/assets/model/Base.glb"
+    alt="3D model"
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    ar
+    style="width: 100%; height: 40vh;">
+</model-viewer>
+
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/test.gif)
 ---
