@@ -29,10 +29,37 @@ header:
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+    #map { height: 40vh; width: 100%; }
+</style>
 
-<leaflet-map latitude="51.505" longitude="-0.09" zoom="13" style="width: 100%; height: 40vh;"></leaflet-map>
 
 
+<div id="map"></div>
+
+<script>
+    // Initialize the map
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+    // Add a tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Define a polygon (example coordinates)
+    var polygon = L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+    }).addTo(map);
+
+    polygon.bindPopup("A simple polygon.");
+</script>
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
@@ -143,42 +170,3 @@ header:
     * > Virtual reality (VR) is a simulated experience that employs 3D near-eye displays and pose tracking to give the user an immersive feel of a virtual world. Applications of virtual reality include entertainment (particularly video games), education (such as medical, safety or military training) and business (such as virtual meetings). VR is one of the key technologies in the reality-virtuality continuum. As such, it is different from other digital visualization solutions, such as augmented virtuality and augmented reality
 
 
-<script>
-    class LeafletMap extends HTMLElement {
-        connectedCallback() {
-            this.style.display = "block"; // Ensure it's a block element
-            this.style.width = this.getAttribute("width") || "100%";
-            this.style.height = this.getAttribute("height") || "40vh";
-
-            // Create a div inside the custom element to hold the map
-            const mapDiv = document.createElement("div");
-            mapDiv.style.width = "100%";
-            mapDiv.style.height = "100%";
-            this.appendChild(mapDiv);
-
-            // Get attributes from the element
-            const lat = parseFloat(this.getAttribute("latitude")) || 51.505;
-            const lng = parseFloat(this.getAttribute("longitude")) || -0.09;
-            const zoom = parseInt(this.getAttribute("zoom")) || 13;
-
-            // Initialize Leaflet map
-            const map = L.map(mapDiv).setView([lat, lng], zoom);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; OpenStreetMap contributors'
-            }).addTo(map);
-
-            // Example polygon
-            L.polygon([
-                [lat + 0.004, lng - 0.01],
-                [lat - 0.006, lng + 0.02],
-                [lat + 0.01, lng + 0.03]
-            ], {
-                color: 'red',
-                fillColor: '#f03',
-                fillOpacity: 0.5
-            }).addTo(map).bindPopup("A simple polygon.");
-        }
-    }
-
-    customElements.define("leaflet-map", LeafletMap);
-</script>
