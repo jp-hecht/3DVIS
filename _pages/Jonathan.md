@@ -30,36 +30,48 @@ header:
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+
 <style>
-    #map { height: 40vh; width: 100%; }
+    /* Ensure the map and 3D viewer have fixed sizes */
+    .content-container {
+        max-width: 800px; /* Adjust to your needs */
+        margin: 0 auto; /* Centering */
+    }
+
+    .map-container {
+        width: 100%;
+        height: 40vh; /* Responsive height */
+        border: 1px solid #ccc; /* Optional border */
+    }
 </style>
 
+<div class="content-container">
+    <div id="map" class="map-container"></div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var map = L.map('map').setView([51.505, -0.09], 13);
 
-<div id="map"></div>
+            // Add a tile layer (OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
 
-<script>
-    // Initialize the map
-    var map = L.map('map').setView([51.505, -0.09], 13);
+            // Define a polygon (example coordinates)
+            var polygon = L.polygon([
+                [51.509, -0.08],
+                [51.503, -0.06],
+                [51.51, -0.047]
+            ], {
+                color: 'red',
+                fillColor: '#f03',
+                fillOpacity: 0.5
+            }).addTo(map);
 
-    // Add a tile layer (OpenStreetMap)
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Define a polygon (example coordinates)
-    var polygon = L.polygon([
-        [51.509, -0.08],
-        [51.503, -0.06],
-        [51.51, -0.047]
-    ], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5
-    }).addTo(map);
-
-    polygon.bindPopup("A simple polygon.");
-</script>
+            polygon.bindPopup("A simple polygon.");
+        });
+    </script>
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
@@ -158,7 +170,7 @@ header:
   * first vr for built environment in the 1990s
   * technische möglichkeiten haben die relevanz und praktikalibilität gesteigert
   *  In the context of this research, virtual reality refers to the uses of computer science and behavioral interfaces to simulate the behavior of 3D objects in a virtual world, enabling real-time interactions with each other in pseudo-natural immersion via sensorimotor channels 
-  * Different devices could deliver such an experience &rarr; ![alt text](vr_devices.png)
+  * Different devices could deliver such an experience &rarr; ![alt text]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/vr_devices.png)
 
 
 * Kim MJ, Wang X, Love PED, Li H, Kang SC (2013). Virtual reality for the built environment: a critical review of recent advances, ITcon Vol. 18, pg. 279-305, https://www.itcon.org/2013/14
