@@ -223,6 +223,10 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die Ã
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d.drawio.svg)
+*Caption of my image[^1]*
+
+
+[^1]: My reference.
 
 
 
