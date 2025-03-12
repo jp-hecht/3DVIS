@@ -54,22 +54,24 @@ header:
             var map = L.map('map').setView([53.648437464598516, 10.165957827843153], 13);
 
             // Add a tile layer (OpenStreetMap)
-            L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_basemapde?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities', {
-                attribution: '&copy; GeoBasis-DE / BKG (2025) '
+            L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_basemapde', {
+                layers: 'de_basemapde_web_raster_grau',
+                format: 'image/png',
+                transparent: true,
+                attribution: '&copy; GeoBasis-DE / BKG (2025)'
             }).addTo(map);
 
             // Define a polygon (example coordinates)
             var polygon = L.polygon([
-                [53.648437464598516, 10.165857827843153],
-                [53.648437564598516, 10.165957827843153],
-                [53.648437664598516, 10.166057827843153]
-            ], {
-                color: 'red',
-                fillColor: '#f03',
-                fillOpacity: 0.5
-            }).addTo(map);
-
-            polygon.bindPopup("A simple polygon.");
+                  [53.6484, 10.1658],
+                  [53.6490, 10.1665],
+                  [53.6488, 10.1672],
+                  [53.6484, 10.1658] // Closing the polygon
+              ], {
+                  color: 'red',
+                  fillColor: '#f03',
+                  fillOpacity: 0.5
+              }).addTo(map);
         });
     </script>
 
@@ -96,6 +98,7 @@ header:
 
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
+
 ---
 
 # Einleitung
