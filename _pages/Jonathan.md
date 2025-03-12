@@ -30,40 +30,9 @@ header:
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
+<leaflet-map latitude="51.505" longitude="-0.09" zoom="13" style="width: 100%; height: 40vh;"></leaflet-map>
 
-<script>
-        // Initialize the map
-        var map = L.map('map').setView([51.505, -0.09], 13);
 
-        // Add a tile layer (OpenStreetMap)
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-
-        // Define a polygon (example coordinates)
-        var polygon = L.polygon([
-            [51.509, -0.08],
-            [51.503, -0.06],
-            [51.51, -0.047]
-        ], {
-            color: 'red',
-            fillColor: '#f03',
-            fillOpacity: 0.5
-        }).addTo(map);
-
-        polygon.bindPopup("A simple polygon.");
-    </script>
-
-<model-viewer 
-    src="{{ site.url }}{{ site.baseurl }}/assets/model/test_car.glb"
-    alt="3D model"
-    camera-controls 
-    auto-rotate
-    exposure="1"
-    shadow-intensity="1"
-    ar
-    style="width: 100%; height: 40vh;">
-</model-viewer>
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
@@ -172,3 +141,44 @@ header:
   * [VR | Bedeutung im Cambridge Englisch Wörterbuch](https://dictionary.cambridge.org/de/worterbuch/englisch/vr): abbreviation for virtual reality: a set of images and sounds, produced by a computer, that seem to represent a place or a situation that a person can take part in: the VR experience
   * Paul Milgram, Haruo Takemura, Akira Utsumi, and Fumio Kishino "Augmented reality: a class of displays on the reality-virtuality continuum", Proc. SPIE 2351, Telemanipulator and Telepresence Technologies, (21 December 1995); https://doi.org/10.1117/12.197321: 
     * > Virtual reality (VR) is a simulated experience that employs 3D near-eye displays and pose tracking to give the user an immersive feel of a virtual world. Applications of virtual reality include entertainment (particularly video games), education (such as medical, safety or military training) and business (such as virtual meetings). VR is one of the key technologies in the reality-virtuality continuum. As such, it is different from other digital visualization solutions, such as augmented virtuality and augmented reality
+
+
+<script>
+    class LeafletMap extends HTMLElement {
+        connectedCallback() {
+            this.style.display = "block"; // Ensure it's a block element
+            this.style.width = this.getAttribute("width") || "100%";
+            this.style.height = this.getAttribute("height") || "40vh";
+
+            // Create a div inside the custom element to hold the map
+            const mapDiv = document.createElement("div");
+            mapDiv.style.width = "100%";
+            mapDiv.style.height = "100%";
+            this.appendChild(mapDiv);
+
+            // Get attributes from the element
+            const lat = parseFloat(this.getAttribute("latitude")) || 51.505;
+            const lng = parseFloat(this.getAttribute("longitude")) || -0.09;
+            const zoom = parseInt(this.getAttribute("zoom")) || 13;
+
+            // Initialize Leaflet map
+            const map = L.map(mapDiv).setView([lat, lng], zoom);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Example polygon
+            L.polygon([
+                [lat + 0.004, lng - 0.01],
+                [lat - 0.006, lng + 0.02],
+                [lat + 0.01, lng + 0.03]
+            ], {
+                color: 'red',
+                fillColor: '#f03',
+                fillOpacity: 0.5
+            }).addTo(map).bindPopup("A simple polygon.");
+        }
+    }
+
+    customElements.define("leaflet-map", LeafletMap);
+</script>
