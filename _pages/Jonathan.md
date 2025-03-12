@@ -7,9 +7,9 @@ author_profile: true
 
 author:
   name     : "Jonathan Hecht"
-  avatar   : "/assets/images/jph.png"
-  bio      : "My awesome biography constrained to a sentence or two goes here."
-  location : "Hamburg, USA"
+  avatar   : "/assets/images/JPH/jph.png"
+  bio      : "M.Sc. Geodäsie und Geoinformatik"
+  location : "Hamburg, Germany"
   links:
     - label: "Mastodon"
       icon: "fa-brands fa-mastodon"
@@ -19,17 +19,40 @@ author:
       url: "https://github.com/jp-hecht"
 
 
-excerpt: "This post should display a **header with a solid background color**, if the theme supports it."
+excerpt: "Außenbereich und Umgebung der Ohlendorff’schen Villa"
 header:
   overlay_color: "#333"
-
-
 
 ---
 
 # Testing
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+<script>
+        // Initialize the map
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        // Add a tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Define a polygon (example coordinates)
+        var polygon = L.polygon([
+            [51.509, -0.08],
+            [51.503, -0.06],
+            [51.51, -0.047]
+        ], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5
+        }).addTo(map);
+
+        polygon.bindPopup("A simple polygon.");
+    </script>
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/test_car.glb"
@@ -68,32 +91,84 @@ header:
 ---
 
 # Einleitung
-
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+* Aufstieg von VR Anwendung 
+* Relevanz von VR in verschiedenen Feldern
+* Begrifferklärung
+  * Mögliche Umsetzungen bei uns
+* Uni Projekt mit möglichen Modellen
+* Auswahl von Villa Ohlsdorff
+* Idee
+  * Kartenähnlich
+  * Kein Fokus auf realistische Darstellung der Umgebung
+* Weiterer Aufbau des Aritkels
 
 # Objekt
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-
-# Software
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+## Realität
+* Grundlagen, wo was wie
+* Historie
+## Bestehendes Modell
+* Verweis auf andere Berichte
+* Wurde in rohform zur verfügung gestellt
 
 # Hauptteil
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+## Statische Dinge
+* Warum Platte als Baseline
+* Dann Gebäude
+* Straßen
+* Bedeckung anch Karte
+* Immersionsobjekte
+  * Bäume/Büsche/Steine
+  * Autos
+  * Lichter
+## Animation & Interaktionen
+* Jeweils mit erklärung
+* Wind
+* UMgebungsgeräusche
+* Autos
+  * Geräusche
+  * Pfad folgen
+* Licht bzw. Tag Nacht
+* Teleportation
+* Geräusche im Gebäude
+## Möglichkeiten zur VR-Umsetzung
+### Positiv
+* Sehr hohe Frames
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. 
-
-
-# Möglichkeiten zur VR-Umsetzung
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
-
-Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. 
+### Einschränkungen
+* Wind
+* Nebel
+### Software
+* Blender
+  * Blender Plugins für autos
+  * Blender GIS
+* UE5 &rarr; genaue Version
+  * Plugin für Sonne
+### Hardware
+* Theoretische 
 
 # Fazit & Ausblick
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
 
 # Literatur
+
+# Notes
+* Bericht auch in Präsentation verlinken
+* Wie ist unser Umgang mit den anderen berichten
+* Wie landing page & und about?
+* Fehlt euch sonst noch etwas?
+* MUSIK fehlt noch
+
+# Literature
+* Virtual reality applications for the built environment: Research trends and opportunities 
+  * first vr for built environment in the 1990s
+  * technische möglichkeiten haben die relevanz und praktikalibilität gesteigert
+  *  In the context of this research, virtual reality refers to the uses of computer science and behavioral interfaces to simulate the behavior of 3D objects in a virtual world, enabling real-time interactions with each other in pseudo-natural immersion via sensorimotor channels 
+  * Different devices could deliver such an experience &rarr; ![alt text](vr_devices.png)
+
+
+* Kim MJ, Wang X, Love PED, Li H, Kang SC (2013). Virtual reality for the built environment: a critical review of recent advances, ITcon Vol. 18, pg. 279-305, https://www.itcon.org/2013/14
+  * > Over the past decades, virtual reality (VR) technology has been increasingly recognized by the architectural, engineering, and construction (AEC) industry for its ability to provide multisensory three- dimensional (3D) environments that immerse the user in a virtual world, specifically to fulfill the high demand for visual forms of communication during the work related to designing, engineering, construction, and management of the built environment 
+
+* Definition VR
+  * [VR | Bedeutung im Cambridge Englisch Wörterbuch](https://dictionary.cambridge.org/de/worterbuch/englisch/vr): abbreviation for virtual reality: a set of images and sounds, produced by a computer, that seem to represent a place or a situation that a person can take part in: the VR experience
+  * Paul Milgram, Haruo Takemura, Akira Utsumi, and Fumio Kishino "Augmented reality: a class of displays on the reality-virtuality continuum", Proc. SPIE 2351, Telemanipulator and Telepresence Technologies, (21 December 1995); https://doi.org/10.1117/12.197321: 
+    * > Virtual reality (VR) is a simulated experience that employs 3D near-eye displays and pose tracking to give the user an immersive feel of a virtual world. Applications of virtual reality include entertainment (particularly video games), education (such as medical, safety or military training) and business (such as virtual meetings). VR is one of the key technologies in the reality-virtuality continuum. As such, it is different from other digital visualization solutions, such as augmented virtuality and augmented reality
