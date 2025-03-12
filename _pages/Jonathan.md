@@ -3,13 +3,11 @@ title: "Bericht von Jonathan Hecht"
 permalink: /Jonathan/
 toc: true
 toc_label: "Inhaltsverzeichnis"
-author_profile: true
-
-author:
-  name     : "Jonathan Hecht"
-  avatar   : "/assets/images/JPH/jph.png"
-  bio      : "M.Sc. Geodäsie und Geoinformatik"
-  location : "Hamburg, Germany"
+author_profile: 
+  name: "Jonathan Hecht"
+  avatar: "/assets/images/JPH/jph.png"
+  bio: "M.Sc. Geodäsie und Geoinformatik"
+  location: "Hamburg, Germany"
   links:
     - label: "Mastodon"
       icon: "fa-brands fa-mastodon"
@@ -17,12 +15,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jp-hecht"
-
-
 excerpt: "Außenbereich und Umgebung der Ohlendorff’schen Villa"
 header:
   overlay_color: "#333"
-
 ---
 
 # Testing
@@ -65,6 +60,7 @@ header:
             var marker = L.marker([53.648437464598516, 10.165957827843153]).addTo(map);
         });
     </script>
+</div> 
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
@@ -87,6 +83,7 @@ header:
     style="width: 100%; height: 40vh;">
 </model-viewer>
 
+<img src="/assets/images/JPH/Car_Move_Opt.gif" alt="alt">
 
 
 # Einleitung
