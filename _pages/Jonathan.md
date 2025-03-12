@@ -51,7 +51,7 @@ header:
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var map = L.map('map').setView([51.505, -0.09], 13);
+            var map = L.map('map').setView([53.41377007600005, 9.763596952000057], 13);
 
             // Add a tile layer (OpenStreetMap)
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -95,7 +95,7 @@ header:
 </model-viewer>
 
 
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/test.gif)
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
 ---
 
 # Einleitung
