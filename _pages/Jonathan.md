@@ -62,16 +62,7 @@ header:
             }).addTo(map);
 
             // Define a polygon (example coordinates)
-            var polygon = L.polygon([
-                  [53.6484, 10.1658],
-                  [53.6490, 10.1665],
-                  [53.6488, 10.1672],
-                  [53.6484, 10.1658] // Closing the polygon
-              ], {
-                  color: 'red',
-                  fillColor: '#f03',
-                  fillOpacity: 0.5
-              }).addTo(map);
+            var marker = L.marker([53.648437464598516, 10.165957827843153]).addTo(map);
         });
     </script>
 
@@ -97,11 +88,12 @@ header:
 </model-viewer>
 
 
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
-
----
 
 # Einleitung
+
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
+
+
 * Aufstieg von VR Anwendung 
 * Relevanz von VR in verschiedenen Feldern
 * Begrifferklärung
