@@ -24,6 +24,14 @@ header:
 
 
 # Einleitung
+Die Ohlendorff'sche Villa im Hamburger Stadtteil Volksdorf  *Satz zur Bedeutung der Villa*. Um diesen Besonderheiten auch außerhalb einer vor Ort Begehung erfahrbar zu machen und somit die Villa für diverse Menschen zugänglich zu machen, wurde im Rahmen des Kurse eine VR Anwendung zur Ohlendorff'schen Villa entwickelt. Innerhalb des letzten Jahrzehnte ist die Bedeutung von Virtual Reality (VR) Anwendungen durch die geschaffene multisensorische 3D Umwelt in verschiedenen Feldern gestiegen[^1]. Typische Anwendungsbereiche umfassen unter anderem die Psychology, Simulatoren, Operationen, Lernumgebungen, körperliche Prävention oder in der Industrie[^4].
+Innerhalb der Architektur, Ingenieurwesen und Konstruktion ermöglichen VR Anwendungen die Immersion von Nutzenden in eine virtuelle Welt, welche den hohen Anforderungen der visuellen Kommunikation in Bezug auf Design, Konstruktion und Management der gebauten Umwelt ermöglicht[^1]. Entsprechend wird die insbesondere die Simulation der realen Welt angestrebt. Erste Versuche von VR Applikationen für die bebaute Umwelt wurden zwar bereits in den 1990er Jahren getestet, jedoch erfolgte eine größere Verbreitung durch praktische Anwendungen erst in den letzten Jahren durch eine Reduktion von Einstiegshürden mittels leistungsfähigerer Hard- und Software. Beispiele für praktische Anwendungen können Kundenbegehungen oder die schrittweise Überprüfung von Bauabläufen sein[^2].
+Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wird, sollte das Verständnis des Begriffes VR offengelegt werden. Eingeordnet werden kann der Begriff in das übergeordnete Thema des Realitäts-Virtualitäts-Kontinuum[^3]. Dabei wird davon ausgegangen, dass sich Augmented Reality (AR) und VR zwischen den Endpolen physischen Realität und vollständig virtuellen Umgebung befinden und beide Unterformen der Mixed Reality (MR) sind. Diese Skalierung hilft dabei verschiedene Formen der Erweiterung der Realität einzuordnen und verstehen. Vor diesem Hintergrund kann, dass hier verwendete Verständnis von VR, wie folgt dargelegt werden: 
+> DEFINTION
+
+
+
+
 
 * Aufstieg von VR Anwendung 
 * Relevanz von VR in verschiedenen Feldern
@@ -39,6 +47,7 @@ header:
   * hohe flexibilität
 
 * Weiterer Aufbau des Aritkels
+  * FOkuspunkt hier ist der Außenebereich und Umgebung
 
 # Objekt
 ## Realität
@@ -59,7 +68,7 @@ header:
   * Kein Fokus auf realistische Darstellung der Umgebung
   * Warum Platte
 ## Theoretische Überlegungen
-[Immersion, Presence, and Interaction | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/875)
+* [Immersion, Presence, and Interaction | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/875)
 ## Statische Dinge
 * Warum Platte als Baseline
 * Dann Gebäude
@@ -104,16 +113,6 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die �
 * Steam VR: Übertragung auf Hardware
 
 
-
-
-
-
-
-
-
-
-
-
 ### Hardware
 * Theoretische viele möglichkeiten bei uns an der uni
 * [HTC Vive | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/861)
@@ -150,6 +149,7 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die �
 
 * Kim MJ, Wang X, Love PED, Li H, Kang SC (2013). Virtual reality for the built environment: a critical review of recent advances, ITcon Vol. 18, pg. 279-305, https://www.itcon.org/2013/14
   * > Over the past decades, virtual reality (VR) technology has been increasingly recognized by the architectural, engineering, and construction (AEC) industry for its ability to provide multisensory three- dimensional (3D) environments that immerse the user in a virtual world, specifically to fulfill the high demand for visual forms of communication during the work related to designing, engineering, construction, and management of the built environment 
+
 
 * Definition VR
   * [VR | Bedeutung im Cambridge Englisch Wörterbuch](https://dictionary.cambridge.org/de/worterbuch/englisch/vr): abbreviation for virtual reality: a set of images and sounds, produced by a computer, that seem to represent a place or a situation that a person can take part in: the VR experience
@@ -225,10 +225,12 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die �
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d.drawio.svg)
-*Caption of my image[^1]*
+*Caption of my image*
 
 
-[^1]: My reference.
-
+[^1]: Kim MJ, Wang X, Love PED, Li H, Kang SC (2013). Virtual reality for the built environment: a critical review of recent advances, ITcon Vol. 18, pg. 279-305, https://www.itcon.org/2013/14
+[^2]: https://www.sciencedirect.com/science/article/abs/pii/S0926580520301394
+[^3]: Milgram, Paul; H. Takemura; A. Utsumi; F. Kishino (1994). "Augmented Reality: A class of displays on the reality-virtuality continuum". Proceedings of SPIE - The International Society for Optical Engineering Vol. 2351
+[^4]: Artur Becker and Carla M. Dal Sasso Freitas. 2023. Evaluation of XR Applications: A Tertiary Review. ACM Comput. Surv. 56, 5, Article 110 (May 2024), 35 pages. https://doi.org/10.1145/3626517
 
 
