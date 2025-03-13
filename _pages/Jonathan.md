@@ -17,7 +17,9 @@ author_profile:
       url: "https://github.com/jp-hecht"
 excerpt: "Außenbereich und Umgebung der Ohlendorff’schen Villa"
 header:
-  overlay_color: "#333"
+  overlay_image: "/assets/images/JPH/villa_sketch.jpg"
+  caption: "Bildquelle: [**ohlendorffsche.de**](https://ohlendorffsche.de/historie/)"
+  overlay_filter: 0.5
 ---
 
 
