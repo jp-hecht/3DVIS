@@ -20,3 +20,4 @@ permalink: /help/
 * Wenn wer eine gute index.html baut oder weiß wie das besser geht freue ich mich &rarr; ist die Landing Page bzw. das was passiert wenn man auf den Titel klickt
 * Finde dieses Autor Ding ganz cool und man kann flexibel DInge hinzufügen oder wegmachen &rarr; macht das natürlich so wie ihr das füllt ...
 * Fügt selbst gerne noch Dinge hinzu :) 
+* [Minimal Mistakes Cheat Sheet - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Minimal_Mistakes_Cheat_Sheet/)
