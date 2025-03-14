@@ -22,24 +22,25 @@ header:
   overlay_filter: 0.5
 ---
 
-
 # Einleitung
-Die Ohlendorff'sche Villa im Hamburger Stadtteil Volksdorf  *Satz zur Bedeutung der Villa*. Um diesen Besonderheiten auch außerhalb einer vor Ort Begehung erfahrbar zu machen und somit die Villa für diverse Menschen zugänglich zu machen, wurde im Rahmen des Kurse eine VR Anwendung zur Ohlendorff'schen Villa entwickelt. Innerhalb des letzten Jahrzehnte ist die Bedeutung von Virtual Reality (VR) Anwendungen durch die geschaffene multisensorische 3D Umwelt in verschiedenen Feldern gestiegen[^1]. Typische Anwendungsbereiche umfassen unter anderem die Psychology, Simulatoren, Operationen, Lernumgebungen, körperliche Prävention oder in der Industrie[^4].
-Innerhalb der Architektur, Ingenieurwesen und Konstruktion ermöglichen VR Anwendungen die Immersion von Nutzenden in eine virtuelle Welt, welche den hohen Anforderungen der visuellen Kommunikation in Bezug auf Design, Konstruktion und Management der gebauten Umwelt ermöglicht[^1]. Entsprechend wird die insbesondere die Simulation der realen Welt angestrebt. Erste Versuche von VR Applikationen für die bebaute Umwelt wurden zwar bereits in den 1990er Jahren getestet, jedoch erfolgte eine größere Verbreitung durch praktische Anwendungen erst in den letzten Jahren durch eine Reduktion von Einstiegshürden mittels leistungsfähigerer Hard- und Software. Beispiele für praktische Anwendungen können Kundenbegehungen oder die schrittweise Überprüfung von Bauabläufen sein[^2].
-Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wird, sollte das Verständnis des Begriffes VR offengelegt werden. Eingeordnet werden kann der Begriff in das übergeordnete Thema des Realitäts-Virtualitäts-Kontinuum[^3]. Dabei wird davon ausgegangen, dass sich Augmented Reality (AR) und VR zwischen den Endpolen physischen Realität und vollständig virtuellen Umgebung befinden und beide Unterformen der Mixed Reality (MR) sind. Diese Skalierung hilft dabei verschiedene Formen der Erweiterung der Realität einzuordnen und verstehen. Vor diesem Hintergrund kann, dass hier verwendete Verständnis von VR, wie folgt dargelegt werden: 
-> DEFINTION
+Die Ohlendorff'sche Villa übernimmt im Hamburger Stadtteil Volksdorf eine hervorgehobene Stellung im urbanen Gefüge, welche insbesondere durch die Zentralität im Stadtteil, sowie die Betonung des Gebäudes durch den umschließenden Park gegeben ist. Um diesen Besonderheiten auch außerhalb einer vor Ort Begehung erfahrbar zu machen und somit die Villa für diverse Menschen zugänglich zu machen, wurde im Rahmen des Kurses 3D-Visualisierung an der HafenCity Universität von Herrn Prof. Kersten eine Virtual Reality (VR) Anwendung zur Ohlendorff'schen Villa entwickelt. Ziel ist es ein zur Verfügung gestelltes historische Gebäude für eine interaktive Begehung und Visualisierung aufzubereiten.{: style="text-align: justify"}
 
+Innerhalb der letzten Jahrzehnte ist die Bedeutung von VR Anwendungen durch die geschaffene multisensorische 3D Umwelt in verschiedenen Feldern gestiegen[^1]. Typische Anwendungsbereiche umfassen unter anderem die Psychologie, Simulatoren, Operationen, Lernumgebungen, körperliche Prävention oder in der Industrie[^4]. Innerhalb der Architektur, Ingenieurwesen und Konstruktion ermöglichen VR Anwendungen die Immersion von Nutzenden in eine virtuelle Welt, welche den hohen Anforderungen der visuellen Kommunikation in Bezug auf Design, Konstruktion und Management der gebauten Umwelt ermöglicht[^1]. Entsprechend wird die insbesondere die Simulation der realen Welt angestrebt. Erste Versuche von VR Applikationen für die bebaute Umwelt wurden zwar bereits in den 1990er Jahren getestet, jedoch erfolgte eine größere Verbreitung durch praktische Anwendungen erst in den letzten Jahren durch eine Reduktion von Einstiegshürden mittels leistungsfähigerer Hard- und Software. Beispiele für praktische Anwendungen können Kundenbegehungen oder die schrittweise Überprüfung von Bauabläufen sein[^2].
+Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wird, sollte das Verständnis des Begriffes VR offengelegt werden. Eingeordnet werden kann der Begriff in das übergeordnete Thema des Realitäts-Virtualitäts-Kontinuums[^3]. Dabei wird davon ausgegangen, dass sich Augmented Reality (AR), Augmented Virtuality (AV) und VR zwischen den Endpolen physischen Realität und vollständig virtuellen Umgebung befinden[^5]. AR, AV und VR werden dabei unter dem Begriff *extended reality* (XR) zusammengefasst, welches „[...] alle realen und virtuellen kombinierten Umgebungen und Mensch-Maschine-Interaktionen, die durch Computertechnologie und Wearables erzeugt werden“ umfasst[^6]. Vor diesem Hintergrund wurden verschiedene Definition im wissenschaftlichen Kontext erarbeitet, welche nicht im Detail erläutert werden sollen und einzig auf das hier zugrundlegendes Verständnis dargelegt werden soll:{: style="text-align: justify"}
 
+> VR leverages immersive technologies to simulate interactive virtual environments or virtual worlds with which users become subjectively involved and in which they feel physically present[^5]
+Basierend auf diesem Verständnis wird im folgenden Bericht zunächst das reale Objekt beschrieben, sowie die Entscheidung des Modelles begründet. Im Anschluss folgt die Konzeption unserer VR Anwendung, weitere theoretische Überlegungen zur Anwendung und die verwendete Hard- und Software. Nachdem die Vorraussetzungen festgelegt wurden, wird die Umsetzung, sowie die Limitierungen samt Fazit/Ausblick aufgezeigt. Innerhalb dieses Berichtes wird insbesondere die Entstehung des Außenbereiches, samt aller dazugehörigen Elemente aufgegriffen. Für andere Bereiche, wie beispielsweise die Texturierung des Gebäudes, werden erwähnt, aber detailierter in den anderen Berichten aufgegriffen.
 
+# Ohlendorff'sche Villa
+## Realität
+* Auch auswahl hier begründen vlt. schon der konzeption vorgreifen
+* Grundlagen, wo was wie
+* Historie
+  * Architekt
+  * Auftrageber
+  * Stil
+  * Lage
 
-
-* Aufstieg von VR Anwendung 
-* Relevanz von VR in verschiedenen Feldern
-* Begrifferklärung
-  * Mögliche Umsetzungen bei uns &rarr; VR
-  * DEf
-* Bedeutung Geoinformatics / Visualisierung räumlicher daten: [1.3 3D Modeling and VR in the Geospatial Sciences | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/800)
-* Beudeutung für städte: Biljecki, F., Stoter, J., Ledoux, H., Zlatanova, S., & Çöltekin, A. (2015). Applications of 3D City Models: State of the Art Review. ISPRS International Journal of Geo-Information, 4(4), 2842–2889. doi:10.3390/ijgi4042842
 * Uni Projekt mit möglichen Modellen
 * Auswahl von Villa Ohlsdorff
   * Alter stil schwierig
@@ -48,15 +49,6 @@ Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wir
 
 * Weiterer Aufbau des Aritkels
   * FOkuspunkt hier ist der Außenebereich und Umgebung
-
-# Objekt
-## Realität
-* Grundlagen, wo was wie
-* Historie
-  * Architekt
-  * Auftrageber
-  * Stil
-  * Lage
 ## Bestehendes Modell
 * Verweis auf andere Berichte
 * Wurde in rohform zur verfügung gestellt
@@ -157,6 +149,10 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die �
     * > Virtual reality (VR) is a simulated experience that employs 3D near-eye displays and pose tracking to give the user an immersive feel of a virtual world. Applications of virtual reality include entertainment (particularly video games), education (such as medical, safety or military training) and business (such as virtual meetings). VR is one of the key technologies in the reality-virtuality continuum. As such, it is different from other digital visualization solutions, such as augmented virtuality and augmented reality
 
 
+* Bedeutung Geoinformatics / Visualisierung räumlicher daten: [1.3 3D Modeling and VR in the Geospatial Sciences | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/800)
+Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden. 
+3D Stadtmodelle haben in den letzten Jahren an Bedeutung für diverse Anwendungen gewonnen in den GIScience [^7]
+* Beudeutung für städte: Biljecki, F., Stoter, J., Ledoux, H., Zlatanova, S., & Çöltekin, A. (2015). Applications of 3D City Models: State of the Art Review. ISPRS International Journal of Geo-Information, 4(4), 2842–2889. doi:10.3390/ijgi4042842
 # Testing
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
@@ -232,5 +228,6 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die �
 [^2]: https://www.sciencedirect.com/science/article/abs/pii/S0926580520301394
 [^3]: Milgram, Paul; H. Takemura; A. Utsumi; F. Kishino (1994). "Augmented Reality: A class of displays on the reality-virtuality continuum". Proceedings of SPIE - The International Society for Optical Engineering Vol. 2351
 [^4]: Artur Becker and Carla M. Dal Sasso Freitas. 2023. Evaluation of XR Applications: A Tertiary Review. ACM Comput. Surv. 56, 5, Article 110 (May 2024), 35 pages. https://doi.org/10.1145/3626517
-
-
+[^5]: Wohlgenannt, I., Simons, A. & Stieglitz, S. Virtual Reality. Bus Inf Syst Eng 62, 455–461 (2020). https://doi.org/10.1007/s12599-020-00658-9
+[^6]: Übersetzt aus: Fast-Berglund Å, Gong L, Li D (2018) Testing and validating extended reality (xR) technologies in manufacturing. Procedia Manuf 25:31–38
+[^7]: Biljecki, F.; Stoter, J.; Ledoux, H.; Zlatanova, S.; Çöltekin, A. Applications of 3D City Models: State of the Art Review. ISPRS Int. J. Geo-Inf. 2015, 4, 2842-2889. https://doi.org/10.3390/ijgi404284
