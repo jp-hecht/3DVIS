@@ -25,8 +25,7 @@ header:
 # Einleitung
 Die Ohlendorff'sche Villa übernimmt im Hamburger Stadtteil Volksdorf eine hervorgehobene Stellung im urbanen Gefüge, welche insbesondere durch die Zentralität im Stadtteil, sowie die Betonung des Gebäudes durch den umschließenden Park gegeben ist. Um diesen Besonderheiten auch außerhalb einer vor Ort Begehung erfahrbar zu machen und somit die Villa für diverse Menschen zugänglich zu machen, wurde im Rahmen des Kurses 3D-Visualisierung an der HafenCity Universität von Herrn Prof. Kersten eine Virtual Reality (VR) Anwendung zur Ohlendorff'schen Villa entwickelt. Ziel ist es ein zur Verfügung gestelltes historische Gebäude für eine interaktive Begehung und Visualisierung aufzubereiten.
 {: style="text-align: justify;"}
-Innerhalb der letzten Jahrzehnte ist die Bedeutung von VR Anwendungen durch die geschaffene multisensorische 3D Umwelt in verschiedenen Feldern gestiegen[^1]. Typische Anwendungsbereiche umfassen unter anderem die Psychologie, Simulatoren, Operationen, Lernumgebungen, körperliche Prävention oder in der Industrie[^4]. Innerhalb der Architektur, Ingenieurwesen und Konstruktion ermöglichen VR Anwendungen die Immersion von Nutzenden in eine virtuelle Welt, welche den hohen Anforderungen der visuellen Kommunikation in Bezug auf Design, Konstruktion und Management der gebauten Umwelt ermöglicht[^1]. Entsprechend wird die insbesondere die Simulation der realen Welt angestrebt. Erste Versuche von VR Applikationen für die bebaute Umwelt wurden zwar bereits in den 1990er Jahren getestet, jedoch erfolgte eine größere Verbreitung durch praktische Anwendungen erst in den letzten Jahren durch eine Reduktion von Einstiegshürden mittels leistungsfähigerer Hard- und Software. Beispiele für praktische Anwendungen können Kundenbegehungen oder die schrittweise Überprüfung von Bauabläufen sein[^2].
-{: style="text-align: justify;"}
+Innerhalb der letzten Jahrzehnte ist die Bedeutung von VR Anwendungen durch die geschaffene multisensorische 3D Umwelt in verschiedenen Feldern gestiegen[^1]. Typische Anwendungsbereiche umfassen unter anderem die Psychologie, Simulatoren, Operationen, Lernumgebungen, körperliche Prävention oder in der Industrie[^4]. Innerhalb der Architektur, Ingenieurwesen und Konstruktion ermöglichen VR Anwendungen die Immersion von Nutzenden in eine virtuelle Welt, welche den hohen Anforderungen der visuellen Kommunikation in Bezug auf Design, Konstruktion und Management der gebauten Umwelt ermöglicht[^1]. Entsprechend wird die insbesondere die Simulation der realen Welt angestrebt. Erste Versuche von VR Applikationen für die bebaute Umwelt wurden zwar bereits in den 1990er Jahren getestet, jedoch erfolgte eine größere Verbreitung durch praktische Anwendungen erst in den letzten Jahren durch eine Reduktion von Einstiegshürden mittels leistungsfähigerer Hard- und Software. Beispiele für praktische Anwendungen können Kundenbegehungen oder die schrittweise Überprüfung von Bauabläufen sein[^2].{: style="text-align: justify;"}
 
 Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wird, sollte das Verständnis des Begriffes VR offengelegt werden. Eingeordnet werden kann der Begriff in das übergeordnete Thema des Realitäts-Virtualitäts-Kontinuums[^3]. Dabei wird davon ausgegangen, dass sich Augmented Reality (AR), Augmented Virtuality (AV) und VR zwischen den Endpolen physischen Realität und vollständig virtuellen Umgebung befinden[^5]. AR, AV und VR werden dabei unter dem Begriff *extended reality* (XR) zusammengefasst, welches „[...] alle realen und virtuellen kombinierten Umgebungen und Mensch-Maschine-Interaktionen, die durch Computertechnologie und Wearables erzeugt werden“ umfasst[^6]. Vor diesem Hintergrund wurden verschiedene Definition im wissenschaftlichen Kontext erarbeitet, welche nicht im Detail erläutert werden sollen und einzig auf das hier zugrundlegendes Verständnis dargelegt werden soll:
 
@@ -35,6 +34,28 @@ Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wir
 Basierend auf diesem Verständnis wird im folgenden Bericht zunächst das reale Objekt beschrieben, sowie die Entscheidung des Modelles begründet. Im Anschluss folgt die Konzeption unserer VR Anwendung, weitere theoretische Überlegungen zur Anwendung und die verwendete Hard- und Software. Nachdem die Vorraussetzungen festgelegt wurden, wird die Umsetzung, sowie die Limitierungen samt Fazit/Ausblick aufgezeigt. Innerhalb dieses Berichtes wird insbesondere die Entstehung des Außenbereiches, samt aller dazugehörigen Elemente aufgegriffen. Für andere Bereiche, wie beispielsweise die Texturierung des Gebäudes, werden erwähnt, aber detailierter in den anderen Berichten aufgegriffen.
 
 # Ohlendorff'sche Villa
+Wie aus der [Übersichtskarte](#map1) deutlich wird und bereits angedeutet wurde befindet sich das ehemalige Wohnhaus im Hamburger Stadteil Volksdorf.
+<div class="content-container">
+    <div id="map" class="map-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var map = L.map('map').setView([53.648437464598516, 10.165957827843153], 15);
+
+            L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_basemapde', {
+                layers: 'de_basemapde_web_raster_grau',
+                format: 'image/png',
+                transparent: true,
+                attribution: '&copy; GeoBasis-DE / BKG (2025)'
+            }).addTo(map);
+            var marker = L.marker([53.648437464598516, 10.165957827843153]).addTo(map);
+        });
+    </script>
+</div> 
+*Karte 1: Verortung der Ohlendorff'sche Villa in Volksdorf.*
+{: #map1}
+
+
 ## Realität
 * Auch auswahl hier begründen vlt. schon der konzeption vorgreifen
 * Grundlagen, wo was wie
@@ -177,26 +198,7 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
     }
 </style>
 
-<div class="content-container">
-    <div id="map" class="map-container"></div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var map = L.map('map').setView([53.648437464598516, 10.165957827843153], 13);
-
-            // Add a tile layer (OpenStreetMap)
-            L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_basemapde', {
-                layers: 'de_basemapde_web_raster_grau',
-                format: 'image/png',
-                transparent: true,
-                attribution: '&copy; GeoBasis-DE / BKG (2025)'
-            }).addTo(map);
-
-            // Define a polygon (example coordinates)
-            var marker = L.marker([53.648437464598516, 10.165957827843153]).addTo(map);
-        });
-    </script>
-</div> 
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
