@@ -56,6 +56,8 @@ Wie aus der [Übersichtskarte](#map1) deutlich wird und bereits angedeutet wurde
 {: #map1}
 Die historische Entwicklung wird auf der Website von der heute besitzenden Stiftung Ohlendorff’sche Villa durch Gerhard Hirschfeld beschrieben. Eine kurze Zusammenfassung wird hier aufgegriffen: Die heutige Villa wurde 1928/29 von Erich Elingius (1879–1948) für Hans v. Ohlendorff (1880–1967) errichtet. Dieser ließ das vorherige Gutshaus seines Vaters Heinrich v. Ohlendorff abreißen. Die neue Villa hebt sich durch ihre herrschaftliche Gestaltung hervor. Während der Abriss der eklektizistischen Villa seines Vaters dem Zeitgeist entsprach, wählte Hans v. Ohlendorff mit Elingius einen Architekten, der konservative Bauweisen bevorzugte. Besonders auffällig ist die zentrale Auffahrt mit dem hervorgehobenen Eingangsportal, das den repräsentativen Anspruch der Familie unterstreicht. Die asymmetrisch gestaltete Gartenseite wirkt wohnlicher, doch das hohe Sockelgeschoss verhindert eine direkte Verbindung zum Park. Entsprechenden der repräsentativen Funktion wurden die Zimmer im Untergeschoss als Empfangszimmer, Bibliothek, Musikzimmer und Speisezimmer gestaltet. Die obere private Etage umfasste ein großes Schlafzimmer mit Ankleidezimmer und eigenem Bad sowie einen achteckigen Frühstücksraum. Ein separater Flur für das Dienstpersonal führte zur Anrichte und zum Speisenaufzug. Der Gästebereich bestand aus zwei Fremdenzimmern mit einem gemeinsamen Bad. Die Villa zeigt sparsam eingesetzte Schmuckelemente. Werkstein-Umrahmungen betonen die Rundbogenfenster und Rechtecköffnungen, während Balkone und französische Fenster mit gusseisernen Ziergittern versehen sind.[^8]. Hans v. Ohlendorff verkaufte das Anwesen an die Stadt Hamburg im Jahr 1953, welche das Gebäude bis 2006 als Ortsamt nutzte. Im Anschluss wurde das Gebäude bis 2014 saniert und in eine Kultur- und Begegungsstätte des Stadtteils umgestaltet[^10].
 {: style="text-align: justify;"}
+Die Entscheidung dieses Gebäude zu gestalten, wurde unter anderem wegen der spannenden Historie getroffen. Weitere Gründe waren die Datenverfügbarkeit, sowie ein flexibelere Gestaltung und Stilisierung im Vergleich zu den anderen vorgeschlagenen Projekten.
+{: style="text-align: justify;"}
 Innerhalb unterschiedlicher Kurse an der HafenCity Universität wurden diverse Daten über das Gebäude aufgenommen und durch die Kursleitung zur Verfügung gestellt. Details über das zur Verfügung gestellte Gebäude können im Bericht von Marlene nachvollzogen werden *LINK*. 
 {: style="text-align: justify;"}
 
@@ -69,6 +71,54 @@ Die Gestaltung des Außenbereiches orientiert sich an kartographischen Darstellu
 Die Villa wurde im Gegensatz dazu detailiert modelliert und texturiert und kommt somit einer realistischen Darstellung näher. **FARBEN** TEXTUEN &rarr; Was wurde sich diesbezüglich gedacht?
 Da eine vollständige und realistische Modellierung des Innenbereiches den Umfang des Projektes übersteigen würde, wurden einzig zwei Räume geschaffen, die in dieser Form in der Realität nicht existieren. Ober- und Untergeschoss wurden nicht, wie in der realen Villa, modelliert. Die zwei geschaffen Räume behandeln verschiedene Animationen und Interaktionen, die angelehnt sind an die historischen Nutzungen, aber frei interpretiert wurden. Folglich ist ein Raum als Musikzimmer gestaltet und der andere beinhaltet Kunstwerke. Neben der Anlehnung an die historischen Gegebenheiten ermöglicht dies flexibele und geforderte Interaktionen.
 {: style="text-align: justify;"}
+
+## Möglichkeiten zur VR-Umsetzung
+Bevor konkrete umgesetzte Elemente beschrieben und Funktionsweisen erläutert werden können, werden sowohl die Arbeitsschritte zur Entwicklung einer VR Anwendung als auch Entscheidungen für konkrete Hard- und Software aufgegriffen.
+### Entwicklungsumgebung
+Die Möglichkeiten eine VR Anwendung zu bauen, sind je intendierten Anwendungsfall und Umfang breit. Von einfacheren JavaScript Bibliotheken wie WebGL bis zu dedizierten Game Engine kann eine VR Anwendung entwickelt werden. Die Arbeitsschritte bis zur fertigen Anwendung bleiben jedoch vergleichbar: 
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d.drawio.svg)
+*Abbildung Z zeigt den schematisches Workflow für eine VR Anwendung. Zunächst werden Eingabedaten in verschiedenen Formaten in eine 3D-Modellierungssoftware oder Game-Engines importiert. Modelle können manuell oder rechnergestützt generiert und für Visualisierungen genutzt oder in Game-Engines weiterverarbeitet werden. Anwendungen aus Game-Engines können anschließend auf Webplattformen und VR-Headsets bereitgestellt werden[^12]. Die Softwarepakete sind nicht umfassend und stellen einzig bekanntere Beispiele dar.*
+Zunächst müssen als Eingabedaten Modelle von realen Objekten erstellt oder bezogen werden. Beispiele für die Erstellung beinhalten die selbstständige Modellierung, der Bezug von existierenden Modellen oder prozedurale Erzeugung. Im Anschluss werden das bzw. die Modelle in eine 3D Modellierungssoftware oder 3D Game Engine übertragen, um aus den einzelnen Modellen eine 3D Anwendung zu erzeugen. Die Grenzen zwischen Modellierungssoftwayre und 3D Game Engine sind dabei nicht trennscharf. Zum Beispiel ermöglicht Blender neben der Modellierung auch die direkte Animation. Die fertige Applikation wird anschließend dem Zielgerät oder der Präsentationssoftware aufbereitet. 
+{: style="text-align: justify;"}
+Der theoretische Aufbau kann auf unsere Gegebenheiten vor dem Hintergrund der Projektvorgeben, sowie der Konzeption konkretisiert werden:
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
+*Abbildung X: Konkretisierung des theoretischen Workflows für die Entwicklung einer VR Anwendung über die Ohlendorff'sche Villa*
+Für unsere Anwendung wurden primär existierende 3D Modelle im Vektorformat verwendet. Der Begriff der Vektordaten ist hier nicht beschränkt auf Vektordaten, wie sie typischerweise in Geographischen Informationssystemen vorkommen. Die Daten wurden entweder von der Kursleitung zur Verfügung gestellt, selbstständig modelliert oder vorhandene kostenfreie Modelle aus dem Internet verwendet. Im Anschluss wurden die Daten in [blender](https://www.blender.org/) aufbereitet. Dies umfasste alle Schritte, welche notwendig sind, um keine weiteren Veränderungen in einer Game Engine vorzunehmen. Hierzu zählen insbesondere die Positionierung, Modellierung und Texturierung. Zusätzlich zu Blender wurden [BlenderGIS](https://blender-addons.org/blendergis-addon/) und [Rigacar](https://blender-addons.org/rigacar/) als Erweiterungen verwendet. Die speziellen Nutzungen werden in der Implementierung konkretisiert. Die Entscheidung blender zu verwenden liegt hauptsächlich in der hohen Flexibilität inklusive der einfacheren Progammierung, sowie dem Vorteil, dass das OpenSource Projekt den Studierenden dauerhaft zur Verfügung steht. Hierdurch ist der Lerneffekt auch auf andere Projekte übertragbar.
+{: style="text-align: justify;"}
+Die aufbereiteten Modelle wurden im Anschluss in [Unreal Engine 5.4](https://www.unrealengine.com/en-US) (UE) importiert. UE wurde verwendet um jegliche Form der Interaktion von der Bewegung in der VR Umgebung bis zum Licht zu erstellen. Über [SteamVR](https://store.steampowered.com/app/250820/SteamVR/?l=german) wurden die Anwendung im Anschluss auf eine HTC Vive transferiert. Dieses Setup war im Wesentlichen durch die Aufgabenstellung vorgegeben, sodass die Verwendung einer alterantiven Game Engine oder Head-Mounted Display (HMD) nicht diskutiert wurde.
+{: style="text-align: justify;"}
+
+### Implementierung für die Ohlendorff'sche Villa
+Im nachfolgenden Abschnitten werden die unterschiedlichen Schritte und Details zur Implementierung der Konzeption genauer erläutert. Dabei wird sich von den Objekten im Außenbereich über die implementierte Animationen in den Innenbereich gearbeitet.
+#### Außenbereich
+Das relevant Gebiet wurde in QGIS eingezeichnet und in blender importiert. Das einfache aber durch BlenderGIS richtig positionierte Polygon wurde daraufhin extrudiert. Auf dieser Scheibe wurden drei unterschiedliche amtliche Geodatensätze platziert. Als Hintergrund, der das Gebiet vollständig bedeckt, wurden Daten über den Arten- und Biotopsschutz gewählt[^13]. Aufbauend darauf wurden die Feinkartierung der Straßen mit deren expliziter Nutzung hinzugefügt[^14]. Der Datensatz wurde im Vorfeld leicht modifiziert um auch die Wege innerhalb des Ohlendorff'schen Park darzustellen. Zuletzt wurden die LOD II Daten von Hamburg verarbeit, wobei die Daten zunächst in CityJSON konvertiert wurden und im Anschluss zugeschnitten wurden[^15]. Die Gebäude wurden ebenfalls entsprechend der attributierten Höhe extrudiert. Anschließend wurde die jeweiligen Modellen orientiert am angestrebten Kartenstil mit neutraleren Farben eingefärbt. Das resultierend Modell kann hier gesehen werden: 
+<model-viewer 
+    src="{{ site.url }}{{ site.baseurl }}/assets/model/Base.glb"
+    alt="3D model"
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    ar
+    style="width: 100%; height: 40vh;">
+</model-viewer>
+*Modell der Umgebung nach Integration der amtlichen Geodaten. Die Basis Scheibe wurde nicht dargestellt, da diese zu Artefakten geführt hat. Bei der Gesamtansicht des Modells sind in Teilen noch Artefakte zu beobachten.*
+
+#### Innenbereich
+* Außenbereich: 
+  * Scheibe + Test DEM
+  * Gebäude LOD 2
+  * Hintergrund karten &rarr; Straßen + Hintergrund/Nutzung
+  * Mehr Lebhaft durch Bäume Autos
+    * Fahrende Autos
+  * sounds im außenbereich
+    * Wind
+    * Vägel
+    * Motoren
+  * dann lichter und entwicklung
+  * Insel gesperrt man kann nicht runterfallen
+* Innenbereich
+  * 
 
 ## Statische Dinge
 * Warum Platte als Baseline
@@ -89,7 +139,6 @@ Da eine vollständige und realistische Modellierung des Innenbereiches den Umfan
 * Licht bzw. Tag Nacht
 * Teleportation
 * Geräusche im Gebäude
-## Möglichkeiten zur VR-Umsetzung
 
 ### Positiv
 * Sehr hohe Frames
@@ -195,23 +244,11 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
     ar
     style="width: 100%; height: 40vh;">
 </model-viewer>
-<model-viewer 
-    src="{{ site.url }}{{ site.baseurl }}/assets/model/Base.glb"
-    alt="3D model"
-    camera-controls 
-    auto-rotate
-    exposure="1"
-    shadow-intensity="1"
-    ar
-    style="width: 100%; height: 40vh;">
-</model-viewer>
+
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
 
 
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d.drawio.svg)
-*Caption of my image*
 
 
 [^1]: Kim MJ, Wang X, Love PED, Li H, Kang SC (2013). Virtual reality for the built environment: a critical review of recent advances, ITcon Vol. 18, pg. 279-305, https://www.itcon.org/2013/14
@@ -224,3 +261,7 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
 [^8]: https://ohlendorffsche.de/historie/
 [^10]: https://ohlendorffsche.de/umbau-und-sanierung/
 [^11]: https://shibaura.elsevierpure.com/en/publications/low-poly-image-stylization
+[^12]: Verändert und Ereitert: https://www.e-education.psu.edu/geogvr/node/559
+[^13]: https://metaver.de/trefferanzeige?cmd=doShowDocument&docuuid=B8F6865A-1790-4B9D-987E-AF97B88E84D3
+[^14]: https://metaver.de/trefferanzeige?cmd=doShowDocument&docuuid=A02FCB1D-8B20-4937-BC9A-235D736B8569
+[^15]: https://metaver.de/trefferanzeige?docuuid=2C1F2EEC-CF9F-4D8B-ACAC-79D8C1334D5E
