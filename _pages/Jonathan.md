@@ -74,24 +74,49 @@ Da eine vollständige und realistische Modellierung des Innenbereiches den Umfan
 
 ## Möglichkeiten zur VR-Umsetzung
 Bevor konkrete umgesetzte Elemente beschrieben und Funktionsweisen erläutert werden können, werden sowohl die Arbeitsschritte zur Entwicklung einer VR Anwendung als auch Entscheidungen für konkrete Hard- und Software aufgegriffen.
+### Theorie
+Ich bau von der Definition her hier auf und gehee dann auf aspekete ein
+* Immersion
+* Was muss eine VR Anwendung aufweisen etc. sollt ehier behandelt werden damit man dann den bezug aufbauen kann
+* hier könnten auch die verschiedenen displays gut auftauchen
+* Nach VL wären wichtige Themen:
+  * Wiedergabetreue, Immersion, navigation und Interaktion &rarr; sollten hier als bewertungskriterien auftauchen
+  * Was genau ist eine Game Enigne &rarr; kurz irgendwo definieren undw as kann diese
+  * Was kann eignetlich die Brille ... 
+  * Workflow in VL ein wenig anders: 3D-Datenerfassung &rarr; 3D-Modellierung &rarr; Texture Mapping &rarr; Implementierung in Game Eninge &rarr; Stema VR als Schnitsttelle &rarr; Visualisierung im VR System
+  * Wie viele Frames braucht man performance mäßig
+  * Luteraturverzeichnis anschauen ...
+* VL2:
+  * Thema mit Geoedaten hat er auch
+  * hat auch gründe für VR genannt &rarr; nochmal prüfen
+  * hat auch definitionen
+  * hat auch continuum &rarr; prüfen
 ### Entwicklungsumgebung
 Die Möglichkeiten eine VR Anwendung zu bauen, sind je intendierten Anwendungsfall und Umfang breit. Von einfacheren JavaScript Bibliotheken wie WebGL bis zu dedizierten Game Engine kann eine VR Anwendung entwickelt werden. Die Arbeitsschritte bis zur fertigen Anwendung bleiben jedoch vergleichbar: 
+
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d.drawio.svg)
 *Abbildung Z zeigt den schematisches Workflow für eine VR Anwendung. Zunächst werden Eingabedaten in verschiedenen Formaten in eine 3D-Modellierungssoftware oder Game-Engines importiert. Modelle können manuell oder rechnergestützt generiert und für Visualisierungen genutzt oder in Game-Engines weiterverarbeitet werden. Anwendungen aus Game-Engines können anschließend auf Webplattformen und VR-Headsets bereitgestellt werden[^12]. Die Softwarepakete sind nicht umfassend und stellen einzig bekanntere Beispiele dar.*
+
 Zunächst müssen als Eingabedaten Modelle von realen Objekten erstellt oder bezogen werden. Beispiele für die Erstellung beinhalten die selbstständige Modellierung, der Bezug von existierenden Modellen oder prozedurale Erzeugung. Im Anschluss werden das bzw. die Modelle in eine 3D Modellierungssoftware oder 3D Game Engine übertragen, um aus den einzelnen Modellen eine 3D Anwendung zu erzeugen. Die Grenzen zwischen Modellierungssoftwayre und 3D Game Engine sind dabei nicht trennscharf. Zum Beispiel ermöglicht Blender neben der Modellierung auch die direkte Animation. Die fertige Applikation wird anschließend dem Zielgerät oder der Präsentationssoftware aufbereitet. 
 {: style="text-align: justify;"}
 Der theoretische Aufbau kann auf unsere Gegebenheiten vor dem Hintergrund der Projektvorgeben, sowie der Konzeption konkretisiert werden:
+
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
 *Abbildung X: Konkretisierung des theoretischen Workflows für die Entwicklung einer VR Anwendung über die Ohlendorff'sche Villa*
+
 Für unsere Anwendung wurden primär existierende 3D Modelle im Vektorformat verwendet. Der Begriff der Vektordaten ist hier nicht beschränkt auf Vektordaten, wie sie typischerweise in Geographischen Informationssystemen vorkommen. Die Daten wurden entweder von der Kursleitung zur Verfügung gestellt, selbstständig modelliert oder vorhandene kostenfreie Modelle aus dem Internet verwendet. Im Anschluss wurden die Daten in [blender](https://www.blender.org/) aufbereitet. Dies umfasste alle Schritte, welche notwendig sind, um keine weiteren Veränderungen in einer Game Engine vorzunehmen. Hierzu zählen insbesondere die Positionierung, Modellierung und Texturierung. Zusätzlich zu Blender wurden [BlenderGIS](https://blender-addons.org/blendergis-addon/) und [Rigacar](https://blender-addons.org/rigacar/) als Erweiterungen verwendet. Die speziellen Nutzungen werden in der Implementierung konkretisiert. Die Entscheidung blender zu verwenden liegt hauptsächlich in der hohen Flexibilität inklusive der einfacheren Progammierung, sowie dem Vorteil, dass das OpenSource Projekt den Studierenden dauerhaft zur Verfügung steht. Hierdurch ist der Lerneffekt auch auf andere Projekte übertragbar.
 {: style="text-align: justify;"}
-Die aufbereiteten Modelle wurden im Anschluss in [Unreal Engine 5.4](https://www.unrealengine.com/en-US) (UE) importiert. UE wurde verwendet um jegliche Form der Interaktion von der Bewegung in der VR Umgebung bis zum Licht zu erstellen. Über [SteamVR](https://store.steampowered.com/app/250820/SteamVR/?l=german) wurden die Anwendung im Anschluss auf eine HTC Vive transferiert. Dieses Setup war im Wesentlichen durch die Aufgabenstellung vorgegeben, sodass die Verwendung einer alterantiven Game Engine oder Head-Mounted Display (HMD) nicht diskutiert wurde.
+Die aufbereiteten Modelle wurden im Anschluss in [Unreal Engine 5.4](https://www.unrealengine.com/en-US) (UE) importiert. UE wurde verwendet um jegliche Form der Interaktion von der Bewegung in der VR Umgebung bis zum Licht zu erstellen. Über [SteamVR](https://store.steampowered.com/app/250820/SteamVR/?l=german) wurden die Anwendung im Anschluss auf eine HTC Vive Pro transferiert. Dieses Setup war im Wesentlichen durch die Aufgabenstellung vorgegeben, sodass die Verwendung einer alterantiven Game Engine oder Head-Mounted Display (HMD) nicht diskutiert wurde.
 {: style="text-align: justify;"}
 
 ### Implementierung für die Ohlendorff'sche Villa
 Im nachfolgenden Abschnitten werden die unterschiedlichen Schritte und Details zur Implementierung der Konzeption genauer erläutert. Dabei wird sich von den Objekten im Außenbereich über die implementierte Animationen in den Innenbereich gearbeitet.
 #### Außenbereich
+*Kollsion muss irgendwo noch erwähnt werden*
+
+
 Das relevant Gebiet wurde in QGIS eingezeichnet und in blender importiert. Das einfache aber durch BlenderGIS richtig positionierte Polygon wurde daraufhin extrudiert. Auf dieser Scheibe wurden drei unterschiedliche amtliche Geodatensätze platziert. Als Hintergrund, der das Gebiet vollständig bedeckt, wurden Daten über den Arten- und Biotopsschutz gewählt[^13]. Aufbauend darauf wurden die Feinkartierung der Straßen mit deren expliziter Nutzung hinzugefügt[^14]. Der Datensatz wurde im Vorfeld leicht modifiziert um auch die Wege innerhalb des Ohlendorff'schen Park darzustellen. Zuletzt wurden die LOD II Daten von Hamburg verarbeit, wobei die Daten zunächst in CityJSON konvertiert wurden und im Anschluss zugeschnitten wurden[^15]. Die Gebäude wurden ebenfalls entsprechend der attributierten Höhe extrudiert. Anschließend wurde die jeweiligen Modellen orientiert am angestrebten Kartenstil mit neutraleren Farben eingefärbt. Das resultierend Modell kann hier gesehen werden: 
+
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/Base.glb"
     alt="3D model"
@@ -102,21 +127,41 @@ Das relevant Gebiet wurde in QGIS eingezeichnet und in blender importiert. Das e
     ar
     style="width: 100%; height: 40vh;">
 </model-viewer>
-*Modell der Umgebung nach Integration der amtlichen Geodaten. Die Basis Scheibe wurde nicht dargestellt, da diese zu Artefakten geführt hat. Bei der Gesamtansicht des Modells sind in Teilen noch Artefakte zu beobachten.*
+*Modell der Umgebung nach Integration der amtlichen Geodaten. Die Villa selbst wird nicht gezeigt. Die Basis Scheibe wurde nicht dargestellt, da diese zu Artefakten geführt hat. Bei der Gesamtansicht des Modells sind in Teilen noch Artefakte zu beobachten. Die Artefakte konnten in der finalen VR Applikation nicht beobachtet werden.*
 
-#### Innenbereich
-* Außenbereich: 
-  * Scheibe + Test DEM
-  * Gebäude LOD 2
-  * Hintergrund karten &rarr; Straßen + Hintergrund/Nutzung
-  * Mehr Lebhaft durch Bäume Autos
-    * Fahrende Autos
-  * sounds im außenbereich
-    * Wind
-    * Vägel
-    * Motoren
-  * dann lichter und entwicklung
-  * Insel gesperrt man kann nicht runterfallen
+Ebenfalls wurden Versuche unternommen ein digitales Höhenmodell zu integrieren, da die Villa in den Hang hinein gebaut wurde. Jedoch ist die Auflösung der amtlichen Daten für eine VR Anwendung zu gering und die eher geringen Höhenunterschiede sind ohne Überhöhung nicht erkennbar. Gleichzeitig führte eine Integration zu massiven Performance verlusten
+Um die Immersion der Nutzenden zu erhöhen, wurden weitere Elemente der realen Umwelt der Applikation hinzugefügt. Hierzu zählen Modelle von Bäumen, Gebüsch, Steine, Autos und Laternen. Die Modelle konnten alle frei verfügbar im Internet gefunden werden und wurden in blender einzig eingefärbt und oder durch Streckung, Drehungen oder Expansion leicht modifiziert, um visuelle Variation zwischen bspw. Baumtypen herzustellen. Alle zusätzlichen Elemente wurden nicht in einer realistischen Anzahl dargestellt. Diese Entscheidung resultiert von Experimenten, die zeigten, dass zu viele Element die Nutzenden visuell verwirren **?** und keinen Mehrwert gebracht haben. Das resultierende Modell sieht, wie folgt aus: 
+
+<model-viewer 
+    src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
+    alt="3D model"
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    ar
+    style="width: 100%; height: 40vh;">
+</model-viewer>
+*Vollständiger Außenbereich der VR Applikation zur Ohlendorff'schen Villa in Hamburg Volksdorf. Erneut wurde die Villa ausgelassen.*
+
+Neben den unterschiedlichen Modellen wurden weitere Elemente hinzugefügt, die die Immersion verstärken sollen. Hierzu zählen die Erzeugung einer Geräuschkullisse, Bewegung der Autos und einen Tag-Nacht Rythmus samt verbundener Lichter. 
+Visuell am auuffällgsten ist der Tag-Nacht Rhytmus. Hierzu wurde der Blueprint des Sun Position Calculators so verändert, dass ein realitätnaher Sonnen und Mondverlauf je nach Position auf der Erde ermöglicht wird. Neben der Definition einer Position auf der Erde lassen sich auch Parameter über die Intensität und Größe, sowie Material der Sterne kontrollieren. *Was genau wurde verändert; Wie genau funktioniert das; PostProcessing Box*. Im Kontext dieser Implementierung wird auch ermöglicht unterschiedliche Lichter je nach Tageszeit an und auszuschalten. Diese Funktionalität benötigt durch die Berechnung der Schatten viele Resourcen und wurde einzig in einem Innenraum, sowie der Straßenbeleuchtung verwendet. Ähnlich dazu wurde ein Material erzeugt, welches auch auf die Tageszeit reagiert und bei den Fahrzeugen dazu führt, dass die Leuchter die Farbe in der Tag und Nacht wechseln.   Zwei resultierende Beispiele können hier gezeigt werden:
+
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Island_Day_Night_Opt.gif)
+*Abbildung X: Überblick eines Tag-Nacht Rhytmuses über die ganze Insel. Neben der Veränderung des Lichtes lässt sich bereits die Bewegung der Fahrzeuge erkennen.*
+
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Haus_Day_Night_Opt.gif)
+*Abbildung X: Detailaufnahme des Tag-Nacht Rhytmuses inklusive der sichtbaren Veränderung der Innenbeleuchtung*
+
+Um die hier sichtbaren Fahrzeuge zu bewegen, wurden diese in blender mittels Rigacar vorbereitet, sodass diese de facto kein statische Netz sind, sondern ein Skelettnetz sind. Hierdurch wurde die Größe vereinheitlicht, die einzelnen Räder bewegbar gemacht und der Drehpunkt für den späteren Blueprint aufbereiten. In Theorie ist es mit einem solchen Fahrzeug möglich, dass ein Actor einsteigen kann. Dem jeiligen Fahrzeug wurde ein Blueprint hinzugefügt, der die Fahrzeuge auf einem Spline bewegen lässt und diesen vorher selbstständig auffindet. Insgesamt wurde je ein Spline für jede Fahrrichtung implementiert. Außerhalb der Scheibe sind Markierungen gesetzt, welche die jeweiligen Fahrzeuge erkennen, auf eine Liste schreiben und sichtbar oder unsichtbar machen je nachdem, ob diese bereits auf der Liste existieren.*Detailierte Implementierung*. Das Ergebnis stellt sich, wie folgt dar: 
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
+*Abbildung X: In der Animation sind drei fahrende Fahrzeuge sichtbar. Der Sportwagen wurde für die Animation an einer ungewöhnlichen Stelle positioniert und findet den Spline.*
+Zuletzt wurden unterschiedliche Sounds der Umgebung hinzugefügt. Dabei unterscheidet sich die Komplexität der Sounderstellung. Für die sich bewegenden Fahrzeuge wurde relativ einfach ein Motorensound hinzugefügt und überall in der Welt wurden Vögelgeräusche hinterlegt. Die Vogelgeräusche wurden so implementiert, dass jeweils zufällig zwei von acht möglich Sounds gespielt werden. Deutlich komplexer sind die adaptiven Windgeräusche. Das Grundkonzept ist, dass sich Windgeräusche je nach Umgebung des VR Pawns in der Lautstärke verändern, sodass auf einer freien Fläche der volle Sound erklingt und in engen Umgebungen deutlich weniger Windgeräusche. Um diesen Effekt zu ermöglichen, wurde eine Actor Component dem VR Pawn hinzugefügt. Innerhalb dieser Komponente wird zunächst ein aus zwei verschiedenen starken Windgeräuschen zusammengesetzter Sound erzeugt. Ausgehend davon wird ein Timer gestartet, der je nach Zeiteinheit eine Anpassung der Windlautstärke vornimmt. Die Anpassungstärke wird dabei durch die Verändeurng von emittierten Linien der Komponent ermittelt. Hierzu werden bspw. sechs Linien im den Pawn ausgestrahlt, sobald diese Linie ein Objekt trifft, verändert sich der Wert der Linie. Entsprechend muss die Intensität der Windgeräusche verringert werden, sobald mehrere Linien geringere Werte anzeigen. Nach Ermittlung dieses Wertes findet zunächst eine Interpolation statt, um abrupte Veränderungen zu vermeiden. Dieser interpolierte Wert wird im Anschluss verwendet, um die Lautstärke zu verändenr.
+
+*Animation Wind*
+
+
+
 * Innenbereich
   * 
 
@@ -146,26 +191,11 @@ Das relevant Gebiet wurde in QGIS eingezeichnet und in blender importiert. Das e
 ### Einschränkungen
 * Wind
 * Nebel
-### Software
-Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die über die Entwicklung des VR Projekt verwendet wurden. 
-
-* THeoretischer Vergleich unterschiedlicher Möglicher software pakete &rarr; VIelfalt aufzeigen
-* Blender
-  * Datenmanipulation samt Texturierung
-  * Blender GIS: Handling von Geodaten 
-  * Blender Plugins für autos &rarr; Bewegliche Reifen, Theoretisch Fahrbare Autos
-
-* Export als FBX zu unreal
-* UE5
-  * Import
-  * Modellierung von Animation & Interaktionen
-  * Plugin für Sonne als eigene Software für speziellen Blueprint
-* Steam VR: Übertragung auf Hardware
 
 
 ### Hardware
 * Theoretische viele möglichkeiten bei uns an der uni
-* [HTC Vive | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/861)
+* [HTC Vive Pro| GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/861)
 * mit den bestandteilen für xyz
 * den specs
 
@@ -185,7 +215,7 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die �
   * Input Daten &rarr; Geodaten / Verfügbare Daten / Modelle aus dem netz
   * 3D Modellierung Software &rarr; Blender
   * 3D Application building software/ game engine &rarr; UE5
-  * Target Platform &rarr; Vive / VR BRILLE
+  * Target Platform &rarr; Vive Pro/ VR BRILLE
   * Präsentationsplatform &rarr; Steam
   * [2.6 3D and VR Application Building Workflows | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/559)
 
@@ -211,7 +241,16 @@ Umgesetzt wurde die Anwendung in wesentlichen mit drei Software Produkten, die �
 Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden. 
 3D Stadtmodelle haben in den letzten Jahren an Bedeutung für diverse Anwendungen gewonnen in den GIScience [^7]
 * Beudeutung für städte: Biljecki, F., Stoter, J., Ledoux, H., Zlatanova, S., & Çöltekin, A. (2015). Applications of 3D City Models: State of the Art Review. ISPRS International Journal of Geo-Information, 4(4), 2842–2889. doi:10.3390/ijgi4042842
-# Testing
+* Genauer CAD Modelle
+
+
+
+
+
+
+
+
+
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -234,19 +273,9 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
 
 
 
-<model-viewer 
-    src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
-    alt="3D model"
-    camera-controls 
-    auto-rotate
-    exposure="1"
-    shadow-intensity="1"
-    ar
-    style="width: 100%; height: 40vh;">
-</model-viewer>
 
 
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
+
 
 
 
