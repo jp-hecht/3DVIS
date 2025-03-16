@@ -25,19 +25,19 @@ header:
 # Einleitung
 Die Ohlendorff'sche Villa übernimmt im Hamburger Stadtteil Volksdorf eine hervorgehobene Stellung im urbanen Gefüge, welche insbesondere durch die Zentralität im Stadtteil, sowie die Betonung des Gebäudes durch den umschließenden Park gegeben ist. Um diesen Besonderheiten auch außerhalb einer vor Ort Begehung erfahrbar zu machen und somit die Villa für diverse Menschen zugänglich zu machen, wurde im Rahmen des Kurses 3D-Visualisierung an der HafenCity Universität von Herrn Prof. Kersten eine Virtual Reality (VR) Anwendung zur Ohlendorff'schen Villa entwickelt. Ziel ist es ein zur Verfügung gestelltes historische Gebäude für eine interaktive Begehung und Visualisierung aufzubereiten.
 {: style="text-align: justify;"}
-Innerhalb der letzten Jahrzehnte ist die Bedeutung von VR Anwendungen durch die geschaffene multisensorische 3D Umwelt in verschiedenen Feldern gestiegen[^1]. Typische Anwendungsbereiche umfassen unter anderem die Psychologie, Simulatoren, Operationen, Lernumgebungen, körperliche Prävention oder in der Industrie[^4]. Innerhalb der Architektur, Ingenieurwesen und Konstruktion ermöglichen VR Anwendungen die Immersion von Nutzenden in eine virtuelle Welt, welche den hohen Anforderungen der visuellen Kommunikation in Bezug auf Design, Konstruktion und Management der gebauten Umwelt ermöglicht[^1]. Entsprechend wird die insbesondere die Simulation der realen Welt angestrebt. Erste Versuche von VR Applikationen für die bebaute Umwelt wurden zwar bereits in den 1990er Jahren getestet, jedoch erfolgte eine größere Verbreitung durch praktische Anwendungen erst in den letzten Jahren durch eine Reduktion von Einstiegshürden mittels leistungsfähigerer Hard- und Software. Beispiele für praktische Anwendungen können Kundenbegehungen oder die schrittweise Überprüfung von Bauabläufen sein[^2].{: style="text-align: justify;"}
-
+Innerhalb der letzten Jahrzehnte ist die Bedeutung von VR Anwendungen durch die geschaffene multisensorische 3D Umwelt in verschiedenen Feldern gestiegen[^1]. Typische Anwendungsbereiche umfassen unter anderem die Psychologie, Simulatoren, Operationen, Lernumgebungen, körperliche Prävention oder in der Industrie[^4]. Innerhalb der Architektur, Ingenieurwesen und Konstruktion ermöglichen VR Anwendungen die Immersion von Nutzenden in eine virtuelle Welt, welche den hohen Anforderungen der visuellen Kommunikation in Bezug auf Design, Konstruktion und Management der gebauten Umwelt ermöglicht[^1]. Entsprechend wird die insbesondere die Simulation der realen Welt angestrebt. Erste Versuche von VR Applikationen für die bebaute Umwelt wurden zwar bereits in den 1990er Jahren getestet, jedoch erfolgte eine größere Verbreitung durch praktische Anwendungen erst in den letzten Jahren durch eine Reduktion von Einstiegshürden mittels leistungsfähigerer Hard- und Software. Beispiele für praktische Anwendungen können Kundenbegehungen oder die schrittweise Überprüfung von Bauabläufen sein[^2].
+{: style="text-align: justify;"}
 Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wird, sollte das Verständnis des Begriffes VR offengelegt werden. Eingeordnet werden kann der Begriff in das übergeordnete Thema des Realitäts-Virtualitäts-Kontinuums[^3]. Dabei wird davon ausgegangen, dass sich Augmented Reality (AR), Augmented Virtuality (AV) und VR zwischen den Endpolen physischen Realität und vollständig virtuellen Umgebung befinden[^5]. AR, AV und VR werden dabei unter dem Begriff *extended reality* (XR) zusammengefasst, welches „[...] alle realen und virtuellen kombinierten Umgebungen und Mensch-Maschine-Interaktionen, die durch Computertechnologie und Wearables erzeugt werden“ umfasst[^6]. Vor diesem Hintergrund wurden verschiedene Definition im wissenschaftlichen Kontext erarbeitet, welche nicht im Detail erläutert werden sollen und einzig auf das hier zugrundlegendes Verständnis dargelegt werden soll:
-
+{: style="text-align: justify;"}
 > VR leverages immersive technologies to simulate interactive virtual environments or virtual worlds with which users become subjectively involved and in which they feel physically present[^5]
 
 Basierend auf diesem Verständnis wird im folgenden Bericht zunächst das reale Objekt beschrieben, sowie die Entscheidung des Modelles begründet. Im Anschluss folgt die Konzeption unserer VR Anwendung, weitere theoretische Überlegungen zur Anwendung und die verwendete Hard- und Software. Nachdem die Vorraussetzungen festgelegt wurden, wird die Umsetzung, sowie die Limitierungen samt Fazit/Ausblick aufgezeigt. Innerhalb dieses Berichtes wird insbesondere die Entstehung des Außenbereiches, samt aller dazugehörigen Elemente aufgegriffen. Für andere Bereiche, wie beispielsweise die Texturierung des Gebäudes, werden erwähnt, aber detailierter in den anderen Berichten aufgegriffen.
+{: style="text-align: justify;"}
 
 # Ohlendorff'sche Villa
-Wie aus der [Übersichtskarte](#map1) deutlich wird und bereits angedeutet wurde befindet sich das ehemalige Wohnhaus im Hamburger Stadteil Volksdorf.
+Wie aus der [Übersichtskarte](#map1) deutlich wird und bereits angedeutet wurde befindet sich das ehemalige großbügergliche Wohnhaus im Hamburger Stadteil Volksdorf. Im wesentlichen wird das Gebäude vom zugehörigen Park, sowie Gebäuden mit primärer Wohnfunktion eingegrenzt. 
 <div class="content-container">
     <div id="map" class="map-container"></div>
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var map = L.map('map').setView([53.648437464598516, 10.165957827843153], 15);
@@ -54,37 +54,22 @@ Wie aus der [Übersichtskarte](#map1) deutlich wird und bereits angedeutet wurde
 </div> 
 *Karte 1: Verortung der Ohlendorff'sche Villa in Volksdorf.*
 {: #map1}
-
-
-## Realität
-* Auch auswahl hier begründen vlt. schon der konzeption vorgreifen
-* Grundlagen, wo was wie
-* Historie
-  * Architekt
-  * Auftrageber
-  * Stil
-  * Lage
-
-* Uni Projekt mit möglichen Modellen
-* Auswahl von Villa Ohlsdorff
-  * Alter stil schwierig
-  * Nahe zu hamburg
-  * hohe flexibilität
-
-* Weiterer Aufbau des Aritkels
-  * FOkuspunkt hier ist der Außenebereich und Umgebung
-## Bestehendes Modell
-* Verweis auf andere Berichte
-* Wurde in rohform zur verfügung gestellt
+Die historische Entwicklung wird auf der Website von der heute besitzenden Stiftung Ohlendorff’sche Villa durch Gerhard Hirschfeld beschrieben. Eine kurze Zusammenfassung wird hier aufgegriffen: Die heutige Villa wurde 1928/29 von Erich Elingius (1879–1948) für Hans v. Ohlendorff (1880–1967) errichtet. Dieser ließ das vorherige Gutshaus seines Vaters Heinrich v. Ohlendorff abreißen. Die neue Villa hebt sich durch ihre herrschaftliche Gestaltung hervor. Während der Abriss der eklektizistischen Villa seines Vaters dem Zeitgeist entsprach, wählte Hans v. Ohlendorff mit Elingius einen Architekten, der konservative Bauweisen bevorzugte. Besonders auffällig ist die zentrale Auffahrt mit dem hervorgehobenen Eingangsportal, das den repräsentativen Anspruch der Familie unterstreicht. Die asymmetrisch gestaltete Gartenseite wirkt wohnlicher, doch das hohe Sockelgeschoss verhindert eine direkte Verbindung zum Park. Entsprechenden der repräsentativen Funktion wurden die Zimmer im Untergeschoss als Empfangszimmer, Bibliothek, Musikzimmer und Speisezimmer gestaltet. Die obere private Etage umfasste ein großes Schlafzimmer mit Ankleidezimmer und eigenem Bad sowie einen achteckigen Frühstücksraum. Ein separater Flur für das Dienstpersonal führte zur Anrichte und zum Speisenaufzug. Der Gästebereich bestand aus zwei Fremdenzimmern mit einem gemeinsamen Bad. Die Villa zeigt sparsam eingesetzte Schmuckelemente. Werkstein-Umrahmungen betonen die Rundbogenfenster und Rechtecköffnungen, während Balkone und französische Fenster mit gusseisernen Ziergittern versehen sind.[^8]. Hans v. Ohlendorff verkaufte das Anwesen an die Stadt Hamburg im Jahr 1953, welche das Gebäude bis 2006 als Ortsamt nutzte. Im Anschluss wurde das Gebäude bis 2014 saniert und in eine Kultur- und Begegungsstätte des Stadtteils umgestaltet[^10].
+{: style="text-align: justify;"}
+Innerhalb unterschiedlicher Kurse an der HafenCity Universität wurden diverse Daten über das Gebäude aufgenommen und durch die Kursleitung zur Verfügung gestellt. Details über das zur Verfügung gestellte Gebäude können im Bericht von Marlene nachvollzogen werden *LINK*. 
+{: style="text-align: justify;"}
 
 # Hauptteil
-## Konzeption
-* Idee
-  * Kartenähnlich
-  * Kein Fokus auf realistische Darstellung der Umgebung
-  * Warum Platte
-## Theoretische Überlegungen
-* [Immersion, Presence, and Interaction | GEOG 497: 3D Modeling and Virtual Reality](https://www.e-education.psu.edu/geogvr/node/875)
+Blablba
+## Konzeption einer VR Anwendung der Ohlendorff'sche Villa
+Vorgegebenes Ziel des Projektes ist die interaktive Begehung und Visuallisierung der Ohlendorff'schen Villa. Entsprechend dieser Anforderung wurde entschlossen das Gebäude in den Mittelpunkt der virtuellen Welt zu stellen. Da jedoch die Villa insbesondere, wie bereits erwähnt, in Zusammenhang und Wirkungsgefüge mit der Umgebung steht, sollte dieses auch eingebunden werden, wobei die Fokussierung auf die Villa nicht verloren gehen sollte. Dieses kann den Nutzenden gleichzeitig ermöglichen ein besseres Verständnis für die Größenrelationen zu erlangen. Da eine großräumige Darstellung beispielsweise von gesamt Volksdorf keinen Mehrwert brächte und ein gesamter Stadtteil vom Umfang nicht gestaltet werden könnte, wurde sich entschiedenen die Villa auf einem Block darzustellen. Die Idee ein markantes Element im Raum in Blockform darzustellen, wurde inspiriert von Darstellung digitaler Geländemodelle als Block ( [Beispiele](https://www.rayshader.com/)). Bei der Wahl der Blockform wurde sich an den natürlichen Gegebenheiten vor Ort orientiert. Ziel war es die Umgebung abzubilden, ohne jedoch die Hauptsichtachsen auf die Front und Rückseite der Villa zu beschränken. In der praktischen Umsetzung erwies sich eine Kreisform als geeignet. 
+{: style="text-align: justify;"}
+Die Gestaltung des Außenbereiches orientiert sich an kartographischen Darstellungen, welche eher den Sehgewohnheiten der Nutzenden entsprechen, als der Versuch eine realistische Umgebung zu schaffen. Angelehnt an die kartographischen Generalisierung sollten Objekte in einem *Low Poly Stil*, also der Modellierung von Objekten durch ein Netz von wenigen verbunden Punkten, abgebildet werden. Dies ermöglicht zum einen die Performance der gesamten Anwendung deutlich zu erhöhen und zum anderen einen deutlichen Kontrast zwischen einer detailierten und realistischeren gestalteten Villa und der Umgebung herzustellen[^11]. Ein derartiger Kontrast kann bei den Nutzenden die Aufmerksamkeit erhöhen und somit die Wahrnehmung schärfen. 
+{: style="text-align: justify;"}
+Die Villa wurde im Gegensatz dazu detailiert modelliert und texturiert und kommt somit einer realistischen Darstellung näher. **FARBEN** TEXTUEN &rarr; Was wurde sich diesbezüglich gedacht?
+Da eine vollständige und realistische Modellierung des Innenbereiches den Umfang des Projektes übersteigen würde, wurden einzig zwei Räume geschaffen, die in dieser Form in der Realität nicht existieren. Ober- und Untergeschoss wurden nicht, wie in der realen Villa, modelliert. Die zwei geschaffen Räume behandeln verschiedene Animationen und Interaktionen, die angelehnt sind an die historischen Nutzungen, aber frei interpretiert wurden. Folglich ist ein Raum als Musikzimmer gestaltet und der andere beinhaltet Kunstwerke. Neben der Anlehnung an die historischen Gegebenheiten ermöglicht dies flexibele und geforderte Interaktionen.
+{: style="text-align: justify;"}
+
 ## Statische Dinge
 * Warum Platte als Baseline
 * Dann Gebäude
@@ -236,3 +221,6 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
 [^5]: Wohlgenannt, I., Simons, A. & Stieglitz, S. Virtual Reality. Bus Inf Syst Eng 62, 455–461 (2020). https://doi.org/10.1007/s12599-020-00658-9
 [^6]: Übersetzt aus: Fast-Berglund Å, Gong L, Li D (2018) Testing and validating extended reality (xR) technologies in manufacturing. Procedia Manuf 25:31–38
 [^7]: Biljecki, F.; Stoter, J.; Ledoux, H.; Zlatanova, S.; Çöltekin, A. Applications of 3D City Models: State of the Art Review. ISPRS Int. J. Geo-Inf. 2015, 4, 2842-2889. https://doi.org/10.3390/ijgi404284
+[^8]: https://ohlendorffsche.de/historie/
+[^10]: https://ohlendorffsche.de/umbau-und-sanierung/
+[^11]: https://shibaura.elsevierpure.com/en/publications/low-poly-image-stylization
