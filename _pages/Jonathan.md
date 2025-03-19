@@ -82,7 +82,7 @@ Wenn ein VR-System von großen Komponenten bis zu kleineren Bestandteilen betrac
 Als Hauptdifferenzierung kann die Position des Displays genannt werden. Die Bandbreite reicht von verschiedenen Kombinationen an fest montierten Displays, über Displays, die über den Kopf gehalten werden und zuletzt Displays, die in der Hand gehalten werden. Dabei ist das gängige Verständnis, dass VR mit abschließenden Head-based Displays (HBD)verbunden ist. Neben dem Begriff HBD findet sich in der Literatur häufiger der Begriff Head-mounted Display.
 Je nach System kommen diverse integrierte oder externe Sensoren sowie Aktoren zum Display hinzu, um den Grad der Immersion zu erhöhen. Beispiele für Sensoren umfassen Kameras, Bewegungstracker oder Eingabegeräte (Joysticks, Trackpads, Laufbänder, ...). Als Aktoren können neben dem Display Audiowiedergabegeräte oder Vibrationsmotoren sein[^18]. Als wichtigste Eigenschaft können geringe Latenz und Genauigkeit genannt werden[^19].
 Im Zusammenspiel zwischen Hard- und Software können bei einer schlecht eingestellten und gestalteter VR Anwendung auch potenzielle physische, psychologische Schäden für die Nutzenden auftretten. Bevor auf typische Gefährdungen eingegangen werden kann, sollte darauf hingewiesen werden, dass ebenfalls Cyberbedrohung mit höchst sensitiven Daten möglich sind und hier nicht gesondert auf VR sondern auf gesundheitsrelevante Aspekte in XR Anwendungen bezogen wird. Einen Überblick über die Gefährdungen kann in Abb. XYZ gesehen werden: 
-![alt text]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/xr_threat.svg)
+![alt text]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/xr_threat.drawio.svg)
 *Abbildung XY: Überblick über Bedrohungen für die menschliche Gesunheit und Leben[^19].*
 
 
