@@ -234,10 +234,8 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
 [^12]: Verändert und erweitert: Alex Klippel, Mahda M. Bagher & Jan Oliver Wallgrün (o.J). 3D and VR Application Building Workflows. https://www.e-education.psu.edu/geogvr/node/559 [Zugriff: 19.03.2025]
 [^13]: Freie und Hansestadt Hamburg, Behörde für Umwelt und Energie (2024). Daten: Arten- und Biotopschutz - AuBS (ehem. APRO). https://registry.gdi-de.org/id/de.hh/B8F6865A-1790-4B9D-987E-AF97B88E84D3 [Zugriff: 12.12.2024]
 [^14]: Freie und Hansestadt Hamburg, Behörde für Verkehr und Mobilitätswende (2023). Daten: Feinkartierung Straße Hamburg. https://registry.gdi-de.org/id/de.hh/ad7e3cb6-9a9e-4044-81b1-4c1f8d974c2f [Zugriff: 08.12.2024]
-[^15]: Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung (LGV) (2024). Daten: 3D-Gebäudemodell LoD2-DE Hamburg.
+[^15]: Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung (LGV) (2024). Daten: 3D-Gebäudemodell LoD2-DE Hamburg. https://registry.gdi-de.org/id/de.hh/948321ba-e9b2-4290-88c3-8dda2912defa [Zugriff: 01.12.2024]
 [^16]: Asmaa Saeed Alqahtani, Lamya Foaud Daghestani & Lamiaa Fattouh Ibrahim (2017). Environments and system types of virtual reality technology in STEM: a survey. International Journal of Advanced Computer Science and Applications Vol. 8, 6. 10.14569/IJACSA.2017.080610. 
 [^17]: HTC Corporation (o.J.). VIVE Product Specification. https://www.vive.com/eu/product/vive/ [Zugriff: 19.03.2025]
-https://registry.gdi-de.org/id/de.hh/948321ba-e9b2-4290-88c3-8dda2912defa [Zugriff: 01.12.2024]
 [^18]: Christoph Anthes, Rubén Jesús García-Hernández, Markus Wiedemann & Dieter Kranzlmüller (2016). State of the art of virtual reality technology. IEEE Aerospace Conference, Big Sky, MT, USA. pg. 1-19. 10.1109/AERO.2016.7500674.
-[^19]: Sara Qamar, Zahid Anwar & Mehreen Afzal (2023). A systematic threat analysis and defense strategies for the metaverse and extended reality systems. Computers & Security
-Vol. 128, 103127.
+[^19]: Sara Qamar, Zahid Anwar & Mehreen Afzal (2023). A systematic threat analysis and defense strategies for the metaverse and extended reality systems. Computers & Security Vol. 128, 103127.
