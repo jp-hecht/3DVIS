@@ -76,7 +76,7 @@ Da eine vollständige und realistische Modellierung des Innenbereiches den Umfan
 Bevor konkrete umgesetzte Elemente beschrieben und Funktionsweisen erläutert werden können, werden sowohl die Arbeitsschritte zur Entwicklung einer VR Anwendung als auch Entscheidungen für konkrete Hard- und Software aufgegriffen.
 {: style="text-align: justify;"}
 ### Theorie
-Wie bereits aus der [Definition](#def) hervorgeht, zielt eine VR Anwendung auf die Immersion der Nutzenden in eine virtuelle Welt ab, welche gleichzeitig die Außenwelt versucht auszuschließen[^20]. Um einen hohen Immersionsgrad zu erzeugen, sollte die geschaffene Umgebung im Zusammenspiel aus realer Umgebung, Hardwarekomponenten und Software ähnlich zur Realität zu reagieren[^18]. Einfache Beispiele hierfür können hochauflösende Displays oder räumliche Geräuschkulissen sein.
+Wie bereits aus der [Definition](#def) hervorgeht, zielt eine VR Anwendung auf die Immersion der Nutzenden in eine virtuelle Welt ab, welche gleichzeitig die Außenwelt versucht auszuschließen[^16]. Um einen hohen Immersionsgrad zu erzeugen, sollte die geschaffene Umgebung im Zusammenspiel aus realer Umgebung, Hardwarekomponenten und Software ähnlich zur Realität zu reagieren[^18]. Einfache Beispiele hierfür können hochauflösende Displays oder räumliche Geräuschkulissen sein.
 {: style="text-align: justify;"}
 Wenn ein VR-System von großen Komponenten bis zu kleineren Bestandteilen betracht wird, kann zunächst die reale Umgebung der VR-Anwendung betrachtet werden. Diese reichen von einfachen stationären Umgebungen, wo die Nutzenden einzeln sitzen oder stehen bis zu realen Umgebungen, wo ein gesamter Raum ggfs. mit verschiedenen Nutzenden verwendetbar für die VR Applikation ist[^19]. Die nächst größere Komponente ist die Art und Weise, wie den Nutzenden die virtuelle Realität gezeigt wird. Eine Differenzierung in fünf Kategorien kann der nachfolgenden Abbildung entnommen werden:
 {: style="text-align: justify;"}
@@ -223,7 +223,7 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
 # Literatur
 [^1]: Jeong Kim, Xiangyu Wang, Peter Love, Heng Li & Shih-Chung Kang (2013). Virtual reality for the built environment: a critical review of recent advances, ITcon Vol. 18, pg. 279-305, https://www.itcon.org/2013/14
 [^2]: Yuxuan Zhang, Hexu Liu, Shih-Chung Kang & Mohamed Al-Hussein (2020). Virtual reality applications for the built environment: Research trends and opportunities. Automation in Construction. 118. 10.1016/j.autcon.2020.103311
-[^3]: Paul Milgram, Haruo Takemura, Akira Utsumi & Fumio Kishino(1994). Augmented Reality: A class of displays on the reality-virtuality continuum. Proceedings of SPIE - The International Society for Optical Engineering Vol. 2351
+[^3]: Paul Milgram, Haruo Takemura, Akira Utsumi & Fumio Kishino (1994). Augmented Reality: A class of displays on the reality-virtuality continuum. Proceedings of SPIE - The International Society for Optical Engineering Vol. 2351
 [^4]: Artur Becker & Carla M. Dal Sasso Freitas (2023). Evaluation of XR Applications: A Tertiary Review. ACM Comput. Surv. Vol. 56, 5, 110 pg.1-35  https://doi.org/10.1145/3626517
 [^5]: Isabell Wohlgenannt, Alexander Simons & Stefan Stieglitz (2020). Virtual Reality. Bus Inf Syst Eng. Vol. 62, pg. 455–461. https://doi.org/10.1007/s12599-020-00658-9
 [^6]: Übersetzt aus: Åsa Fast-Berglund, Liang Gong & Dan Li (2018): Testing and validating extended reality (xR) technologies in manufacturing. Procedia Manuf. Vol. 25, pg. 31-38. https://doi.org/10.1016/j.promfg.2018.06.054
@@ -233,11 +233,11 @@ Geoinformatik und Geodäsie sind dabei eng mit VR und 3D Modellierung verbunden.
 [^11]: Thitiwudh Uasmith, Tantikorn Pukkaman & Peeraya Sripian (2017). Low-poly image stylization. Journal for Geometry and Graphics, Vol. 21, 1, pg. 131-139. https://shibaura.elsevierpure.com/en/publications/low-poly-image-stylization
 [^12]: Verändert und erweitert: Alex Klippel, Mahda M. Bagher & Jan Oliver Wallgrün (o.J). 3D and VR Application Building Workflows. https://www.e-education.psu.edu/geogvr/node/559 [Zugriff: 19.03.2025]
 [^13]: Freie und Hansestadt Hamburg, Behörde für Umwelt und Energie (2024). Daten: Arten- und Biotopschutz - AuBS (ehem. APRO). https://registry.gdi-de.org/id/de.hh/B8F6865A-1790-4B9D-987E-AF97B88E84D3 [Zugriff: 12.12.2024]
-[^14]: Freie und Hansestadt Hamburg, Behörde für Verkehr und Mobilitätswende (2023): Daten: Feinkartierung Straße Hamburg. https://registry.gdi-de.org/id/de.hh/ad7e3cb6-9a9e-4044-81b1-4c1f8d974c2f [Zugriff: 08.12.2024]
-[^15]: Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung (LGV) (2024): Daten: 3D-Gebäudemodell LoD2-DE Hamburg.   
+[^14]: Freie und Hansestadt Hamburg, Behörde für Verkehr und Mobilitätswende (2023). Daten: Feinkartierung Straße Hamburg. https://registry.gdi-de.org/id/de.hh/ad7e3cb6-9a9e-4044-81b1-4c1f8d974c2f [Zugriff: 08.12.2024]
+[^15]: Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung (LGV) (2024). Daten: 3D-Gebäudemodell LoD2-DE Hamburg.
+[^16]: Asmaa Saeed Alqahtani, Lamya Foaud Daghestani & Lamiaa Fattouh Ibrahim (2017). Environments and system types of virtual reality technology in STEM: a survey. International Journal of Advanced Computer Science and Applications Vol. 8, 6. 10.14569/IJACSA.2017.080610. 
+[^17]: HTC Corporation (o.J.). VIVE Product Specification. https://www.vive.com/eu/product/vive/ [Zugriff: 19.03.2025]
 https://registry.gdi-de.org/id/de.hh/948321ba-e9b2-4290-88c3-8dda2912defa [Zugriff: 01.12.2024]
 [^18]: Christoph Anthes, Rubén Jesús García-Hernández, Markus Wiedemann & Dieter Kranzlmüller (2016). State of the art of virtual reality technology. IEEE Aerospace Conference, Big Sky, MT, USA. pg. 1-19. 10.1109/AERO.2016.7500674.
 [^19]: Sara Qamar, Zahid Anwar & Mehreen Afzal (2023). A systematic threat analysis and defense strategies for the metaverse and extended reality systems. Computers & Security
 Vol. 128, 103127.
-[^20]: Asmaa Saeed Alqahtani, Lamya Foaud Daghestani & Lamiaa Fattouh Ibrahim (2017). Environments and system types of virtual reality technology in STEM: a survey. International Journal of Advanced Computer Science and Applications Vol. 8, 6. 10.14569/IJACSA.2017.080610 . 
-[^17]: HTC Corporation (o.J.). VIVE Product Specification. https://www.vive.com/eu/product/vive/ [Zugriff: 19.03.2025]
