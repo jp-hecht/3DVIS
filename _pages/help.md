@@ -39,3 +39,9 @@ permalink: /help/
 * jeder macht seinen folien teil der schon eingeteilt ist
 * Marlene bereit thema eins und zwei vor damit wir drüber diskutieren können
 
+
+
+* BP_Sky_Sphere
+* Wind_AC
+Lautstärken prüfen
+
