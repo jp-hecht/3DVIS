@@ -21,3 +21,21 @@ permalink: /help/
 * Finde dieses Autor Ding ganz cool und man kann flexibel DInge hinzufügen oder wegmachen &rarr; macht das natürlich so wie ihr das füllt ...
 * Fügt selbst gerne noch Dinge hinzu :) 
 * [Minimal Mistakes Cheat Sheet - Fabrizio Musacchio](https://www.fabriziomusacchio.com/blog/2021-08-11-Minimal_Mistakes_Cheat_Sheet/)
+
+
+## TODO
+* [X] Schilder läschen
+* Nummer versteckjen
+* bilder tauschen um bild in mitte richtig ist
+* sichtbar/unsichtbar
+* Positionierung
+* Türknauf
+* Türposition
+* Geräusch truhe auf
+* Bildtauschen in der MItte &rarr; via material und export von anderen
+
+
+* Zurück zum Haus + Musik
+* jeder macht seinen folien teil der schon eingeteilt ist
+* Marlene bereit thema eins und zwei vor damit wir drüber diskutieren können
+
