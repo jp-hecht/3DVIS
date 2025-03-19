@@ -19,17 +19,15 @@ author:
       url: "https://github.com/jp-hecht"
 
 
-excerpt: "This post should display a **header with a solid background color**, if the theme supports it."
+excerpt: "Ohlendorff’sche Villa - Vom Model zur VR-Visualisierung"
 header:
   overlay_color: "#333"
 
 ---
 
 
-[//]: # () 
-# Ohlendorff’sche Villa - Vom Model zur VR-Visualisierung
-
-## 1. Einleitung
+[//]: # ()
+# 1. Einleitung
 In den letzten Jahrzehnten hat die bedeutung von Virtueller Realität (VR) an Bedeutung gewonnen und ist von einem wissenschaftlichen Konzept zu einer weit verbreiteten Technologie gewachsen. Inzwischen erlaubten spezialisierte Gertäte wie VR-Headset und dazugehörigen Steuerungselementen ein immersives Erleben digitaler Welten. Die Bedeutung dieser Technologie wächste kontinuierlich und findet Anwendung in einer Vielzahl von Bereichen, darunter Medizin, Bildung, Industrie und Unterhaltung (Slater & Sanchez-Vives, 2016). Um in das Themenfeld von Virtueller Realität einzuleiten wird hier ein grober Überblick über die historische Entwicklung der VR, zentrale technische Meilensteine und ihre heutige Relevanz in unterschiedlichen Anwendungsfeldern gegeben.
 
 Unter Virtueller Realität versteht man eine computergenerierte Umgebung, die die physische Welt simuluiert bzw. erweitert oder eine erfundene Welt darstellt und eine immersive Erfahrung in dieser Welt ermöglicht. Nutzer*innen erleben VR durch spezielle Endgeräte wie Head-Mounted Displays (HMDs), die 3D-Bilder mit hoher Bildwiederholrate anzeigen, sowie durch Bewegungssensoren, die Interaktionen in Echtzeit erfassen (Burdea & Coiffet, 2003). Ein zentrales Merkmal einer VR-Anwendung ist die Immersion, also das Gefühl, vollständig in der virtuellen Umgebung zu sein. Dies wird durch visuelle, auditive und haptischer Reize verstärkt (Slater, 2009). 
@@ -63,7 +61,7 @@ Die Virtuelle Realität hat sich von einem experimentellen Konzept zu einer viel
 Im Rahmen des Seminars "3D-Visualisierung" soll ein Projekt entwicklet werden, dass die realisitische Darstellung eine 3D-Modells und die Einbettung in eine immersive 3D-Umgebung zum Ziel hat. Dies hat zum Ziel, die Fähigkeiten der Studierenden im Bereich von digitaler (dreidimensionaler) Visualisierung zu erhöhen und die Kompetenz in den wachsenden Anwendungsfelder zu erweitern. Daber seht neben der realitätsnahen Visualisierung (Modellierung und Texturierung) eines 3D-Modells auch Interaktionen der SpielerIn mit der Umgebung im Vordergrund. Dieses schriftliche Ausarbeitung zeigt die dafür notwenigen Schritte auf. Dies sind folgende: 3D-Modellierung, Testaurierung und Einbindung in eine VR-Umgebung, sowie die Interaktionsmöglichkeiten. Schlussendlich werden auch die Herausforderungen beleuchtet und ein Fazit gezogen. 
 
 
-## 2. Objekt
+# 2. Objekt
 Im Zentrum unseres Projektes steht die Ohlendorff’sche Villa. Dabei handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg-Volksdorf steht. Die zweigeschossige Gebäude im Stil des Neoklassizismus, sollte nach der Erbauung sowohl als Einfamilienhaus wie auch als Repräsentationgebäude Hans von Ohlendorff dienen. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. 
 Heute wird die Villa von der "Stiftung Ohlendorff'sche Villa" geführt und beherbert ein Café, eine Kinderhort und mehrere Tagungsräume (*Die Ohlendorff'sche Villa*, o.J.).
 
@@ -82,7 +80,7 @@ Wie in der Abbildung zu erkennen, lässt sich die FBX-Datei in Blender öffnen u
 
 Insgesamt stellen das Modell eine gute Grundlage dar, um das Modell für die VR-Anwendung zu entwickeln, da das große (übergeordnete) Erscheinungbild des Gebäudes mit der Realität übereinstimmt. Gleichzeitig ist noch Modellierungarbeit nötig, um die beschriebenen Mängel des Modell auszubessern, damit die finale VR-Anwendung ein realistisches und immersives Ergebnis erzielt. 
 
-## 3. Konzept
+# 3. Konzept
 Das Projekt verfolgt die Idee einer stilisierten 3D-Karte, die einen kleinen Ausschnitt der realen Welt, auf einer Scheibe, darstellt. Dieser Ausschnitt enthält die wesentlichen Wege, Straßen und umstehenden Gebäude in einer abstrahierten, kartografisch inspirierten Form. Dies ist eine Möglichkeit bekannte Karten, wie Google Maps oder Open Street Map, in einer 3D-Umgebung darzustellen. Die Darstellung kombiniert dabei realistische und abstrahierte Elemente, um Erkennbarkeit der Wirklichkeit und künstlerischer Freiheit zu vereinen.
 Zentrales Element dieser Visualisierung ist die realitätsnah modellierte Ohlendorff'sche Villa, die mittig auf der Scheibe plaziert ist. Während das Gebäude in Bezug auf Architektur und Texturierung detailliert gestaltet ist, werden die umstehenden Gebäude in einer vereinfachenden Level-of-Detail-1-Darstellung abgeildet, also mit reduzierter geometrischer Komplexität. Dies hebt die Villa als Augenmerk der Visualisierung hervor und macht den bewusst gewählten Stilkontrast innerhalb der Visualisierung deutlich. Zusätzlich wird die Fläche, sprich der Außenbereich um die Villa, mit low-poly Bäumen und Autos ergänzt. Diese reduzierten Modelle verstärken den Gegensatz zwischen der detaillierten Texturierung der Villa und der stilisierten Umgebung, was dem zugrundeliegenden Konzept folgt.
 
@@ -99,12 +97,12 @@ Hier werden fünf berühmte, aber verschollene oder gestohlene Kunstwerke inklus
 
 Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurden und ein realistischen Darstellung verschiedener Modelle mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
 
-## 4. Software
+# 4. Software
 Um die unterschiedlichen Teilaufgaben mit des Projekt durchführen zu können, wurde auf unterschiedliche Software zurückgegriffen. Da alle Mitglieder unserer Gruppe bisher keine Erfahrung im Bereich Modellierung, Texturierung oder VR-Interaktionen gemacht haben, erfolgte eine Neueinarbeitung in die Programmen. Für die Modellierung der Villa, um die oben beschriebenen Mängel auszubessern wurde die Software Blender verwendet. Bei Blender handelt es sich um eine Open Source Software, die für die Betriebssysteme Linux, Windows und macOS zur Verfügung steht, was in unserer Gruppe wichtig war, damit alle mit den unterschiedlichen Programmen arbeiten konnten. Das Blender einen sehr umfangreichen Werkzuegkasten für die Erstellung und Bearbeitung von 3D-Graphiken bereitstellt, haben wir uns entschieden auch die Texturen in Blender zu bearbeiten. 
 Für die Erstellung einer virtuellen Realität, wurde sich für die Unreal Engine des Entwicklers Epic Games entschieden. Wie Blender kann die Software kostenlos heruntergelanden werden und eignet sich gut für die Erstellung von VR-Anwendungen. Hier lassen sich auch Interaktionen für die VR-Anwenung mithilfe von Blueprints erstellen, die am Ende ein immersiveres Erlebnis schaffen. 
 
-## 5. Modellierung & Texturierung
-### Modellierung
+# 5. Modellierung & Texturierung
+## Modellierung
 Die Modellierung der Villa erfolgte in Blender, wobei bereits die Grundstruktur des Gebäudes vorhanden war (s. Kapitel Daten). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
 Wie bereits im Kapitel Daten beschrieben, wies das 3D-Modell der Ohlendorff'schen Villa einige kleinere Unstimmigkeiten auf. Zunächst wurden Lücken zwischen verschiedenen Objekten, wie beispielsweise zwischen dem Eingangsportal und der Gebäudewand, geschlossen. In einigen Fällen war es ausreichend, die Position der Objekte leicht zu justieren, während an anderen Stellen gezielt Anpassungen an den Geometrien vorgenommen wurden. So wurden etwa die Lücken zwischen Fensterrahmen und Gebäudewand durch das gezielte Verschieben einzelner Vertices sowie durch Anpassungen der Skalierung entlang der Achsen im Modellierungsprogramm behoben.
 Des Weiteren wurden vier Fenster entfernt, die in das Dachmodell integriert worden waren. Die ursprünglich vorhandenen Fenster bestanden aus Volumenkörpern, die lediglich an den jeweiligen Positionen auf dem Dach platziert worden waren, ohne dass entsprechende Öffnungen im Dachmodell selbst existierten. Zudem waren an mehreren Gebäudeseiten die Fensterscheiben als eigenständige Volumenkörper modelliert, was in einigen Fällen dazu führte, dass sich zwei oder mehr überlappende Fensterscheiben an derselben Öffnung befanden. Diese überflüssigen Geometrien wurden entfernt, um eine saubere Modellstruktur zu gewährleisten.
@@ -113,7 +111,7 @@ Zum Abschluss wurde eine Eingangstreppe hinzugefügt, um den Zugang zur Villa in
 
 Aufgrund der begrenzten Projektzeit und der vielfältigen weiteren Aufgaben im Rahmen der VR-Entwicklung wurde entschieden, kleinere Unstimmigkeiten am Modell in Kauf zu nehmen. Dieser pragmatische Ansatz ermöglichte es, sich auf nachfolgende Arbeitsschritte zu konzentrieren und die Modellierung effizient abzuschließen, ohne dass die finalen immersiven Qualitäten der VR-Anwendung erheblich beeinträchtigt wurden. 
 
-### Texturierung
+## Texturierung
 Für realistische und immersive VR-Anwendungen sind Texturen von großer Bedeutzung. Durch Texturen werden 3D-Objekten Oberflächenmerkmale wie Farben, Muster und Materialeigenschaften verliehen, wodurch diese Objekte in der VR-Anwendung glaubwürdierg und ansprechender wirken.
 Durch den Einsatz von Techniken wie Texture Mapping, Bumpmapping und Parallax Mapping können Oberflächenstrukturen simuliert werden, die dem Benutzer das Gefühl vermitteln, sich in einer realen Umgebung zu befinden. Durch diese Methoden werden Details wie Rauheit, Glanz oder Unebenheiten dargestellt, ohne dad die Geometrie des Modells verändert werden muss, was sich auch positiv auf die Performacne der VR-Anwendung auswirkt. 
 Texture Mapping ist eine zentrale Technik in der Computergrafik, die es ermöglicht, zweidimensionale Bildinformationen (Texturen) auf dreidimensionale Modelle zu projizieren. In VR-Anwendungen trägt Texture Mapping entscheidend dazu bei, die visuelle Echtheit der VR-Umgebung zu steigern. Durch die präzise Platzierung von Texturen auf 3D-Modellen können spezifische Materialien wie Holz, Metall oder Stein realistisch nachbildet werden. Ein wichtiger Aspekt des Texture Mappings ist das UV-Mapping. Hierbei wird die Oberfläche eines 3D-Modells auf eine zweidimensionale Ebene "abgewickelt", um die Textur passgenau aufzubringen. Dieser Prozess stellt sicher, dass die Textur ohne Verzerrungen oder Unstimmigkeiten auf dem Modell erscheint, was für die visuelle Qualität unerlässlich ist  (Dörner et al., 2019).
@@ -135,8 +133,8 @@ Da die importierten Texturen nicht automatisch optimal auf die 3D-Geometrie gema
 
 Um sicherzustellen, dass die Texturen korrekt ausgerichtet sind, wurden verschiedene Mapping-Techniken wie Box Projection Mapping und Manual Projection Painting genutzt. Ziel der Texturierung war nicht die exakte Nachbildung der realen Oberflächen der Villa, sondern eine stilisierte, dennoch realistische Darstellung, die sich in das Gesamtkonzept der virtuellen Umgebung einfügt. Die gewählten Texturen sollten den visuellen Kontrakt zur Umgebung unterstreichen und die Villa damit in den Fokus rücken und die narrative Idee des Gesamtkonzepts unterstützen.
 
-### Innenraumgestaltung
-#### Kunstzimmer
+## Innenraumgestaltung
+### Kunstzimmer
 Das Kunstzimmer der Villa wurde mit besonderer Sorgfalt gestaltet, um eine Atmosphäre von Geheimnis und Entdeckung zu schaffen. An den Wänden hängen fünf bedeutende Kunstwerke, die entweder verschollen sind oder es einst waren:
 
 - Fräulein Lieser von Gustav Klimt
@@ -150,7 +148,7 @@ Zentral im Raum steht ein Untersuchungstisch, auf dem eine Lupe platziert ist. D
 The Concert gilt als das wertvollste gestohlene Kunstwerk der Welt. Es wurde 1990 aus dem Isabella Stewart Gardner Museum in Boston entwendet und hatte 2015 einen geschätzten Wert von 250 Millionen US-Dollar (Kurkjian, 2015). 
 Diese interaktive Gestaltung des Kunstzimmers ermöglicht es den Besuchern, nicht nur die Kunstwerke zu bewundern, sondern auch aktiv an der Entdeckung des verborgenen Meisterwerks teilzunehmen.
 
-#### Musikzimmer
+### Musikzimmer
 Das Musikzimmer der Villa wurde so konzipiert, dass es Besucher*innen auf eine akustische Reise durch verschiedene Kulturen und Epochen mitnimmt. Im Mittelpunkt stehen sieben Musikinstrumente aus unterschiedlichen Teilen der Welt:
 
 - Klavier – Ein klassisches westliches Tasteninstrument, das seit Jahrhunderten in der Kunst- und Unterhaltungsmusik eine zentrale Rolle spielt.
@@ -164,16 +162,16 @@ Das Musikzimmer der Villa wurde so konzipiert, dass es Besucher*innen auf eine a
 Um eine immersive Erfahrung zu schaffen, reagiert der Raum dynamisch auf die Bewegungen der Besucherinnen. Sobald man sich einem der Instrumente nähert, wird eine Klangsequenz abgespielt, die das jeweilige Instrument in einem typischen musikalischen Kontext präsentiert. Dies ermöglicht ein tiefgehendes Eintauchen in verschiedene Klangwelten und schafft eine interaktive Verbindung zwischen den Besucherinnen und den Musikinstrumenten.
 Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver Zugang zu den ausgestellten Instrumenten ermöglicht. Dies verstärkt die Immersion in der virtuellen Umgebung und lädt dazu ein, die klangliche Vielfalt verschiedener Kulturen aktiv zu erleben.
 
-## 6. Möglichkeiten zur VR-Umsetzung
+# 6. Möglichkeiten zur VR-Umsetzung
 Die Unreal Engine bietet eine leistungsstarke Umgebung für die Entwicklung von VR-Anwendungen und eignet sich daher besonders gut für ein Universitätsprojekt. Ein zentraler Vorteil ist die erstklassige Grafikqualität, die durch fortschrittliche Rendering-Technologien wie Lumen für dynamische Beleuchtung und Nanite für hochdetaillierte Modelle ermöglicht wird. Diese Features tragen entscheidend zur Immersion in der virtuellen Realität bei.
 Ein weiterer wichtiger Aspekt ist die Benutzerfreundlichkeit der Engine. Dank der Blueprint-Skripting-Sprache können interaktive Elemente auch ohne tiefgehende Programmierkenntnisse erstellt werden, was den Einstieg erleichtert.
 Zudem verfügt die Unreal Engine über eine optimierte VR-Unterstützung mit nativen Funktionen für Headsets wie Meta Quest, HTC Vive oder Valve Index. Die Engine bietet integrierte VR-Interaktionssysteme und performante Rendering-Techniken wie Variable Rate Shading (VRS), die für eine flüssige Darstellung in VR-Anwendungen essenziell sind (Epic Games, 2023). Seitens der Universität wurde uns eine HTV Vive zur Verfügung gestellt. Da Unreal Engine dieses Headset unterstützt war die Kompatibilität mit dieser Hardware kein Problem. 
 Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und entsprechend eine umfangreiche Community bietet, die zahlreiche Informationen und Beispiele online zur Verfügung stellen, die die Entwicklung einer VR-Anwendung unterstützen. 
 
-### Umgebung
+## Umgebung
 
-## 7. Fazit & Ausblick
-## 8. Literatur
+# 7. Fazit & Ausblick
+# 8. Literatur
 - Burdea, G. C., & Coiffet, P. (2003). *Virtual Reality Technology*. Wiley-IEEE Press.
 - *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
 - Dörner, R., Broll, W., Grimm, P. & Jung, B. (Hrsg.). (2019). *Virtual und augmented reality (vr/ar)* (2. Aufl.). Springer Vieweg Berlin, Heidelberg. Zugriff auf https:// doi.org/10.1007/978-3-662-58861-1 (Published: 11 October 2019) doi: 10 .1007/978-3-662-58861-1
