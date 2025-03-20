@@ -4,7 +4,6 @@ permalink: /Marlene/
 toc: true
 toc_label: "Inhaltsverzeichnis"
 author_profile: true
-
 author:
   name     : "Marlene"
   avatar   : "/assets/images/jph.png"
@@ -65,7 +64,6 @@ Im Rahmen des Seminars "3D-Visualisierung" soll ein Projekt entwicklet werden, d
 Im Zentrum unseres Projektes steht die Ohlendorff’sche Villa. Dabei handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg-Volksdorf steht. Die zweigeschossige Gebäude im Stil des Neoklassizismus, sollte nach der Erbauung sowohl als Einfamilienhaus wie auch als Repräsentationgebäude Hans von Ohlendorff dienen. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. 
 Heute wird die Villa von der "Stiftung Ohlendorff'sche Villa" geführt und beherbert ein Café, eine Kinderhort und mehrere Tagungsräume (*Die Ohlendorff'sche Villa*, o.J.).
 
-### *Daten*
 Damit der Ergebnis dieses Projektes, die Virtual-Reality-Anwendung (VR) eine realisitische und immersive Erfahrung ermöglicht ist eine sorgfältige Erfassung der Daten sowie eine Optimierung dieser erforderlich. Hochwertige 3D-Modelle, detaillierte Texturen und konsistente Daten sind essenziell, um eine glaubwürdige visuelle Darstellung sicherzustellen (Slater & Sanchez-Vives, 2016).
 Die Erfassung von 3D-Objekten kann manuell in Modellierungssoftware erfolgen, erfordert jedoch Fachkenntnisse und Zeit. Alternativ bieten photogrammetrische Verfahren oder Laserscanning-Technologien eine automatisierte Erfassung realer Objekte in Form von Punktwolken. Diese können darufhin genutzt werden um 3D-Modelle zu generieren (Whyte et al., 2018). Prozedurale Generierungsmethoden ermöglichen zudem die automatische Erstellung komplexer Strukturen, sind jedoch oft weniger detailliert (Hermann, 2019).
 Nach der Erfassung müssen die 3D-Modelle für VR optimiert werden. Dies umfasst die Reduktion der Polygonanzahl zur Verbesserung der Performance, das Backen von Texturen sowie den Einsatz von Level-of-Detail-Techniken (Dörner et al., 2019).
