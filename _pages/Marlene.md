@@ -28,24 +28,20 @@ header:
 
 [//]: # ()
 # 1. Einleitung
-In den letzten Jahrzehnten hat die bedeutung von Virtueller Realität (VR) an Bedeutung gewonnen und ist von einem wissenschaftlichen Konzept zu einer weit verbreiteten Technologie gewachsen. Inzwischen erlaubten spezialisierte Gertäte wie VR-Headset und dazugehörigen Steuerungselementen ein immersives Erleben digitaler Welten. Die Bedeutung dieser Technologie wächste kontinuierlich und findet Anwendung in einer Vielzahl von Bereichen, darunter Medizin, Bildung, Industrie und Unterhaltung (Slater & Sanchez-Vives, 2016). Um in das Themenfeld von Virtueller Realität einzuleiten wird hier ein grober Überblick über die historische Entwicklung der VR, zentrale technische Meilensteine und ihre heutige Relevanz in unterschiedlichen Anwendungsfeldern gegeben.
-
-Unter Virtueller Realität versteht man eine computergenerierte Umgebung, die die physische Welt simuluiert bzw. erweitert oder eine erfundene Welt darstellt und eine immersive Erfahrung in dieser Welt ermöglicht. Nutzer*innen erleben VR durch spezielle Endgeräte wie Head-Mounted Displays (HMDs), die 3D-Bilder mit hoher Bildwiederholrate anzeigen, sowie durch Bewegungssensoren, die Interaktionen in Echtzeit erfassen (Burdea & Coiffet, 2003). Ein zentrales Merkmal einer VR-Anwendung ist die Immersion, also das Gefühl, vollständig in der virtuellen Umgebung zu sein. Dies wird durch visuelle, auditive und haptischer Reize verstärkt (Slater, 2009). 
-
-Die ersten Idenn der VR lassen sich im 19. Jahrhundert finden. Bereits 1838 entwickelte Sir Charles Wheatstone das Stereoskop, das durch zwei leicht versetzte Bilder eine dreidimensionale Wahrnehmung erzeugte (Wheatstone, 1838). Dieses Prinzip bildet die Grundlage für moderne VR-Displays.
-Die Grundlagen für moderne VR-Systeme wurden in den 1960er Jahren von Ivan Sutherland gelegt, der das "Ulimate Display" entwickelte. Dieses gilt als Vorläufer für moderne VR-Technologien. Das 1968 wntwickelte Head-Mounted Display gehörte zu den ersten Geräten mit denen es möglich war computergenerierte Bilder in Echtzeit zu visualisieren. Schon damals nannte Sutherland Immerson und Interaktivität als zentrale Elemente der VR (Sutherland, 1968). 
-In den folgenden Jahrzehnten wurden VR-Technologien insbesondere im militärischen und industriellen Bereich weiterentwickelt, etwa für Flugsimulatoren und Architekturvisualisierungen (Mazuryk & Gervautz, 1996).
-
-In den 1980er Jahren wurde ein weiterer entscheidender Fortschritt erreicht, also Jaron Lanier mit seinem Unternehmen VPL Research die ersten kommerziellen VR-Systeme entwickelte, darunter auch Datenhandschuhe und VR-Brillen (Lanier, 1989). Dennoch waren diese technologischen Innoviationen im Bereich der VR aufgrund der mangelnden Rechenleistung nicht massentauglich. Das änderte sich erst in den 2010er Jahren als durch gestiegene Rechenleistungen und konstengünstigere Sensorik eine massenhafte Verbreitung ermöglicht wurde. Seitdem wurden weitere Forschritte erzielt, insbesondere in den Bereichen Computergraphik, Sensorik und Mensch-Maschine-Interaktion. Die Entwicklung leistungsfähigerer Computer und fortschrittlicher Display-Technologien ermöglichte realistischere und immersivere VR-Erfahrungen (Grasnick, 2020). 
-
+In den letzten Jahrzehnten hat die bedeutung von Virtueller Realität (VR) an Bedeutung gewonnen und ist von einem wissenschaftlichen Konzept zu einer weit verbreiteten Technologie gewachsen. Inzwischen erlaubten spezialisierte Gertäte wie VR-Headset und dazugehörigen Steuerungselementen ein immersives Erleben digitaler Welten. Die Bedeutung dieser Technologie wächste kontinuierlich und findet Anwendung in einer Vielzahl von Bereichen, darunter Medizin, Bildung, Industrie und Unterhaltung (Slater & Sanchez-Vives, 2016)[^1]. Im Rahmen des Kursen 3D-Visualisierung, sollen die Studierenden ihre Kenntnisse in der Modellierung und dreidimensionlen Visualisierung von Geodaten ausbauen. Ziel ist dabei die interaktive Begehung eines Gebäudes, die in eine ebenfalls modelierte und gestaltete Umwelt eingebettet ist. Der Vorteil einer 3D-Visualisierung von Geodaten liegt in der realitätsnahen Darstellung komplexer räumlicher Strukturen und erweitert die Analysemöglichkeiten in Bereichen wie Stadtplanung, Umweltmonitoring und Geowissenschaften. Für Geoinformatik-Studierende ist sie daher vorteilhaft sich mit diesen Technologien auseinander zu setzen, um fundierte Entscheidungen zu unterstützen.
+{: style="text-align: justify;"}
+Unter Virtueller Realität versteht man eine computergenerierte Umgebung, die die physische Welt simuluiert bzw. erweitert oder eine erfundene Welt darstellt und eine immersive Erfahrung in dieser Welt ermöglicht. Nutzerende erleben VR durch spezielle Endgeräte wie Head-Mounted Displays (HMDs), die 3D-Bilder mit hoher Bildwiederholrate anzeigen, sowie durch Bewegungssensoren, die Interaktionen in Echtzeit erfassen. Ein zentrales Merkmal einer VR-Anwendung ist die Immersion, also das Gefühl, vollständig in der virtuellen Umgebung zu sein. Dies wird durch visuelle, auditive und haptischer Reize verstärkt (Burdea & Coiffet, 2003)[^2]. 
+{: style="text-align: justify;"}
+Die ersten Idenn der VR lassen sich im 19. Jahrhundert finden. Bereits 1838 entwickelte Sir Charles Wheatstone das Stereoskop, das durch zwei leicht versetzte Bilder eine dreidimensionale Wahrnehmung erzeugte (Wheatstone, 1838)[^3].
+Die Grundlagen für moderne VR-Systeme wurden in den 1960er Jahren von Ivan Sutherland gelegt, der das "Ulimate Display" entwickelte. Dieses gilt als Vorläufer für moderne VR-Technologien. Das 1968 wntwickelte Head-Mounted Display gehörte zu den ersten Geräten mit denen es möglich war computergenerierte Bilder in Echtzeit zu visualisieren. Schon damals nannte Sutherland Immerson und Interaktivität als zentrale Elemente der VR (Sutherland, 1968)[^4]. 
+{: style="text-align: justify;"}
+In den 1980er Jahren wurde ein weiterer entscheidender Fortschritt erreicht, also Jaron Lanier mit seinem Unternehmen VPL Research die ersten kommerziellen VR-Systeme entwickelte, darunter auch Datenhandschuhe und VR-Brillen (Burdea & Coiffet, 2003)[^2]. Dennoch waren diese technologischen Innoviationen im Bereich der VR aufgrund der mangelnden Rechenleistung nicht massentauglich. Das änderte sich erst in den 2010er Jahren als durch gestiegene Rechenleistungen und konstengünstigere Sensorik eine massenhafte Verbreitung ermöglicht wurde. Seitdem wurden weitere Forschritte erzielt, insbesondere in den Bereichen Computergraphik, Sensorik und Mensch-Maschine-Interaktion. Die Entwicklung leistungsfähigerer Computer und fortschrittlicher Display-Technologien ermöglichte realistischere und immersivere VR-Erfahrungen (Grasnick, 2020)[^5]. 
+{: style="text-align: justify;"}
 Moderne VR-Technologien basieren auf einer Kombination aus Hochleistungscomputergrafik, Bewegungserkennung und immersiven Audio- sowie haptischen Rückmeldesystemen (LaValle, 2017). Die wichtigsten Komponenten eines VR-Systems sind:
 - **Head-Mounted Displays (HMDs)**: Diese Geräte projizieren stereoskopische Bilder mit hoher Bildwiederholrate und niedriger Latenz, um Motion Sickness zu reduzieren.
 - **Bewegungserfassung**: Durch Inside-Out-Tracking oder externe Sensoren werden Kopf- und Handbewegungen in Echtzeit erfasst.
 - **Interaktive Eingabegeräte**: Controller oder Handschuhe mit haptischem Feedback ermöglichen die Manipulation virtueller Objekte.
 - **Rendering-Engines**: Software-Plattformen wie Unreal Engine oder Unity ermöglichen die realitätsnahe Darstellung virtueller Welten.
-
-[//]: # (In den letzten Jahren haben Fortschritte in der künstlichen Intelligenz und der Netzwerktechnologie die Möglichkeiten der VR erheblich erweitert. Beispielsweise ermöglichen Cloud-basierte VR-Systeme und KI-gesteuerte Interaktionen realistischere Simulationen. Bailenson, 2018)  
-[//]: # (- Bailenson, J. 2018. *Experience on Demand: What Virtual Reality Is, How It Works, and What It Can Do*. W. W. Norton & Company.)  
 
 Die Einsatzmöglichkeiten der VR-Technologie sind vielfältig und reichen von medizinischen Anwendungen über industrielle Nutzung bis hin zur Unterhaltung.
 - **Medizinische Anwendungen**: VR wird in der Medizin zur Schmerztherapie, Behandlung von Angststörungen und für chirurgische Simulationen genutzt . Durch realitätsnahe Trainingssimulationen können Mediziner in einer sicheren Umgebung üben (Rizzo & Koenig, 2017).
@@ -62,6 +58,9 @@ Im Rahmen des Seminars "3D-Visualisierung" soll ein Projekt entwicklet werden, d
 
 
 # 2. Objekt
+
+Woher haben wir das objekt, welche standen noch zu auswahl und warum haben wir und dafür entschiden
+
 Im Zentrum unseres Projektes steht die Ohlendorff’sche Villa. Dabei handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg-Volksdorf steht. Die zweigeschossige Gebäude im Stil des Neoklassizismus, sollte nach der Erbauung sowohl als Einfamilienhaus wie auch als Repräsentationgebäude Hans von Ohlendorff dienen. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. 
 Heute wird die Villa von der "Stiftung Ohlendorff'sche Villa" geführt und beherbert ein Café, eine Kinderhort und mehrere Tagungsräume (*Die Ohlendorff'sche Villa*, o.J.).
 
@@ -172,18 +171,23 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 
 # 7. Fazit & Ausblick
 # 8. Literatur
-- Burdea, G. C., & Coiffet, P. (2003). *Virtual Reality Technology*. Wiley-IEEE Press.
+[^1]: Slater, Mel & Sanchez-Vives, Maria (2016). Enhancing Our Lives with Immersive Virtual Reality. Frontiers in Robotics and AI. 3. 10.3389/frobt.2016.00074. 
+[^2]: Burdea, Grigore & Coiffet, Philippe (2003). Virtual Reality Technology. Presence. 12. 663-664. 10.1162/105474603322955950. 
+[^3]: Wheatstone, Charles (2011). Contributions to the Physiology of Vision.—Part the First. On some remarkable, and hitherto unobserved, Phenomena of Binocular Vision. The Scientific Papers of Sir Charles Wheatstone. Cambridge University Press. pg. 225–283
+[^4]: Sutherland, Ivan E. (1998). A head-mounted three dimensional display. Seminal graphics: pioneering efforts that shaped the field. Association for Computing Machinery Vol. 1, pg. 295–302. https://doi.org/10.1145/280811.281016
+[^5]: Grasnick, Armin (2020). Grundlagen der virtuellen Realität: Von der Entdeckung der Perspektive bis zur VR-Brille. Springer Verlag. 10.1007/978-3-662-60785-5. 
+
 - *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
 - Dörner, R., Broll, W., Grimm, P. & Jung, B. (Hrsg.). (2019). *Virtual und augmented reality (vr/ar)* (2. Aufl.). Springer Vieweg Berlin, Heidelberg. Zugriff auf https:// doi.org/10.1007/978-3-662-58861-1 (Published: 11 October 2019) doi: 10 .1007/978-3-662-58861-1
 - Epic Games (2023). *Virtual Reality Development with Unreal Engine.* Verfügbar unter: https://www.unrealengine.com
 - Freina, L., & Ott, M. (2015). *A literature review on immersive virtual reality in education: State of the art and perspectives*. eLearning & Software for Education (eLSE).
-- Grasnick, A. (2020). *Grundlagen der virtuellen Realität: Von der Entdeckung der Perspektive bis zur VR-Brille*. Springer Vieweg. 
+
 - Gonçalves, R., Pedrozo, A. L., Coutinho, E. S., Figueira, I., & Ventura, P. (2020). *Efficacy of virtual reality exposure therapy in the treatment of PTSD: A systematic review*. PLoS ONE, 15(7).
 - Hermann, S. (2019). *Prozedurale generierung von 3d-stadtmodellen (Bachelorarbeit).* Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
 - Jobst, M., & Germanchis, T. (2007). *The paradigm of 3D cartography.* Proceedings of the 23rd International Cartographic Conference (ICC).
 - Kraak, M. J., & Ormeling, F. (2020). *Cartography: Visualization of spatial data.* Routledge.
 - Kurkjian, Stephen (2015). *Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist.* New York: PublicAffairs. ISBN 978-1-61039-632-5.
-- Lanier, J. (1989). *Virtual Reality: The Revolutionary Technology of Computer-Generated Artificial Worlds and How It Promises to Transform Society*. MIT Press.
+
 - LaValle, S. M. (2017). *Virtual Reality*. Cambridge University Press.
 - Mazuryk, T., & Gervautz, M. (1996). *Virtual Reality—History, applications, technology and future*. Technical Report, TU Wien.
 - Milgram, P., & Kishino, F. (1994). *A Taxonomy of Mixed Reality Visual Displays*. IEICE Transactions on Information and Systems.
@@ -191,6 +195,5 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 - Slater, M. (2009). *Place illusion and plausibility can lead to realistic behaviour in immersive virtual environments*. Philosophical Transactions of the Royal Society.
 - Slater, M., & Sanchez-Vives, M. V. (2016). *Enhancing our lives with immersive virtual reality*. Frontiers in Robotics and AI.
 - Sutherland, I. (1968). *A head-mounted three-dimensional display*. Proceedings of the AFIPS Fall Joint Computer Conference.
-- Wheatstone, C. (1838). *Contributions to the physiology of vision—Part the first. On some remarkable, and hitherto unobserved, phenomena of binocular vision*. Philosophical Transactions of the Royal Society.
 - Whyte, J., Bouchlaghem, D., Thorpe, A., & McCaffer, R. (2018). *From CAD to virtual reality: modelling approaches, data exchange and interactive 3D building design tools*. Automation in Construction.
 - Zyda, M. (2005). *From visual simulation to virtual reality to games*. IEEE Computer.
