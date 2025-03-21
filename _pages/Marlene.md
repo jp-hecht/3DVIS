@@ -58,6 +58,17 @@ Ausgehend von dieser grundlegenden Einführung in das Themenfeld der Virtuellen 
 
 # 2. Objekt
 
+<model-viewer 
+    src="{{ site.url }}{{ site.baseurl }}/assets/model/OhlendorffscheVilla.glb"
+    alt="3D model"
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    ar
+    style="width: 100%; height: 40vh;">
+</model-viewer>
+
 Woher haben wir das objekt, welche standen noch zu auswahl und warum haben wir und dafür entschiden
 
 Im Zentrum unseres Projektes steht die Ohlendorff’sche Villa. Dabei handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg-Volksdorf steht. Die zweigeschossige Gebäude im Stil des Neoklassizismus, sollte nach der Erbauung sowohl als Einfamilienhaus wie auch als Repräsentationgebäude Hans von Ohlendorff dienen. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. 
