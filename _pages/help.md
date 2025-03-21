@@ -45,3 +45,11 @@ permalink: /help/
 * Wind_AC
 Lautstärken prüfen
 
+
+* Kamerafahrt
+* Teleportation (Debug)
+* Wind; Lautstärke 
+* Eingang
+* Bilder 
+* (MUsik)
+
