@@ -57,6 +57,29 @@ Ausgehend von dieser grundlegenden Einführung in das Themenfeld der Virtuellen 
 {: style="text-align: justify;"}
 
 # 2. Objekt
+Es standen drei mögliche Objekte für das Projekt zur Auswahl: Die Ohlendorff'sche Villa, das Schloss Agathenburg und die Horneburg. Die Entscheidung für die Ohlendorff'sche Villa wurde aufgrund Datenverfügbarkeit und der flexiblen Gestaltungsmöglichkeiten getroffen. Die Daten die uns zu diesem Objekt zur Verfügung gestellt wurden im Rahmen verschiedenen Kurse an der HafenCity Universität aufgenommen und anschließen modelliert.
+{: style="text-align: justify;"}
+Bei der Ohlendorff'schen Villa handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg Volksdorf steht [Übersichtskarte] (#map1). Auf dem Gelände, wo zuvor die Villa seines Vaters gestanden hatte, ließ Hans von Ohlendorff 1929 das zweigeschossige Gebäude im Stil des Neoklassizismus erbauen. Die Villa diente nach der Erbauung der Familie Ohlendorff als Einfamilienhaus ebenso wie Hans von Ohlendorff als Repräsentationsgebäude. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Die Rückseite des Gebäudes, an die der Garten angrenzt, zeichnet sich durch einen asymmetrischen Wintergartenvorbau aus. Durch das hohe Kellergeschoss war dennoch eine Distanz zwischen Garten und Wohngebäude vorhanden. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. Im Jahre 1953 verkaufte Hans von Ohlendorff die Villa and die Stadt Hamburg, die darauf hin bis 2006 als Ortsamt für Volksdorf diente. Nach dem das Gebäude unter Denkmalschutz gestellt wurde und einer entsprechenden Sanierung, wird die Villa seit 2014 von der "Stiftung Ohlendorff'sche Villa" verwaltet. Heute befinden sich ein Café, ein Kinderhort und mehrere Tagungsräume im Gebäude (*Die Ohlendorff'sche Villa*, o.J.)[^13].
+{: style="text-align: justify;"}
+<div class="content-container">
+    <div id="map" class="map-container"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var map = L.map('map').setView([53.648437464598516, 10.165957827843153], 15);
+
+            L.tileLayer.wms('https://sgx.geodatenzentrum.de/wms_basemapde', {
+                layers: 'de_basemapde_web_raster_grau',
+                format: 'image/png',
+                transparent: true,
+                attribution: '&copy; GeoBasis-DE / BKG (2025)'
+            }).addTo(map);
+            var marker = L.marker([53.648437464598516, 10.165957827843153]).addTo(map);
+        });
+    </script>
+</div> 
+*Karte 1: Verortung der Ohlendorff'sche Villa in Volksdorf.*
+{: #map1}
+
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/OhlendorffscheVilla.glb"
@@ -69,10 +92,8 @@ Ausgehend von dieser grundlegenden Einführung in das Themenfeld der Virtuellen 
     style="width: 100%; height: 40vh;">
 </model-viewer>
 
-Woher haben wir das objekt, welche standen noch zu auswahl und warum haben wir und dafür entschiden
 
-Im Zentrum unseres Projektes steht die Ohlendorff’sche Villa. Dabei handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg-Volksdorf steht. Die zweigeschossige Gebäude im Stil des Neoklassizismus, sollte nach der Erbauung sowohl als Einfamilienhaus wie auch als Repräsentationgebäude Hans von Ohlendorff dienen. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. 
-Heute wird die Villa von der "Stiftung Ohlendorff'sche Villa" geführt und beherbert ein Café, eine Kinderhort und mehrere Tagungsräume (*Die Ohlendorff'sche Villa*, o.J.).
+
 
 ## Daten
 Damit der Ergebnis dieses Projektes, die Virtual-Reality-Anwendung (VR) eine realisitische und immersive Erfahrung ermöglicht ist eine sorgfältige Erfassung der Daten sowie eine Optimierung dieser erforderlich. Hochwertige 3D-Modelle, detaillierte Texturen und konsistente Daten sind essenziell, um eine glaubwürdige visuelle Darstellung sicherzustellen (Slater & Sanchez-Vives, 2016).
@@ -213,9 +234,9 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 [^10]: Zyda, Michael (2005). From Visual Simulation to Virtual Reality to Games. Computer. 38. 25 - 32. 10.1109/MC.2005.297. 
 [^11]: Gonçalves, Raquel & Pedrozo, Ana & Coutinho, Evandro & Figueira, Ivan & Ventura, Paula (2012). Efficacy of Virtual Reality Exposure Therapy in the Treatment of PTSD: A Systematic Review. PloS one. 7. e48469. 10.1371/journal.pone.0048469. 
 [^12]: Knoll, Matthias & Stieglitz, Stefan (2022). Augmented Reality und Virtual Reality – Einsatz im Kontext von Arbeit, Forschung und LehreAugmented Reality and Virtual Reality in the Context of Work, Research and Teaching. HMD Praxis der Wirtschaftsinformatik. 59. 10.1365/s40702-022-00840-5. 
+[^13]: *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
 
 
-- *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
 - Dörner, R., Broll, W., Grimm, P. & Jung, B. (Hrsg.). (2019). *Virtual und augmented reality (vr/ar)* (2. Aufl.). Springer Vieweg Berlin, Heidelberg. Zugriff auf https:// doi.org/10.1007/978-3-662-58861-1 (Published: 11 October 2019) doi: 10 .1007/978-3-662-58861-1
 - Epic Games (2023). *Virtual Reality Development with Unreal Engine.* Verfügbar unter: https://www.unrealengine.com
 
