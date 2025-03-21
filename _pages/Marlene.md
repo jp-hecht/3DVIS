@@ -141,14 +141,38 @@ In diesem Raum sind verschiedene Musikinstrumente aus unterschiedlichen Teilen d
 - **Das Kunstzimmer**:
 Hier werden fünf berühmte, aber verschollene oder gestohlene Kunstwerke inklusive Informationsplakaten, die die Besonderheiten der jeweiligen Kunstwerke präsentieren. Dies verstärkt die narrative Komponente des Projekts: Die Villa dient als geheimer Aufbewahrungsort für wertvollen Werke. Die Gestaltung des Raumes mit hochwertigen Materialien wie Marmor schafft eine Umgebung, die dem Wert der ausgestellten Objekte gerecht wird, während andere Elemente bewusst abgenutzt wirken, um die mysteriöse Atmosphäre zu schaffen.
 {: style="text-align: justify;"}
-Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurde und ein realistischen Darstellung der Ohlendorff'schen Villa mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
+Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurde und einer realistischen Darstellung der Ohlendorff'schen Villa mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
 {: style="text-align: justify;"}
 
-# 4. Software
+# 4 Möglichkeiten zur VR-Umsetzung
+
+## Theorie
+Die Erarbeitung einer VR-Anwendung gliedert sich normalerweise in folgende Teilaufgaben: Datenaufbereitung, Modellierung, Implementierung in Game Engine und Interaktionsgestaltung.
+{: style="text-align: justify;"}
+Zunächst erfolgt die Datenakquise und -aufbereitung, bei der relevante 3D-Modelle, Geodaten oder CAD-Daten gesammelt, bereinigt und in ein kompatibles Format umgewandelt werden (Helmholz et al., 2020)[^18]. Hierbei kommen häufig GIS-Software wie QGIS oder ArcGIS zum Einsatz, wenn georeferenzierte Daten genutzt werden, während CAD-Daten mit Programmen wie AutoCAD oder Rhino verarbeitet werden. Eine Herausforderung in dieser Phase besteht in der Datenkonvertierung zwischen unterschiedlichen Formaten, da nicht alle Softwarelösungen dieselben Standards unterstützen. Zudem müssen hochdetaillierte Modelle oft vereinfacht werden, um eine flüssige Darstellung in Echtzeit zu ermöglichen.
+{: style="text-align: justify;"}
+Anschließend folgt die Modellierung und Optimierung der virtuellen Umgebung. 3D-Modelle werden in Software wie Blender, Autodesk Maya oder 3ds Max erstellt und für die Echtzeitdarstellung optimiert. Hierbei kommen Polygonreduktion, Normal Mapping oder Level-of-Detail-Techniken (LOD) zum Einsatz, um die Performance zu verbessern (Luebke et al., 2002)[^19]. Eine häufige Schwierigkeit in dieser Phase ist das Balancieren zwischen Detailreichtum und Performance, da hochauflösende Modelle die Rechenleistung stark beanspruchen können.
+{: style="text-align: justify;"}
+Nach der Modellierung wird die Szene in eine Game Engine wie Unreal Engine oder Unity importiert. Beide Engines bieten leistungsstarke Werkzeuge für VR-Entwicklung, wobei Unreal Engine aufgrund der grafischen Qualität und integrierten Physiksimulation bevorzugt wird, während Unity für seine Flexibilität und plattformübergreifende Kompatibilität geschätzt wird (LaValle, 2017)[^6]. Herausforderungen in dieser Phase bestehen in der richtigen Implementierung von Beleuchtung und Performance-Optimierung, da VR-Anwendungen eine stabile Framerate (mindestens 90 FPS) benötigen, um Motion Sickness zu vermeiden.
+{: style="text-align: justify;"}
+Im nächsten Schritt erfolgt die Interaktionsgestaltung, bei der Steuerungsmethoden für VR-Controller, Hand-Tracking oder Blicksteuerung integriert werden. Hierbei werden spezielle Software Development Kits (SDKs) wie OpenXR, SteamVR oder Oculus SDK genutzt, um die Hardwarekompatibilität sicherzustellen. Eine der größten Herausforderungen ist dabei die intuitive Interaktionsgestaltung, da klassische Eingabemethoden wie Maus und Tastatur in VR nicht anwendbar sind und Benutzerfreundlichkeit eine zentrale Rolle spielt (Slater & Sanchez-Vives, 2016)[^1].
+{: style="text-align: justify;"}
+
+## Theorie und Entwicklungsumgebung
 Um die unterschiedlichen Teilaufgaben mit des Projekt durchführen zu können, wurde auf unterschiedliche Software zurückgegriffen. Da alle Mitglieder unserer Gruppe bisher keine Erfahrung im Bereich Modellierung, Texturierung oder VR-Interaktionen gemacht haben, erfolgte eine Neueinarbeitung in die Programmen. Für die Modellierung der Villa, um die oben beschriebenen Mängel auszubessern wurde die Software Blender verwendet. Bei Blender handelt es sich um eine Open Source Software, die für die Betriebssysteme Linux, Windows und macOS zur Verfügung steht, was in unserer Gruppe wichtig war, damit alle mit den unterschiedlichen Programmen arbeiten konnten. Das Blender einen sehr umfangreichen Werkzuegkasten für die Erstellung und Bearbeitung von 3D-Graphiken bereitstellt, haben wir uns entschieden auch die Texturen in Blender zu bearbeiten. 
 Für die Erstellung einer virtuellen Realität, wurde sich für die Unreal Engine des Entwicklers Epic Games entschieden. Wie Blender kann die Software kostenlos heruntergelanden werden und eignet sich gut für die Erstellung von VR-Anwendungen. Hier lassen sich auch Interaktionen für die VR-Anwenung mithilfe von Blueprints erstellen, die am Ende ein immersiveres Erlebnis schaffen. 
+## Entwicklungsumgebung
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
+*Abbildung 4: Konkretisierung des theoretischen Workflows für die Entwicklung einer VR Anwendung über die Ohlendorff'sche Villa*
 
-# 5. Modellierung & Texturierung
+Die Unreal Engine bietet eine leistungsstarke Umgebung für die Entwicklung von VR-Anwendungen und eignet sich daher besonders gut für ein Universitätsprojekt. Ein zentraler Vorteil ist die erstklassige Grafikqualität, die durch fortschrittliche Rendering-Technologien wie Lumen für dynamische Beleuchtung und Nanite für hochdetaillierte Modelle ermöglicht wird. Diese Features tragen entscheidend zur Immersion in der virtuellen Realität bei.
+Ein weiterer wichtiger Aspekt ist die Benutzerfreundlichkeit der Engine. Dank der Blueprint-Skripting-Sprache können interaktive Elemente auch ohne tiefgehende Programmierkenntnisse erstellt werden, was den Einstieg erleichtert.
+Zudem verfügt die Unreal Engine über eine optimierte VR-Unterstützung mit nativen Funktionen für Headsets wie Meta Quest, HTC Vive oder Valve Index. Die Engine bietet integrierte VR-Interaktionssysteme und performante Rendering-Techniken wie Variable Rate Shading (VRS), die für eine flüssige Darstellung in VR-Anwendungen essenziell sind (Epic Games, 2023). Seitens der Universität wurde uns eine HTV Vive zur Verfügung gestellt. Da Unreal Engine dieses Headset unterstützt war die Kompatibilität mit dieser Hardware kein Problem. 
+Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und entsprechend eine umfangreiche Community bietet, die zahlreiche Informationen und Beispiele online zur Verfügung stellen, die die Entwicklung einer VR-Anwendung unterstützen. 
+
+
+# 5. Entwicklung der VR-Anwendung
+
 ## Modellierung
 Die Modellierung der Villa erfolgte in Blender, wobei bereits die Grundstruktur des Gebäudes vorhanden war (s. Kapitel Daten). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
 Wie bereits im Kapitel Daten beschrieben, wies das 3D-Modell der Ohlendorff'schen Villa einige kleinere Unstimmigkeiten auf. Zunächst wurden Lücken zwischen verschiedenen Objekten, wie beispielsweise zwischen dem Eingangsportal und der Gebäudewand, geschlossen. In einigen Fällen war es ausreichend, die Position der Objekte leicht zu justieren, während an anderen Stellen gezielt Anpassungen an den Geometrien vorgenommen wurden. So wurden etwa die Lücken zwischen Fensterrahmen und Gebäudewand durch das gezielte Verschieben einzelner Vertices sowie durch Anpassungen der Skalierung entlang der Achsen im Modellierungsprogramm behoben.
@@ -209,13 +233,11 @@ Das Musikzimmer der Villa wurde so konzipiert, dass es Besucher*innen auf eine a
 Um eine immersive Erfahrung zu schaffen, reagiert der Raum dynamisch auf die Bewegungen der Besucherinnen. Sobald man sich einem der Instrumente nähert, wird eine Klangsequenz abgespielt, die das jeweilige Instrument in einem typischen musikalischen Kontext präsentiert. Dies ermöglicht ein tiefgehendes Eintauchen in verschiedene Klangwelten und schafft eine interaktive Verbindung zwischen den Besucherinnen und den Musikinstrumenten.
 Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver Zugang zu den ausgestellten Instrumenten ermöglicht. Dies verstärkt die Immersion in der virtuellen Umgebung und lädt dazu ein, die klangliche Vielfalt verschiedener Kulturen aktiv zu erleben.
 
-# 6. Möglichkeiten zur VR-Umsetzung
-Die Unreal Engine bietet eine leistungsstarke Umgebung für die Entwicklung von VR-Anwendungen und eignet sich daher besonders gut für ein Universitätsprojekt. Ein zentraler Vorteil ist die erstklassige Grafikqualität, die durch fortschrittliche Rendering-Technologien wie Lumen für dynamische Beleuchtung und Nanite für hochdetaillierte Modelle ermöglicht wird. Diese Features tragen entscheidend zur Immersion in der virtuellen Realität bei.
-Ein weiterer wichtiger Aspekt ist die Benutzerfreundlichkeit der Engine. Dank der Blueprint-Skripting-Sprache können interaktive Elemente auch ohne tiefgehende Programmierkenntnisse erstellt werden, was den Einstieg erleichtert.
-Zudem verfügt die Unreal Engine über eine optimierte VR-Unterstützung mit nativen Funktionen für Headsets wie Meta Quest, HTC Vive oder Valve Index. Die Engine bietet integrierte VR-Interaktionssysteme und performante Rendering-Techniken wie Variable Rate Shading (VRS), die für eine flüssige Darstellung in VR-Anwendungen essenziell sind (Epic Games, 2023). Seitens der Universität wurde uns eine HTV Vive zur Verfügung gestellt. Da Unreal Engine dieses Headset unterstützt war die Kompatibilität mit dieser Hardware kein Problem. 
-Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und entsprechend eine umfangreiche Community bietet, die zahlreiche Informationen und Beispiele online zur Verfügung stellen, die die Entwicklung einer VR-Anwendung unterstützen. 
 
-## Umgebung
+
+## Außenwelt
+
+## Interaktionen
 
 # 7. Fazit & Ausblick
 
@@ -256,6 +278,8 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 [^15]: Dörner, Ralf & Broll, Wolfgang & Grimm, Paul & Jung, Bernhard (2019). Virtual und Augmented Reality (VR/AR) (2. Auflage). Springer Verlag. [10.1007/978-3-642-28903-3. ](https://doi.org/10.1007/978-3-662-58861-1)
 [^16]: Jobst, Markus & Germanchis, Timothy (2007). The Employment of 3D in Cartography — An Overview. 10.1007/978-3-540-36651-5_15. 
 [^17]: Kraak, Menno-Jan & Ormeling, Ferjan (2013). Cartography: Visualization of Geospatial Data. Routledge.
+[^18]: Helmholz, P. & Zlatanova, Sisi & Barton, Jack & Aleksandrov, Mitko (2020). GEOINFORMATION FOR DISASTER MANAGEMENT 2020 (Gi4DM2020): PREFACE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. XLIV-3/W1-2020. 1-3. 10.5194/isprs-archives-XLIV-3-W1-2020-1-2020. 
+[^19];: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
 
 
 
