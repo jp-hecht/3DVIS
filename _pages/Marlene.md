@@ -144,7 +144,7 @@ Hier werden fünf berühmte, aber verschollene oder gestohlene Kunstwerke inklus
 Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurde und einer realistischen Darstellung der Ohlendorff'schen Villa mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
 {: style="text-align: justify;"}
 
-# 4 Möglichkeiten zur VR-Umsetzung
+# 4. Möglichkeiten zur VR-Umsetzung
 
 ## Theorie
 Die Erarbeitung einer VR-Anwendung gliedert sich normalerweise in folgende Teilaufgaben: Datenaufbereitung, Modellierung, Implementierung in Game Engine und Interaktionsgestaltung.
@@ -158,18 +158,16 @@ Nach der Modellierung wird die Szene in eine Game Engine wie Unreal Engine oder 
 Im nächsten Schritt erfolgt die Interaktionsgestaltung, bei der Steuerungsmethoden für VR-Controller, Hand-Tracking oder Blicksteuerung integriert werden. Hierbei werden spezielle Software Development Kits (SDKs) wie OpenXR, SteamVR oder Oculus SDK genutzt, um die Hardwarekompatibilität sicherzustellen. Eine der größten Herausforderungen ist dabei die intuitive Interaktionsgestaltung, da klassische Eingabemethoden wie Maus und Tastatur in VR nicht anwendbar sind und Benutzerfreundlichkeit eine zentrale Rolle spielt (Slater & Sanchez-Vives, 2016)[^1].
 {: style="text-align: justify;"}
 
-## Theorie und Entwicklungsumgebung
-Um die unterschiedlichen Teilaufgaben mit des Projekt durchführen zu können, wurde auf unterschiedliche Software zurückgegriffen. Da alle Mitglieder unserer Gruppe bisher keine Erfahrung im Bereich Modellierung, Texturierung oder VR-Interaktionen gemacht haben, erfolgte eine Neueinarbeitung in die Programmen. Für die Modellierung der Villa, um die oben beschriebenen Mängel auszubessern wurde die Software Blender verwendet. Bei Blender handelt es sich um eine Open Source Software, die für die Betriebssysteme Linux, Windows und macOS zur Verfügung steht, was in unserer Gruppe wichtig war, damit alle mit den unterschiedlichen Programmen arbeiten konnten. Das Blender einen sehr umfangreichen Werkzuegkasten für die Erstellung und Bearbeitung von 3D-Graphiken bereitstellt, haben wir uns entschieden auch die Texturen in Blender zu bearbeiten. 
-Für die Erstellung einer virtuellen Realität, wurde sich für die Unreal Engine des Entwicklers Epic Games entschieden. Wie Blender kann die Software kostenlos heruntergelanden werden und eignet sich gut für die Erstellung von VR-Anwendungen. Hier lassen sich auch Interaktionen für die VR-Anwenung mithilfe von Blueprints erstellen, die am Ende ein immersiveres Erlebnis schaffen. 
 ## Entwicklungsumgebung
+Aus dem dargestellen theoretischen Workflow, wurde folgender konrekter Workflow für unser Projekt abgeleitet. 
+{: style="text-align: justify;"}
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
 *Abbildung 4: Konkretisierung des theoretischen Workflows für die Entwicklung einer VR Anwendung über die Ohlendorff'sche Villa*
 
-Die Unreal Engine bietet eine leistungsstarke Umgebung für die Entwicklung von VR-Anwendungen und eignet sich daher besonders gut für ein Universitätsprojekt. Ein zentraler Vorteil ist die erstklassige Grafikqualität, die durch fortschrittliche Rendering-Technologien wie Lumen für dynamische Beleuchtung und Nanite für hochdetaillierte Modelle ermöglicht wird. Diese Features tragen entscheidend zur Immersion in der virtuellen Realität bei.
-Ein weiterer wichtiger Aspekt ist die Benutzerfreundlichkeit der Engine. Dank der Blueprint-Skripting-Sprache können interaktive Elemente auch ohne tiefgehende Programmierkenntnisse erstellt werden, was den Einstieg erleichtert.
-Zudem verfügt die Unreal Engine über eine optimierte VR-Unterstützung mit nativen Funktionen für Headsets wie Meta Quest, HTC Vive oder Valve Index. Die Engine bietet integrierte VR-Interaktionssysteme und performante Rendering-Techniken wie Variable Rate Shading (VRS), die für eine flüssige Darstellung in VR-Anwendungen essenziell sind (Epic Games, 2023). Seitens der Universität wurde uns eine HTV Vive zur Verfügung gestellt. Da Unreal Engine dieses Headset unterstützt war die Kompatibilität mit dieser Hardware kein Problem. 
-Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und entsprechend eine umfangreiche Community bietet, die zahlreiche Informationen und Beispiele online zur Verfügung stellen, die die Entwicklung einer VR-Anwendung unterstützen. 
-
+Die Basis unsere Projekts bilden Daten, die entweder von der Kursleitung bereitgestellt oder selbstständig modelliert wurden sowie Modell, die kostenlos im Internet verfügbar sind. Für die Zusammenführung dieser unterschiedlichen Daten und die Modellierung wurde die Software Blender genutzt. Bei Blender handelt es sich um eine Open Source Software, die für die Betriebssysteme Linux, Windows und macOS zur Verfügung steht, was in unserer Gruppe wichtig war, damit alle mit der Software arbeiten konnte. So konnten auch Kompatibilitätsprobleme vermieden werden. Da Blender einen sehr umfangreichen Werkzuegkasten für die Erstellung und Bearbeitung von 3D-Graphiken bereitstellt, haben wir uns entschieden auch die Texturen in Blender zu bearbeiten. Zusätzlich wurden die Erweiterungen BlenderGIS und Rigacar genutzt. Hierzu finden sich weiterführende Informationen in dem Bericht von Jonathan Hecht. Ergebniss dieser Datenaufbereitung in Blender war ein Modell, dass für die Implementierung in einer Game Engine ausgerichtet war und keiner weiteren Veränderung bedarfte. 
+{: style="text-align: justify;"}
+Für die Erstellung einer virtuellen Realität, wurde die Unreal Engine 5.X des Entwicklers Epic Games von der Kursleitung vorgegeben . Wie Blender kann die Software kostenlos heruntergelanden werden und eignet sich gut für die Erstellung von VR-Anwendungen. Hier lassen sich auch Interaktionen für die VR-Anwenung mithilfe von Blueprints erstellen, die am Ende ein immersiveres Erlebnis schaffen (Epic Games, 2023)[^20]. Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und entsprechend eine umfangreiche Community bietet, die zahlreiche Informationen und Beispiele online zur Verfügung stellen, die die Entwicklung einer VR-Anwendung unterstützen. Unreal Engine wurde für die Ambientegestalung sowie für alle Interaktionen genutzt. Seitens der Universität wurde uns eine HTC Vive zur Verfügung gestellt. Da Unreal Engine dieses Headset unterstützt war die Kompatibilität mit dieser Hardware kein Problem. StreamVR wurde genutzt, um das Projekt auf die HTC Vive zu übertragen und zu testen. 
+{: style="text-align: justify;"}
 
 # 5. Entwicklung der VR-Anwendung
 
@@ -239,7 +237,7 @@ Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver 
 
 ## Interaktionen
 
-# 7. Fazit & Ausblick
+# 6. Fazit & Ausblick
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -260,7 +258,7 @@ Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver 
     }
 </style>
 
-# 8. Literatur
+# 7. Literatur
 [^1]: Slater, Mel & Sanchez-Vives, Maria (2016). Enhancing Our Lives with Immersive Virtual Reality. Frontiers in Robotics and AI. 3. 10.3389/frobt.2016.00074. 
 [^2]: Burdea, Grigore & Coiffet, Philippe (2003). Virtual Reality Technology. Presence. 12. 663-664. 10.1162/105474603322955950. 
 [^3]: Wheatstone, Charles (2011). Contributions to the Physiology of Vision.—Part the First. On some remarkable, and hitherto unobserved, Phenomena of Binocular Vision. The Scientific Papers of Sir Charles Wheatstone. Cambridge University Press. pg. 225–283
@@ -280,10 +278,8 @@ Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver 
 [^17]: Kraak, Menno-Jan & Ormeling, Ferjan (2013). Cartography: Visualization of Geospatial Data. Routledge.
 [^18]: Helmholz, P. & Zlatanova, Sisi & Barton, Jack & Aleksandrov, Mitko (2020). GEOINFORMATION FOR DISASTER MANAGEMENT 2020 (Gi4DM2020): PREFACE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. XLIV-3/W1-2020. 1-3. 10.5194/isprs-archives-XLIV-3-W1-2020-1-2020. 
 [^19];: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
+[^20]: Epic Games (2023). Virtual Reality Development with Unreal Engine. Zugriff auf: https://www.unrealengine.com (10. März 2025)
 
-
-
-- Epic Games (2023). *Virtual Reality Development with Unreal Engine.* Verfügbar unter: https://www.unrealengine.com
 
 
 - Kurkjian, Stephen (2015). *Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist.* New York: PublicAffairs. ISBN 978-1-61039-632-5.
