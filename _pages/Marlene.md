@@ -114,27 +114,64 @@ Insgesamt stellen das Modell eine gute Grundlage dar, um damit ein 3D-Objekt zu 
 {: style="text-align: justify;"}
 
 # 3. Konzept
-Das Projekt verfolgt die Idee einer stilisierten 3D-Karte, die einen kleinen Ausschnitt der realen Welt, auf einer Scheibe, darstellt. Dieser Ausschnitt enthält die wesentlichen Wege, Straßen und umstehenden Gebäude in einer abstrahierten, kartografisch inspirierten Form. Dies ist eine Möglichkeit bekannte Karten, wie Google Maps oder Open Street Map, in einer 3D-Umgebung darzustellen. Die Darstellung kombiniert dabei realistische und abstrahierte Elemente, um Erkennbarkeit der Wirklichkeit und künstlerischer Freiheit zu vereinen.
-Zentrales Element dieser Visualisierung ist die realitätsnah modellierte Ohlendorff'sche Villa, die mittig auf der Scheibe plaziert ist. Während das Gebäude in Bezug auf Architektur und Texturierung detailliert gestaltet ist, werden die umstehenden Gebäude in einer vereinfachenden Level-of-Detail-1-Darstellung abgeildet, also mit reduzierter geometrischer Komplexität. Dies hebt die Villa als Augenmerk der Visualisierung hervor und macht den bewusst gewählten Stilkontrast innerhalb der Visualisierung deutlich. Zusätzlich wird die Fläche, sprich der Außenbereich um die Villa, mit low-poly Bäumen und Autos ergänzt. Diese reduzierten Modelle verstärken den Gegensatz zwischen der detaillierten Texturierung der Villa und der stilisierten Umgebung, was dem zugrundeliegenden Konzept folgt.
+Das Projektziel war die Ohlendorff'sche Villa in einer virtuellen Welt immersiv und interaktiv zu erleben. Aus diesem Grund wurde die Villa in das Zentrum der VR-Szene gestellt. Angelehnt an die Darstellung digitaler Geländemodelle als Block ([Beispiel](https://www.researchgate.net/figure/Digital-Elevation-Model-DEM-3D-Elevation-Model-and-3D-Realistic-Model-of-the-combined_fig1_268074280)) wird die Idee einer stilisierte 3D-Karte verfolgt, die einen kleinen Ausschnitt der realen Welt auf einer Scheibe darstellt. Daraus abgeleitet ergibt sich, dass neben der Villa im Zentrum der Darstellung auch die reale Umwelt dargestellt zu einem gewissen Umfang dargestellt wird. In direkter Nähe zu der Villa befindet sich ein großer Park sowie einige Wohngebäude. Aus diesen Gegebenheiten hat sich die Entscheidung ergeben, eine Scheibe die Grundlage für die Szene bildet. So enthält der dargestellt Ausschnitt neben der Villa die wesentlichen Wege, Straßen und umstehenden Gebäude in einer abstrahierten, kartografisch inspirierten Form. Dies ist eine Möglichkeit bekannte Karten, wie Google Maps oder Open Street Map, in einer 3D-Umgebung darzustellen und Nutzenden ein Verhältnis der Größenrelationen zu bieten. Die Darstellung kombiniert dabei realistische und abstrahierte Elemente, um Erkennbarkeit der Wirklichkeit und künstlerischer Freiheit zu vereinen. 
+Zentrales Element dieser Visualisierung ist die realitätsnah modellierte Ohlendorff'sche Villa, die mittig auf der Scheibe plaziert ist. Während das Gebäude in Bezug auf Architektur und Texturierung detailliert gestaltet ist, werden die umstehenden Gebäude in einer vereinfachenden Level-of-Detail-1-Darstellung abgeildet, also mit reduzierter geometrischer Komplexität. Zusätzlich wurden gestaltende Elemente wie Vegetation oder Auto in einem Low-Poly-Stil modelliert. Dies hebt die Villa als Augenmerk der Visualisierung hervor und macht den bewusst gewählten Stilkontrast innerhalb der Visualisierung deutlich. Diese reduzierten Modelle der Außenwelt verstärken den Gegensatz zwischen der detaillierten Texturierung der Villa und der stilisierten Umgebung, was dem zugrundeliegenden Konzept folgt.
+{: style="text-align: justify;"}
 
-Die Idee einer stilisierten 3D-Karte verbindet klassische kartografische Prinzipien mit modernen Möglichkeiten der dreidimensionalen Visualisierung. Im Gegensatz zu klassischen zweidimensionalen Karten, die eine Abstraktion der Realität wiedergeben, wird bei dreidimensionalen Karten eine weitere Informationsebene eingeführt. Hierbei können gezielt bestimmte Objekte hervorgehoben, Maßstäbe verzerrt oder Details reduziert werden, um die Wahrnehmung zu steuern (Jobst & Germanchis, 2007). Die für das Projekt gewählte Methodik nutzt diese Prinzipien, indem sie eine schematische Umgebung mit einem realistisch modellierten zentralen Objekt kombiniert. Ein solche Ansatz findet sich in verschiedenen Bereichen wieder, darunter Stadtplanung, Architekturvisualisierung und digitale Museumslandschaften (Kraak & Ormeling, 2020).
+<model-viewer 
+    src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
+    alt="3D model"
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    ar
+    style="width: 100%; height: 40vh;">
+</model-viewer>
+*Modell 2: Vollständiger Außenbereich der VR Applikation zur Ohlendorff'schen Villa in Hamburg Volksdorf. Erneut wurde die Villa ausgelassen. Die Artefakte konnten in der finalen VR Applikation nicht beobachtet werden.*
 
-Die Villa im Zentrum der Szene wurde bewusst detaillierter gestaltet als die Umgebung. Sie orientiert sich in ihrer Form an dem realen Bauwerk, wobei die Texturen nicht der tatsächlichen Erscheinung entsprechen, sondern stilistisch an die gewählte Konzept angepasst wurden. Während einige Bereiche bewusst heruntergekommen wirken, finden sich an anderen Stellen luxuriöse Materialien wie Marmor, um eine geheimnissvollere Atmosphäre zu schaffen.
-Die Gestallung des Gebäudes soll dabei die inhaltliche Idee unterstützen, dass die Villa als versteckter Ort für wertvolle Kunstgegenstände dient. Durch die Nutzung von Texturen, die neben Verfall auch Exklusivität darstellen, wird ein Ort geschaffen, der sowohl Geheimnisse birgt als auch den Reichtum der ausgestellten Objekte widerspiegelt. Der eingebaute Tag-Nacht-Modus unterstützt ebenfalls die geheimnissvolle Atmosphäre, wenn in der Nacht nicht mehr alle Gegenstände in der Villa ausgeleutet sind.
-
+Die Idee einer stilisierten 3D-Karte verbindet klassische kartografische Prinzipien mit modernen Möglichkeiten der dreidimensionalen Visualisierung. Im Gegensatz zu klassischen zweidimensionalen Karten, die eine Abstraktion der Realität wiedergeben, wird bei dreidimensionalen Karten eine weitere Informationsebene eingeführt. Hierbei können gezielt bestimmte Objekte hervorgehoben, Maßstäbe verzerrt oder Details reduziert werden, um die Wahrnehmung zu steuern (Jobst & Germanchis, 2007)[^16]. Die für das Projekt gewählte Methodik nutzt diese Prinzipien, indem sie eine schematische Umgebung mit einem realistisch modellierten zentralen Objekt kombiniert. Ein solche Ansatz findet sich in verschiedenen Bereichen wieder, darunter Stadtplanung, Architekturvisualisierung und digitale Museumslandschaften (Kraak & Ormeling, 2013)[^17].
+{: style="text-align: justify;"}
+Die Villa im Zentrum der Szene wurde bewusst detaillierter gestaltet als die Umgebung. Sie orientiert sich in ihrer Form an dem realen Bauwerk, wobei die Texturen nicht der tatsächlichen Erscheinung entsprechen, sondern stilistisch an die gewählte Erzählung angepasst wurden. Während einige Bereiche bewusst heruntergekommen wirken, finden sich an anderen Stellen luxuriöse Materialien wie Marmor, um eine geheimnissvollere Atmosphäre zu schaffen.
+Die Gestallung des Gebäudes soll dabei die Erzählung unterstützen, dass die Villa als versteckter Ort für wertvolle Kunstgegenstände dient. Durch die Nutzung von Texturen, die neben Verfall auch Exklusivität darstellen, wird ein Ort geschaffen, der sowohl Geheimnisse birgt als auch den Reichtum der ausgestellten Objekte widerspiegelt. Der eingebaute Tag-Nacht-Modus unterstützt ebenfalls die geheimnissvolle Atmosphäre, wenn in der Nacht nicht mehr alle Gegenstände in der Villa ausgeleutet sind.
+{: style="text-align: justify;"}
 Das Innere der Villa ist in zwei thematische Räume unterteilt:
-**Das Musikzimmer**: 
+- **Das Musikzimmer**: 
 In diesem Raum sind verschiedene Musikinstrumente aus unterschiedlichen Teilen der Welt ausgestellt. Die Auswahl spiegelt eine kulturelle Vielfalt wider und lädt dazu ein, sich mit internationalen Klängen auseinanderzusetzen.
-**Das Kunstzimmer**:
-Hier werden fünf berühmte, aber verschollene oder gestohlene Kunstwerke inklusive eines Informationsplakat mit ihren Besonderheiten präsentiert. Dies verstärkt die narrative Komponente des Projekts: Die Villa dient als geheimer Aufbewahrungsort für wertvollen Werke. Die Gestaltung des Raumes mit hochwertigen Materialien wie Marmor schafft eine Umgebung, die dem Wert der ausgestellten Objekte gerecht wird, während andere Elemente bewusst abgenutzt wirken, um die mysteriöse Atmosphäre zu schaffen.
+- **Das Kunstzimmer**:
+Hier werden fünf berühmte, aber verschollene oder gestohlene Kunstwerke inklusive Informationsplakaten, die die Besonderheiten der jeweiligen Kunstwerke präsentieren. Dies verstärkt die narrative Komponente des Projekts: Die Villa dient als geheimer Aufbewahrungsort für wertvollen Werke. Die Gestaltung des Raumes mit hochwertigen Materialien wie Marmor schafft eine Umgebung, die dem Wert der ausgestellten Objekte gerecht wird, während andere Elemente bewusst abgenutzt wirken, um die mysteriöse Atmosphäre zu schaffen.
+{: style="text-align: justify;"}
+Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurde und einer realistischen Darstellung der Ohlendorff'schen Villa mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
+{: style="text-align: justify;"}
 
-Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurden und ein realistischen Darstellung verschiedener Modelle mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
+# 4. Möglichkeiten zur VR-Umsetzung
+Die Entwicklung einer VR-Anwendung erfordert eine strukturierte Vorgehensweise, die von der Datenaufbereitung über die Modellierung bis hin zur Implementierung und Interaktionsgestaltung reicht. In diesem Kapitel werden die theoretischen Grundlagen sowie der spezifische Workflow für unser Projekt beschrieben, um die methodische Herangehensweise nachvollziehbar zu machen.
+{: style="text-align: justify;"}
+## Theorie
+Die Erarbeitung einer VR-Anwendung gliedert sich normalerweise in folgende Teilaufgaben: Datenaufbereitung, Modellierung, Implementierung in Game Engine und Interaktionsgestaltung.
+{: style="text-align: justify;"}
+Zunächst erfolgt die Datenakquise und -aufbereitung, bei der relevante 3D-Modelle, Geodaten oder CAD-Daten gesammelt, bereinigt und in ein kompatibles Format umgewandelt werden (Helmholz et al., 2020)[^18]. Hierbei kommen häufig GIS-Software wie QGIS oder ArcGIS zum Einsatz, wenn georeferenzierte Daten genutzt werden, während CAD-Daten mit Programmen wie AutoCAD oder Rhino verarbeitet werden. Eine Herausforderung in dieser Phase besteht in der Datenkonvertierung zwischen unterschiedlichen Formaten, da nicht alle Softwarelösungen dieselben Standards unterstützen. Zudem müssen hochdetaillierte Modelle oft vereinfacht werden, um eine flüssige Darstellung in Echtzeit zu ermöglichen.
+{: style="text-align: justify;"}
+Anschließend folgt die Modellierung und Optimierung der virtuellen Umgebung. 3D-Modelle werden in Software wie Blender, Autodesk Maya oder 3ds Max erstellt und für die Echtzeitdarstellung optimiert. Hierbei kommen Polygonreduktion, Normal Mapping oder Level-of-Detail-Techniken (LOD) zum Einsatz, um die Performance zu verbessern (Luebke et al., 2002)[^19]. Eine häufige Schwierigkeit in dieser Phase ist das Balancieren zwischen Detailreichtum und Performance, da hochauflösende Modelle die Rechenleistung stark beanspruchen können.
+{: style="text-align: justify;"}
+Nach der Modellierung wird die Szene in eine Game Engine wie Unreal Engine oder Unity importiert. Beide Engines bieten leistungsstarke Werkzeuge für VR-Entwicklung, wobei Unreal Engine aufgrund der grafischen Qualität und integrierten Physiksimulation bevorzugt wird, während Unity für seine Flexibilität und plattformübergreifende Kompatibilität geschätzt wird (LaValle, 2017)[^6]. Herausforderungen in dieser Phase bestehen in der richtigen Implementierung von Beleuchtung und Performance-Optimierung, da VR-Anwendungen eine stabile Framerate (mindestens 90 FPS) benötigen, um Motion Sickness zu vermeiden.
+{: style="text-align: justify;"}
+Im nächsten Schritt erfolgt die Interaktionsgestaltung, bei der Steuerungsmethoden für VR-Controller, Hand-Tracking oder Blicksteuerung integriert werden. Hierbei werden spezielle Software Development Kits (SDKs) wie OpenXR, SteamVR oder Oculus SDK genutzt, um die Hardwarekompatibilität sicherzustellen. Eine der größten Herausforderungen ist dabei die intuitive Interaktionsgestaltung, da klassische Eingabemethoden wie Maus und Tastatur in VR nicht anwendbar sind und Benutzerfreundlichkeit eine zentrale Rolle spielt (Slater & Sanchez-Vives, 2016)[^1].
+{: style="text-align: justify;"}
 
-# 4. Software
-Um die unterschiedlichen Teilaufgaben mit des Projekt durchführen zu können, wurde auf unterschiedliche Software zurückgegriffen. Da alle Mitglieder unserer Gruppe bisher keine Erfahrung im Bereich Modellierung, Texturierung oder VR-Interaktionen gemacht haben, erfolgte eine Neueinarbeitung in die Programmen. Für die Modellierung der Villa, um die oben beschriebenen Mängel auszubessern wurde die Software Blender verwendet. Bei Blender handelt es sich um eine Open Source Software, die für die Betriebssysteme Linux, Windows und macOS zur Verfügung steht, was in unserer Gruppe wichtig war, damit alle mit den unterschiedlichen Programmen arbeiten konnten. Das Blender einen sehr umfangreichen Werkzuegkasten für die Erstellung und Bearbeitung von 3D-Graphiken bereitstellt, haben wir uns entschieden auch die Texturen in Blender zu bearbeiten. 
-Für die Erstellung einer virtuellen Realität, wurde sich für die Unreal Engine des Entwicklers Epic Games entschieden. Wie Blender kann die Software kostenlos heruntergelanden werden und eignet sich gut für die Erstellung von VR-Anwendungen. Hier lassen sich auch Interaktionen für die VR-Anwenung mithilfe von Blueprints erstellen, die am Ende ein immersiveres Erlebnis schaffen. 
+## Entwicklungsumgebung
+Aus dem dargestellen theoretischen Workflow, wurde folgender konrekter Workflow für unser Projekt abgeleitet. 
+{: style="text-align: justify;"}
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/workflow_3d_con.drawio.svg)
+*Abbildung 4: Konkretisierung des theoretischen Workflows für die Entwicklung einer VR Anwendung über die Ohlendorff'sche Villa*
 
-# 5. Modellierung & Texturierung
+Die Basis unsere Projekts bilden Daten, die entweder von der Kursleitung bereitgestellt oder selbstständig modelliert wurden sowie Modell, die kostenlos im Internet verfügbar sind. Für die Zusammenführung dieser unterschiedlichen Daten und die Modellierung wurde die Software Blender genutzt. Bei Blender handelt es sich um eine Open Source Software, die für die Betriebssysteme Linux, Windows und macOS zur Verfügung steht, was in unserer Gruppe wichtig war, damit alle mit der Software arbeiten konnte. So konnten auch Kompatibilitätsprobleme vermieden werden. Da Blender einen sehr umfangreichen Werkzuegkasten für die Erstellung und Bearbeitung von 3D-Graphiken bereitstellt, haben wir uns entschieden auch die Texturen in Blender zu bearbeiten. Zusätzlich wurden die Erweiterungen BlenderGIS und Rigacar genutzt. Hierzu finden sich weiterführende Informationen in dem Bericht von Jonathan Hecht. Ergebniss dieser Datenaufbereitung in Blender war ein Modell, dass für die Implementierung in einer Game Engine ausgerichtet war und keiner weiteren Veränderung bedarfte. 
+{: style="text-align: justify;"}
+Für die Erstellung einer virtuellen Realität, wurde die Unreal Engine 5.X des Entwicklers Epic Games von der Kursleitung vorgegeben . Wie Blender kann die Software kostenlos heruntergelanden werden und eignet sich gut für die Erstellung von VR-Anwendungen. Hier lassen sich auch Interaktionen für die VR-Anwenung mithilfe von Blueprints erstellen, die am Ende ein immersiveres Erlebnis schaffen (Epic Games, 2023)[^20]. Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und entsprechend eine umfangreiche Community bietet, die zahlreiche Informationen und Beispiele online zur Verfügung stellen, die die Entwicklung einer VR-Anwendung unterstützen. Unreal Engine wurde für die Ambientegestalung sowie für alle Interaktionen genutzt. Seitens der Universität wurde uns eine HTC Vive zur Verfügung gestellt. Da Unreal Engine dieses Headset unterstützt war die Kompatibilität mit dieser Hardware kein Problem. StreamVR wurde genutzt, um das Projekt auf die HTC Vive zu übertragen und zu testen. 
+{: style="text-align: justify;"}
+
+# 5. Entwicklung der VR-Anwendung
+
 ## Modellierung
 Die Modellierung der Villa erfolgte in Blender, wobei bereits die Grundstruktur des Gebäudes vorhanden war (s. Kapitel Daten). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
 Wie bereits im Kapitel Daten beschrieben, wies das 3D-Modell der Ohlendorff'schen Villa einige kleinere Unstimmigkeiten auf. Zunächst wurden Lücken zwischen verschiedenen Objekten, wie beispielsweise zwischen dem Eingangsportal und der Gebäudewand, geschlossen. In einigen Fällen war es ausreichend, die Position der Objekte leicht zu justieren, während an anderen Stellen gezielt Anpassungen an den Geometrien vorgenommen wurden. So wurden etwa die Lücken zwischen Fensterrahmen und Gebäudewand durch das gezielte Verschieben einzelner Vertices sowie durch Anpassungen der Skalierung entlang der Achsen im Modellierungsprogramm behoben.
@@ -195,15 +232,13 @@ Das Musikzimmer der Villa wurde so konzipiert, dass es Besucher*innen auf eine a
 Um eine immersive Erfahrung zu schaffen, reagiert der Raum dynamisch auf die Bewegungen der Besucherinnen. Sobald man sich einem der Instrumente nähert, wird eine Klangsequenz abgespielt, die das jeweilige Instrument in einem typischen musikalischen Kontext präsentiert. Dies ermöglicht ein tiefgehendes Eintauchen in verschiedene Klangwelten und schafft eine interaktive Verbindung zwischen den Besucherinnen und den Musikinstrumenten.
 Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver Zugang zu den ausgestellten Instrumenten ermöglicht. Dies verstärkt die Immersion in der virtuellen Umgebung und lädt dazu ein, die klangliche Vielfalt verschiedener Kulturen aktiv zu erleben.
 
-# 6. Möglichkeiten zur VR-Umsetzung
-Die Unreal Engine bietet eine leistungsstarke Umgebung für die Entwicklung von VR-Anwendungen und eignet sich daher besonders gut für ein Universitätsprojekt. Ein zentraler Vorteil ist die erstklassige Grafikqualität, die durch fortschrittliche Rendering-Technologien wie Lumen für dynamische Beleuchtung und Nanite für hochdetaillierte Modelle ermöglicht wird. Diese Features tragen entscheidend zur Immersion in der virtuellen Realität bei.
-Ein weiterer wichtiger Aspekt ist die Benutzerfreundlichkeit der Engine. Dank der Blueprint-Skripting-Sprache können interaktive Elemente auch ohne tiefgehende Programmierkenntnisse erstellt werden, was den Einstieg erleichtert.
-Zudem verfügt die Unreal Engine über eine optimierte VR-Unterstützung mit nativen Funktionen für Headsets wie Meta Quest, HTC Vive oder Valve Index. Die Engine bietet integrierte VR-Interaktionssysteme und performante Rendering-Techniken wie Variable Rate Shading (VRS), die für eine flüssige Darstellung in VR-Anwendungen essenziell sind (Epic Games, 2023). Seitens der Universität wurde uns eine HTV Vive zur Verfügung gestellt. Da Unreal Engine dieses Headset unterstützt war die Kompatibilität mit dieser Hardware kein Problem. 
-Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und entsprechend eine umfangreiche Community bietet, die zahlreiche Informationen und Beispiele online zur Verfügung stellen, die die Entwicklung einer VR-Anwendung unterstützen. 
 
-## Umgebung
 
-# 7. Fazit & Ausblick
+## Außenwelt
+
+## Interaktionen
+
+# 6. Fazit & Ausblick
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -224,7 +259,7 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
     }
 </style>
 
-# 8. Literatur
+# 7. Literatur
 [^1]: Slater, Mel & Sanchez-Vives, Maria (2016). Enhancing Our Lives with Immersive Virtual Reality. Frontiers in Robotics and AI. 3. 10.3389/frobt.2016.00074. 
 [^2]: Burdea, Grigore & Coiffet, Philippe (2003). Virtual Reality Technology. Presence. 12. 663-664. 10.1162/105474603322955950. 
 [^3]: Wheatstone, Charles (2011). Contributions to the Physiology of Vision.—Part the First. On some remarkable, and hitherto unobserved, Phenomena of Binocular Vision. The Scientific Papers of Sir Charles Wheatstone. Cambridge University Press. pg. 225–283
@@ -240,15 +275,14 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 [^13]: *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
 [^14]: Hermann, Simeon (2019). Prozedurale Generierung von 3D-Stadtmodellen (Bachelorarbeit). Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
 [^15]: Dörner, Ralf & Broll, Wolfgang & Grimm, Paul & Jung, Bernhard (2019). Virtual und Augmented Reality (VR/AR) (2. Auflage). Springer Verlag. [10.1007/978-3-642-28903-3. ](https://doi.org/10.1007/978-3-662-58861-1)
+[^16]: Jobst, Markus & Germanchis, Timothy (2007). The Employment of 3D in Cartography — An Overview. 10.1007/978-3-540-36651-5_15. 
+[^17]: Kraak, Menno-Jan & Ormeling, Ferjan (2013). Cartography: Visualization of Geospatial Data. Routledge.
+[^18]: Helmholz, P. & Zlatanova, Sisi & Barton, Jack & Aleksandrov, Mitko (2020). GEOINFORMATION FOR DISASTER MANAGEMENT 2020 (Gi4DM2020): PREFACE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. XLIV-3/W1-2020. 1-3. 10.5194/isprs-archives-XLIV-3-W1-2020-1-2020. 
+[^19]: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
+[^20]: Epic Games (2023). Virtual Reality Development with Unreal Engine. Zugriff auf: https://www.unrealengine.com (10. März 2025).
 
 
 
-- Epic Games (2023). *Virtual Reality Development with Unreal Engine.* Verfügbar unter: https://www.unrealengine.com
-
-
-- Hermann, Simeon (2019). *Prozedurale generierung von 3d-stadtmodellen (Bachelorarbeit).* Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
-- Jobst, M., & Germanchis, T. (2007). *The paradigm of 3D cartography.* Proceedings of the 23rd International Cartographic Conference (ICC).
-- Kraak, M. J., & Ormeling, F. (2020). *Cartography: Visualization of spatial data.* Routledge.
 - Kurkjian, Stephen (2015). *Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist.* New York: PublicAffairs. ISBN 978-1-61039-632-5.
 
 - 
