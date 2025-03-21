@@ -37,12 +37,14 @@ Die Grundlagen für moderne VR-Systeme wurden in den 1960er Jahren von Ivan Suth
 In den 1980er Jahren wurde ein weiterer entscheidender Fortschritt erreicht, also Jaron Lanier mit seinem Unternehmen VPL Research die ersten kommerziellen VR-Systeme entwickelte, darunter auch Datenhandschuhe und VR-Brillen (Burdea & Coiffet, 2003)[^2]. Dennoch waren diese technologischen Innoviationen im Bereich der VR aufgrund der mangelnden Rechenleistung nicht massentauglich. Das änderte sich erst in den 2010er Jahren als durch gestiegene Rechenleistungen und konstengünstigere Sensorik eine massenhafte Verbreitung ermöglicht wurde. Seitdem wurden weitere Forschritte erzielt, insbesondere in den Bereichen Computergraphik, Sensorik und Mensch-Maschine-Interaktion. Die Entwicklung leistungsfähigerer Computer und fortschrittlicher Display-Technologien ermöglichte realistischere und immersivere VR-Erfahrungen (Grasnick, 2020)[^5]. 
 {: style="text-align: justify;"}
 Moderne VR-Technologien basieren auf einer Kombination aus Hochleistungscomputergrafik, Bewegungserkennung und immersiven Audio- sowie haptischen Rückmeldesystemen (LaValle, 2017)[^6]. Die wichtigsten Komponenten eines VR-Systems sind:
+{: style="text-align: justify;"}
 - **Head-Mounted Displays (HMDs)**: Diese Geräte projizieren stereoskopische Bilder mit hoher Bildwiederholrate und niedriger Latenz, um Motion Sickness zu reduzieren.
 - **Bewegungserfassung**: Durch Inside-Out-Tracking oder externe Sensoren werden Kopf- und Handbewegungen in Echtzeit erfasst.
 - **Interaktive Eingabegeräte**: Controller oder Handschuhe mit haptischem Feedback ermöglichen die Manipulation virtueller Objekte.
 - **Rendering-Engines**: Software-Plattformen wie Unreal Engine oder Unity ermöglichen die realitätsnahe Darstellung virtueller Welten.
 {: style="text-align: justify;"}
 Die Einsatzmöglichkeiten der VR-Technologie sind vielfältig und reichen von medizinischen Anwendungen über industrielle Nutzung bis hin zur Unterhaltung.
+{: style="text-align: justify;"}
 - **Medizinische Anwendungen**: VR wird in der Medizin zur Schmerztherapie, Behandlung von Angststörungen und für chirurgische Simulationen genutzt. Durch realitätsnahe Trainingssimulationen können Mediziner in einer sicheren Umgebung üben (Rizzo & Koenig, 2017)[^7].
 - **Bildung und Training**: Immersive Lernumgebungen ermöglichen es Schülern und Studierenden, historische Ereignisse nachzuerleben oder komplexe Prozesse zu visualisieren (Freina & Ott, 2015)[^8].
 - **Industrie und Design**: In der Produktentwicklung und Architektur wird VR zur Prototypenerstellung eingesetzt, wodurch Entwicklungszyklen verkürzt werden (Whyte et al., 2018)[^9].
