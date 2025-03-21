@@ -114,21 +114,35 @@ Insgesamt stellen das Modell eine gute Grundlage dar, um damit ein 3D-Objekt zu 
 {: style="text-align: justify;"}
 
 # 3. Konzept
-Das Projekt verfolgt die Idee einer stilisierten 3D-Karte, die einen kleinen Ausschnitt der realen Welt, auf einer Scheibe, darstellt. Dieser Ausschnitt enthält die wesentlichen Wege, Straßen und umstehenden Gebäude in einer abstrahierten, kartografisch inspirierten Form. Dies ist eine Möglichkeit bekannte Karten, wie Google Maps oder Open Street Map, in einer 3D-Umgebung darzustellen. Die Darstellung kombiniert dabei realistische und abstrahierte Elemente, um Erkennbarkeit der Wirklichkeit und künstlerischer Freiheit zu vereinen.
-Zentrales Element dieser Visualisierung ist die realitätsnah modellierte Ohlendorff'sche Villa, die mittig auf der Scheibe plaziert ist. Während das Gebäude in Bezug auf Architektur und Texturierung detailliert gestaltet ist, werden die umstehenden Gebäude in einer vereinfachenden Level-of-Detail-1-Darstellung abgeildet, also mit reduzierter geometrischer Komplexität. Dies hebt die Villa als Augenmerk der Visualisierung hervor und macht den bewusst gewählten Stilkontrast innerhalb der Visualisierung deutlich. Zusätzlich wird die Fläche, sprich der Außenbereich um die Villa, mit low-poly Bäumen und Autos ergänzt. Diese reduzierten Modelle verstärken den Gegensatz zwischen der detaillierten Texturierung der Villa und der stilisierten Umgebung, was dem zugrundeliegenden Konzept folgt.
+Das Projektziel war die Ohlendorff'sche Villa in einer virtuellen Welt immersiv und interaktiv zu erleben. Aus diesem Grund wurde die Villa in das Zentrum der VR-Szene gestellt. Angelehnt an die Darstellung digitaler Geländemodelle als Block ([Beispiel](https://www.researchgate.net/figure/Digital-Elevation-Model-DEM-3D-Elevation-Model-and-3D-Realistic-Model-of-the-combined_fig1_268074280)) wird die Idee einer stilisierte 3D-Karte verfolgt, die einen kleinen Ausschnitt der realen Welt auf einer Scheibe darstellt. Daraus abgeleitet ergibt sich, dass neben der Villa im Zentrum der Darstellung auch die reale Umwelt dargestellt zu einem gewissen Umfang dargestellt wird. In direkter Nähe zu der Villa befindet sich ein großer Park sowie einige Wohngebäude. Aus diesen Gegebenheiten hat sich die Entscheidung ergeben, eine Scheibe die Grundlage für die Szene bildet. So enthält der dargestellt Ausschnitt neben der Villa die wesentlichen Wege, Straßen und umstehenden Gebäude in einer abstrahierten, kartografisch inspirierten Form. Dies ist eine Möglichkeit bekannte Karten, wie Google Maps oder Open Street Map, in einer 3D-Umgebung darzustellen und Nutzenden ein Verhältnis der Größenrelationen zu bieten. Die Darstellung kombiniert dabei realistische und abstrahierte Elemente, um Erkennbarkeit der Wirklichkeit und künstlerischer Freiheit zu vereinen. 
+Zentrales Element dieser Visualisierung ist die realitätsnah modellierte Ohlendorff'sche Villa, die mittig auf der Scheibe plaziert ist. Während das Gebäude in Bezug auf Architektur und Texturierung detailliert gestaltet ist, werden die umstehenden Gebäude in einer vereinfachenden Level-of-Detail-1-Darstellung abgeildet, also mit reduzierter geometrischer Komplexität. Zusätzlich wurden gestaltende Elemente wie Vegetation oder Auto in einem Low-Poly-Stil modelliert. Dies hebt die Villa als Augenmerk der Visualisierung hervor und macht den bewusst gewählten Stilkontrast innerhalb der Visualisierung deutlich. Diese reduzierten Modelle der Außenwelt verstärken den Gegensatz zwischen der detaillierten Texturierung der Villa und der stilisierten Umgebung, was dem zugrundeliegenden Konzept folgt.
+{: style="text-align: justify;"}
 
-Die Idee einer stilisierten 3D-Karte verbindet klassische kartografische Prinzipien mit modernen Möglichkeiten der dreidimensionalen Visualisierung. Im Gegensatz zu klassischen zweidimensionalen Karten, die eine Abstraktion der Realität wiedergeben, wird bei dreidimensionalen Karten eine weitere Informationsebene eingeführt. Hierbei können gezielt bestimmte Objekte hervorgehoben, Maßstäbe verzerrt oder Details reduziert werden, um die Wahrnehmung zu steuern (Jobst & Germanchis, 2007). Die für das Projekt gewählte Methodik nutzt diese Prinzipien, indem sie eine schematische Umgebung mit einem realistisch modellierten zentralen Objekt kombiniert. Ein solche Ansatz findet sich in verschiedenen Bereichen wieder, darunter Stadtplanung, Architekturvisualisierung und digitale Museumslandschaften (Kraak & Ormeling, 2020).
+<model-viewer 
+    src="{{ site.url }}{{ site.baseurl }}/assets/model/BaseFill.glb"
+    alt="3D model"
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    ar
+    style="width: 100%; height: 40vh;">
+</model-viewer>
+*Modell 2: Vollständiger Außenbereich der VR Applikation zur Ohlendorff'schen Villa in Hamburg Volksdorf. Erneut wurde die Villa ausgelassen. Die Artefakte konnten in der finalen VR Applikation nicht beobachtet werden.*
 
-Die Villa im Zentrum der Szene wurde bewusst detaillierter gestaltet als die Umgebung. Sie orientiert sich in ihrer Form an dem realen Bauwerk, wobei die Texturen nicht der tatsächlichen Erscheinung entsprechen, sondern stilistisch an die gewählte Konzept angepasst wurden. Während einige Bereiche bewusst heruntergekommen wirken, finden sich an anderen Stellen luxuriöse Materialien wie Marmor, um eine geheimnissvollere Atmosphäre zu schaffen.
-Die Gestallung des Gebäudes soll dabei die inhaltliche Idee unterstützen, dass die Villa als versteckter Ort für wertvolle Kunstgegenstände dient. Durch die Nutzung von Texturen, die neben Verfall auch Exklusivität darstellen, wird ein Ort geschaffen, der sowohl Geheimnisse birgt als auch den Reichtum der ausgestellten Objekte widerspiegelt. Der eingebaute Tag-Nacht-Modus unterstützt ebenfalls die geheimnissvolle Atmosphäre, wenn in der Nacht nicht mehr alle Gegenstände in der Villa ausgeleutet sind.
-
+Die Idee einer stilisierten 3D-Karte verbindet klassische kartografische Prinzipien mit modernen Möglichkeiten der dreidimensionalen Visualisierung. Im Gegensatz zu klassischen zweidimensionalen Karten, die eine Abstraktion der Realität wiedergeben, wird bei dreidimensionalen Karten eine weitere Informationsebene eingeführt. Hierbei können gezielt bestimmte Objekte hervorgehoben, Maßstäbe verzerrt oder Details reduziert werden, um die Wahrnehmung zu steuern (Jobst & Germanchis, 2007)[^16]. Die für das Projekt gewählte Methodik nutzt diese Prinzipien, indem sie eine schematische Umgebung mit einem realistisch modellierten zentralen Objekt kombiniert. Ein solche Ansatz findet sich in verschiedenen Bereichen wieder, darunter Stadtplanung, Architekturvisualisierung und digitale Museumslandschaften (Kraak & Ormeling, 2013)[^17].
+{: style="text-align: justify;"}
+Die Villa im Zentrum der Szene wurde bewusst detaillierter gestaltet als die Umgebung. Sie orientiert sich in ihrer Form an dem realen Bauwerk, wobei die Texturen nicht der tatsächlichen Erscheinung entsprechen, sondern stilistisch an die gewählte Erzählung angepasst wurden. Während einige Bereiche bewusst heruntergekommen wirken, finden sich an anderen Stellen luxuriöse Materialien wie Marmor, um eine geheimnissvollere Atmosphäre zu schaffen.
+Die Gestallung des Gebäudes soll dabei die Erzählung unterstützen, dass die Villa als versteckter Ort für wertvolle Kunstgegenstände dient. Durch die Nutzung von Texturen, die neben Verfall auch Exklusivität darstellen, wird ein Ort geschaffen, der sowohl Geheimnisse birgt als auch den Reichtum der ausgestellten Objekte widerspiegelt. Der eingebaute Tag-Nacht-Modus unterstützt ebenfalls die geheimnissvolle Atmosphäre, wenn in der Nacht nicht mehr alle Gegenstände in der Villa ausgeleutet sind.
+{: style="text-align: justify;"}
 Das Innere der Villa ist in zwei thematische Räume unterteilt:
-**Das Musikzimmer**: 
+- **Das Musikzimmer**: 
 In diesem Raum sind verschiedene Musikinstrumente aus unterschiedlichen Teilen der Welt ausgestellt. Die Auswahl spiegelt eine kulturelle Vielfalt wider und lädt dazu ein, sich mit internationalen Klängen auseinanderzusetzen.
-**Das Kunstzimmer**:
-Hier werden fünf berühmte, aber verschollene oder gestohlene Kunstwerke inklusive eines Informationsplakat mit ihren Besonderheiten präsentiert. Dies verstärkt die narrative Komponente des Projekts: Die Villa dient als geheimer Aufbewahrungsort für wertvollen Werke. Die Gestaltung des Raumes mit hochwertigen Materialien wie Marmor schafft eine Umgebung, die dem Wert der ausgestellten Objekte gerecht wird, während andere Elemente bewusst abgenutzt wirken, um die mysteriöse Atmosphäre zu schaffen.
-
-Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurden und ein realistischen Darstellung verschiedener Modelle mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
+- **Das Kunstzimmer**:
+Hier werden fünf berühmte, aber verschollene oder gestohlene Kunstwerke inklusive Informationsplakaten, die die Besonderheiten der jeweiligen Kunstwerke präsentieren. Dies verstärkt die narrative Komponente des Projekts: Die Villa dient als geheimer Aufbewahrungsort für wertvollen Werke. Die Gestaltung des Raumes mit hochwertigen Materialien wie Marmor schafft eine Umgebung, die dem Wert der ausgestellten Objekte gerecht wird, während andere Elemente bewusst abgenutzt wirken, um die mysteriöse Atmosphäre zu schaffen.
+{: style="text-align: justify;"}
+Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst reduziert wurde und ein realistischen Darstellung der Ohlendorff'schen Villa mit großer Detailtiefe, um eine einzigartige 3D-Visualisierung zu kreieren. Durch den Kontrakt entsteht eine besondere, einzigartige Ästhetik. Gleichzeitig wird das Projekt durch die Innenraumgestaltung der Villa um eine sinnstiftende Erzählung erweitert, die das visuelle Konzept ergänzt und vertieft.
+{: style="text-align: justify;"}
 
 # 4. Software
 Um die unterschiedlichen Teilaufgaben mit des Projekt durchführen zu können, wurde auf unterschiedliche Software zurückgegriffen. Da alle Mitglieder unserer Gruppe bisher keine Erfahrung im Bereich Modellierung, Texturierung oder VR-Interaktionen gemacht haben, erfolgte eine Neueinarbeitung in die Programmen. Für die Modellierung der Villa, um die oben beschriebenen Mängel auszubessern wurde die Software Blender verwendet. Bei Blender handelt es sich um eine Open Source Software, die für die Betriebssysteme Linux, Windows und macOS zur Verfügung steht, was in unserer Gruppe wichtig war, damit alle mit den unterschiedlichen Programmen arbeiten konnten. Das Blender einen sehr umfangreichen Werkzuegkasten für die Erstellung und Bearbeitung von 3D-Graphiken bereitstellt, haben wir uns entschieden auch die Texturen in Blender zu bearbeiten. 
@@ -240,15 +254,14 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 [^13]: *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
 [^14]: Hermann, Simeon (2019). Prozedurale Generierung von 3D-Stadtmodellen (Bachelorarbeit). Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
 [^15]: Dörner, Ralf & Broll, Wolfgang & Grimm, Paul & Jung, Bernhard (2019). Virtual und Augmented Reality (VR/AR) (2. Auflage). Springer Verlag. [10.1007/978-3-642-28903-3. ](https://doi.org/10.1007/978-3-662-58861-1)
+[^16]: Jobst, Markus & Germanchis, Timothy (2007). The Employment of 3D in Cartography — An Overview. 10.1007/978-3-540-36651-5_15. 
+[^17]: Kraak, Menno-Jan & Ormeling, Ferjan (2013). Cartography: Visualization of Geospatial Data. Routledge.
 
 
 
 - Epic Games (2023). *Virtual Reality Development with Unreal Engine.* Verfügbar unter: https://www.unrealengine.com
 
 
-- Hermann, Simeon (2019). *Prozedurale generierung von 3d-stadtmodellen (Bachelorarbeit).* Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
-- Jobst, M., & Germanchis, T. (2007). *The paradigm of 3D cartography.* Proceedings of the 23rd International Cartographic Conference (ICC).
-- Kraak, M. J., & Ormeling, F. (2020). *Cartography: Visualization of spatial data.* Routledge.
 - Kurkjian, Stephen (2015). *Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist.* New York: PublicAffairs. ISBN 978-1-61039-632-5.
 
 - 
