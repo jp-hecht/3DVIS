@@ -5,17 +5,14 @@ toc: true
 toc_label: "Inhaltsverzeichnis"
 author_profile: true
 author:
-  name     : "Marlene"
+  name     : "Marlene Arnold"
   avatar   : "/assets/images/jph.png"
-  bio      : "My awesome biography constrained to a sentence or two goes here."
-  location : "Hamburg, USA"
+  bio      : "M.Sc. Geodäsie und Geoinformatik"
+  location : "Hamburg, Germany"
   links:
-    - label: "Mastodon"
-      icon: "fa-brands fa-mastodon"
-      url: "https://mastodon.social/@jphecht"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jp-hecht"
+      url: "https://github.com/marlene-winny"
 
 
 excerpt: "Ohlendorff’sche Villa - Vom Model zur VR-Visualisierung"
@@ -59,7 +56,7 @@ Ausgehend von dieser grundlegenden Einführung in das Themenfeld der Virtuellen 
 # 2. Objekt
 Es standen drei mögliche Objekte für das Projekt zur Auswahl: Die Ohlendorff'sche Villa, das Schloss Agathenburg und die Horneburg. Die Entscheidung für die Ohlendorff'sche Villa wurde aufgrund Datenverfügbarkeit und der flexiblen Gestaltungsmöglichkeiten getroffen. Die Daten die uns zu diesem Objekt zur Verfügung gestellt wurden im Rahmen verschiedenen Kurse an der HafenCity Universität aufgenommen und anschließen modelliert.
 {: style="text-align: justify;"}
-Bei der Ohlendorff'schen Villa handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg Volksdorf steht [Übersichtskarte] (#map1). Auf dem Gelände, wo zuvor die Villa seines Vaters gestanden hatte, ließ Hans von Ohlendorff 1929 das zweigeschossige Gebäude im Stil des Neoklassizismus erbauen. Die Villa diente nach der Erbauung der Familie Ohlendorff als Einfamilienhaus ebenso wie Hans von Ohlendorff als Repräsentationsgebäude. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Die Rückseite des Gebäudes, an die der Garten angrenzt, zeichnet sich durch einen asymmetrischen Wintergartenvorbau aus. Durch das hohe Kellergeschoss war dennoch eine Distanz zwischen Garten und Wohngebäude vorhanden. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. Im Jahre 1953 verkaufte Hans von Ohlendorff die Villa and die Stadt Hamburg, die darauf hin bis 2006 als Ortsamt für Volksdorf diente. Nach dem das Gebäude unter Denkmalschutz gestellt wurde und einer entsprechenden Sanierung, wird die Villa seit 2014 von der "Stiftung Ohlendorff'sche Villa" verwaltet. Heute befinden sich ein Café, ein Kinderhort und mehrere Tagungsräume im Gebäude (*Die Ohlendorff'sche Villa*, o.J.)[^13].
+Bei der Ohlendorff'schen Villa handelt es sich um eine denmalgeschützte Villa aus dem Jahr 1929, die in Hamburg Volksdorf steht ([Übersichtskarte](#map1)). Auf dem Gelände, wo zuvor die Villa seines Vaters gestanden hatte, ließ Hans von Ohlendorff 1929 das zweigeschossige Gebäude im Stil des Neoklassizismus erbauen. Die Villa diente nach der Erbauung der Familie Ohlendorff als Einfamilienhaus ebenso wie Hans von Ohlendorff als Repräsentationsgebäude. Aus diesem Grund ist die Vorderseite des Gebäudes mit einem hervorgehobenen Portal und einem Erscheinungsbalkon auf ein imposantes Erscheinungsbild ausgerichtet. Die Rückseite des Gebäudes, an die der Garten angrenzt, zeichnet sich durch einen asymmetrischen Wintergartenvorbau aus. Durch das hohe Kellergeschoss war dennoch eine Distanz zwischen Garten und Wohngebäude vorhanden. Um die Villa herum befindet sich ein Park, der ebenfalls Teil des Geländes ist. Im Jahre 1953 verkaufte Hans von Ohlendorff die Villa and die Stadt Hamburg, die darauf hin bis 2006 als Ortsamt für Volksdorf diente. Nach dem das Gebäude unter Denkmalschutz gestellt wurde und einer entsprechenden Sanierung, wird die Villa seit 2014 von der "Stiftung Ohlendorff'sche Villa" verwaltet. Heute befinden sich ein Café, ein Kinderhort und mehrere Tagungsräume im Gebäude (*Die Ohlendorff'sche Villa*, o.J.)[^13].
 {: style="text-align: justify;"}
 <div class="content-container">
     <div id="map" class="map-container"></div>
@@ -80,6 +77,13 @@ Bei der Ohlendorff'schen Villa handelt es sich um eine denmalgeschützte Villa a
 *Karte 1: Verortung der Ohlendorff'sche Villa in Volksdorf.*
 {: #map1}
 
+## Daten
+Damit das Ergebnis dieses Projektes, die Virtual-Reality-Anwendung (VR) eine realisitische und immersive Erfahrung ermöglicht ist eine sorgfältige Erfassung der Daten sowie eine Optimierung dieser erforderlich. Hochwertige 3D-Modelle, detaillierte Texturen und konsistente Daten sind essenziell, um eine glaubwürdige visuelle Darstellung sicherzustellen (Slater & Sanchez-Vives, 2016)[^1].
+Die Erfassung von 3D-Objekten kann manuell in einer Modellierungssoftware erfolgen, erfordert jedoch Fachkenntnisse und Zeit. Alternativ bieten photogrammetrische Verfahren oder Laserscanning-Technologien eine automatisierte Erfassung realer Objekte in Form von Punktwolken. Diese können darufhin genutzt werden um 3D-Modelle zu generieren (Whyte et al., 2020)[^9]. Prozedurale Generierungsmethoden ermöglichen zudem die automatische Erstellung komplexer Strukturen, sind jedoch oft weniger detailliert (Hermann, 2019)[^14].
+Nach der Erfassung müssen die 3D-Modelle für VR optimiert werden. Dies umfasst die Reduktion der Polygonanzahl zur Verbesserung der Performance, das Backen von Texturen sowie den Einsatz von Level-of-Detail-Techniken (Dörner et al., 2019)[^15].
+{: style="text-align: justify;"}
+Die zur Verfügung gestellten Daten für das Modell der Ohlendorff'schen Villa enthielten eine FBX-Datei, Informationen zu den Maßen des Gebäudes und der einzelenen Räume, Metadaten (DWG-Datei), sowie eine virtual Tour und verschiedenste Bilder. Im weiteren Fortlauf des Projektes wurde hauptsächlich mit der FBX-Datei (siehe Modell 1) gearbeitet. 
+{: style="text-align: justify;"}
 
 <model-viewer 
     src="{{ site.url }}{{ site.baseurl }}/assets/model/OhlendorffscheVilla.glb"
@@ -91,24 +95,23 @@ Bei der Ohlendorff'schen Villa handelt es sich um eine denmalgeschützte Villa a
     ar
     style="width: 100%; height: 40vh;">
 </model-viewer>
+*Modell 1: Das bereitgestellte FBX-Modell der Ohlendorff'schen Villa in Volksdorf*
 
 
+Wie in der Darstellung zu erkennen, lässt sich die FBX-Datei in Blender öffnen und betrachten. Auf den ersten Blick wirkt das Modell passend und mit der Realität übereinstimend. Auch im Vergleich mit den Fotos, lässt sich das Modell als zutreffend bewerten. Bei näherer Betrachtung fällt jedoch auf, dass das Modell an einigen Stellen unsauber ist. Zum Beispiel ist zwischen Eingangsportal und Hauswand eine nicht unerhebliche Lücke. Außerdem sind die Fenster an der westlichen Hauswand nicht passend in die Aussparungen der Hauswand eingefügt worden, so sind auch hier Lücken zwischen Hauswand und Fensterrahmen zu finden. Ein weiteres Beispiel für die Mängel der Modellierung ist das Dachgesims an der Nordseite des Gebäudes, welches nicht die Verzierungen wie an der anderen Seiten besitzt, und zusätzlich, vermutlich durch die Überlagerunger mehrerer Objekte, ein Flackern aufweist.
+{: style="text-align: justify;"}
 
+<img src="{{ site.baseurl }}/assets/images/Eingang.png" alt="Fehler: Eingangsportal">
+*Bild 1: Fehlerhafte Modellierung Eingangsportal*
 
-## Daten
-Damit der Ergebnis dieses Projektes, die Virtual-Reality-Anwendung (VR) eine realisitische und immersive Erfahrung ermöglicht ist eine sorgfältige Erfassung der Daten sowie eine Optimierung dieser erforderlich. Hochwertige 3D-Modelle, detaillierte Texturen und konsistente Daten sind essenziell, um eine glaubwürdige visuelle Darstellung sicherzustellen (Slater & Sanchez-Vives, 2016).
-Die Erfassung von 3D-Objekten kann manuell in Modellierungssoftware erfolgen, erfordert jedoch Fachkenntnisse und Zeit. Alternativ bieten photogrammetrische Verfahren oder Laserscanning-Technologien eine automatisierte Erfassung realer Objekte in Form von Punktwolken. Diese können darufhin genutzt werden um 3D-Modelle zu generieren (Whyte et al., 2018). Prozedurale Generierungsmethoden ermöglichen zudem die automatische Erstellung komplexer Strukturen, sind jedoch oft weniger detailliert (Hermann, 2019).
-Nach der Erfassung müssen die 3D-Modelle für VR optimiert werden. Dies umfasst die Reduktion der Polygonanzahl zur Verbesserung der Performance, das Backen von Texturen sowie den Einsatz von Level-of-Detail-Techniken (Dörner et al., 2019).
+<img src="{{ site.baseurl }}/assets/images/Fenster.png" alt="Fehler: Fenster">
+*Bild 1: Fehlerhafte Modellierung Fenster*
 
-Die zur Verfügung gestellten Daten für das Modell der Ohlendorff'schen Villa enthielten eine FBX-Datei, Informationen zu den Maßen des Gebäudes und der einzelenen Räume, Metadaten (DWG-Datei), sowie eine virtual Tour und verschiedenste Bilder. Im weiteren Fortlauf des Projektes wurde hauptsächlich mit der FBX-Datei gearbeitet. 
+<img src="{{ site.baseurl }}/assets/images/Stuck_Dach.png" alt="Fehler: Dachgesims">
+*Bild 1: Fehlerhafte Modellierung Dachgesims*
 
-[BILD VOM GESAMTEN MODELL]
-
-Wie in der Abbildung zu erkennen, lässt sich die FBX-Datei in Blender öffnen und betrachten. Auf den ersten Blick wirkt das Modell passend und mit der Realität übereinstimend. Auch im Vergleich mit den Fotos, lässt sich das Modell als zutreffend bewerten. Bei näherer Betrachtung fällt jedoch auf, dass das Modell an einigen Stellen unsauber ist. Zum Beispiel ist zwischen Eingangsportal und Hauswand eine nicht unerhebliche Lücke. Außerdem sind die Fenster an der westlichen Hauswand nicht passend in die Aussparungen der Hauswand eingefügt worden, so sind auch hier Lücken zwischen Hauswand und Fensterrahmen zu finden. Ein weiteres Beispiel für die Mängel der Modellierung ist das Dachgesims an der Nordseite des Gebäudes, welches nicht die Verzierungen wie an der anderen Seiten hat, und zusätzlich, vermutlich durch die Überlagerunger mehrer Objekte, ein Flackern aufweist.
-
-[BILDER DER DREI MÄNGEL]
-
-Insgesamt stellen das Modell eine gute Grundlage dar, um das Modell für die VR-Anwendung zu entwickeln, da das große (übergeordnete) Erscheinungbild des Gebäudes mit der Realität übereinstimmt. Gleichzeitig ist noch Modellierungarbeit nötig, um die beschriebenen Mängel des Modell auszubessern, damit die finale VR-Anwendung ein realistisches und immersives Ergebnis erzielt. 
+Insgesamt stellen das Modell eine gute Grundlage dar, um damit ein 3D-Objekt zu entwicklen, das für die VR-Anwendung genutzt werden kann, da das große (übergeordnete) Erscheinungbild des Gebäudes mit der Realität übereinstimmt. Gleichzeitig ist noch Modellierungarbeit nötig, um die beschriebenen Mängel des Modell auszubessern, damit die finale VR-Anwendung ein realistisches und immersives Ergebnis erzielt. 
+{: style="text-align: justify;"}
 
 # 3. Konzept
 Das Projekt verfolgt die Idee einer stilisierten 3D-Karte, die einen kleinen Ausschnitt der realen Welt, auf einer Scheibe, darstellt. Dieser Ausschnitt enthält die wesentlichen Wege, Straßen und umstehenden Gebäude in einer abstrahierten, kartografisch inspirierten Form. Dies ist eine Möglichkeit bekannte Karten, wie Google Maps oder Open Street Map, in einer 3D-Umgebung darzustellen. Die Darstellung kombiniert dabei realistische und abstrahierte Elemente, um Erkennbarkeit der Wirklichkeit und künstlerischer Freiheit zu vereinen.
@@ -235,13 +238,15 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 [^11]: Gonçalves, Raquel & Pedrozo, Ana & Coutinho, Evandro & Figueira, Ivan & Ventura, Paula (2012). Efficacy of Virtual Reality Exposure Therapy in the Treatment of PTSD: A Systematic Review. PloS one. 7. e48469. 10.1371/journal.pone.0048469. 
 [^12]: Knoll, Matthias & Stieglitz, Stefan (2022). Augmented Reality und Virtual Reality – Einsatz im Kontext von Arbeit, Forschung und LehreAugmented Reality and Virtual Reality in the Context of Work, Research and Teaching. HMD Praxis der Wirtschaftsinformatik. 59. 10.1365/s40702-022-00840-5. 
 [^13]: *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
+[^14]: Hermann, Simeon (2019). Prozedurale Generierung von 3D-Stadtmodellen (Bachelorarbeit). Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
+[^15]: Dörner, Ralf & Broll, Wolfgang & Grimm, Paul & Jung, Bernhard (2019). Virtual und Augmented Reality (VR/AR) (2. Auflage). Springer Verlag. [10.1007/978-3-642-28903-3. ](https://doi.org/10.1007/978-3-662-58861-1)
 
 
-- Dörner, R., Broll, W., Grimm, P. & Jung, B. (Hrsg.). (2019). *Virtual und augmented reality (vr/ar)* (2. Aufl.). Springer Vieweg Berlin, Heidelberg. Zugriff auf https:// doi.org/10.1007/978-3-662-58861-1 (Published: 11 October 2019) doi: 10 .1007/978-3-662-58861-1
+
 - Epic Games (2023). *Virtual Reality Development with Unreal Engine.* Verfügbar unter: https://www.unrealengine.com
 
 
-- Hermann, S. (2019). *Prozedurale generierung von 3d-stadtmodellen (Bachelorarbeit).* Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
+- Hermann, Simeon (2019). *Prozedurale generierung von 3d-stadtmodellen (Bachelorarbeit).* Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
 - Jobst, M., & Germanchis, T. (2007). *The paradigm of 3D cartography.* Proceedings of the 23rd International Cartographic Conference (ICC).
 - Kraak, M. J., & Ormeling, F. (2020). *Cartography: Visualization of spatial data.* Routledge.
 - Kurkjian, Stephen (2015). *Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist.* New York: PublicAffairs. ISBN 978-1-61039-632-5.
