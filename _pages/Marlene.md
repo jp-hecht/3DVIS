@@ -278,8 +278,8 @@ Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver 
 [^16]: Jobst, Markus & Germanchis, Timothy (2007). The Employment of 3D in Cartography — An Overview. 10.1007/978-3-540-36651-5_15. 
 [^17]: Kraak, Menno-Jan & Ormeling, Ferjan (2013). Cartography: Visualization of Geospatial Data. Routledge.
 [^18]: Helmholz, P. & Zlatanova, Sisi & Barton, Jack & Aleksandrov, Mitko (2020). GEOINFORMATION FOR DISASTER MANAGEMENT 2020 (Gi4DM2020): PREFACE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. XLIV-3/W1-2020. 1-3. 10.5194/isprs-archives-XLIV-3-W1-2020-1-2020. 
-[^19];: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
-[^20]: Epic Games (2023). Virtual Reality Development with Unreal Engine. Zugriff auf: https://www.unrealengine.com (10. März 2025)
+[^19]: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
+[^20]: Epic Games (2023). Virtual Reality Development with Unreal Engine. Zugriff auf: https://www.unrealengine.com (10. März 2025).
 
 
 
