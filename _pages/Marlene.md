@@ -145,7 +145,8 @@ Das Projekt setzt sich zusammen aus eine katrographischen Basis, die bewusst red
 {: style="text-align: justify;"}
 
 # 4. Möglichkeiten zur VR-Umsetzung
-
+Die Entwicklung einer VR-Anwendung erfordert eine strukturierte Vorgehensweise, die von der Datenaufbereitung über die Modellierung bis hin zur Implementierung und Interaktionsgestaltung reicht. In diesem Kapitel werden die theoretischen Grundlagen sowie der spezifische Workflow für unser Projekt beschrieben, um die methodische Herangehensweise nachvollziehbar zu machen.
+{: style="text-align: justify;"}
 ## Theorie
 Die Erarbeitung einer VR-Anwendung gliedert sich normalerweise in folgende Teilaufgaben: Datenaufbereitung, Modellierung, Implementierung in Game Engine und Interaktionsgestaltung.
 {: style="text-align: justify;"}
