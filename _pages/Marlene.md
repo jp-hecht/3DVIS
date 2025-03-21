@@ -180,6 +180,26 @@ Ein weiter wichtiger Punkt ist, dass Unreal Engine kostenlos verfügbar ist und 
 ## Umgebung
 
 # 7. Fazit & Ausblick
+
+<script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+
+<style>
+    /* Ensure the map and 3D viewer have fixed sizes */
+    .content-container {
+        max-width: 800px; /* Adjust to your needs */
+        margin: 0 auto; /* Centering */
+    }
+
+    .map-container {
+        width: 100%;
+        height: 40vh; /* Responsive height */
+        border: 1px solid #ccc; /* Optional border */
+    }
+</style>
+
 # 8. Literatur
 [^1]: Slater, Mel & Sanchez-Vives, Maria (2016). Enhancing Our Lives with Immersive Virtual Reality. Frontiers in Robotics and AI. 3. 10.3389/frobt.2016.00074. 
 [^2]: Burdea, Grigore & Coiffet, Philippe (2003). Virtual Reality Technology. Presence. 12. 663-664. 10.1162/105474603322955950. 
