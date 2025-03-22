@@ -125,8 +125,18 @@ Das System der HTC Vive setzt sich neben dem HMD aus zwei Motion-Controllern und
 {: style="text-align: justify;"}
 
 ### Implementierung
-In den folgenden Abschnitten werden die unterschiedlichen Schritte und Details zur Implementierung der Konzeption genauer erläutert. Dabei wird von den Objekten im Außenbereich über die implementierten Animationen in den Innenbereich gearbeitet.
+In den folgenden Abschnitten werden die unterschiedlichen Schritte und Details zur Implementierung der Konzeption genauer erläutert. Dabei wird von der Interaktion mit der Welt über die Objekten im Außenbereich in den Innenbereich gearbeitet.
 {: style="text-align: justify;"}
+
+#### Bewegung
+Um in Interaktion mit der VR Welt zu treten, wurden die Tasten des Controllers mit unterschiedlichen Funktionalitäten belegt. Neben der intuitiven freien Bewegung im 4.5m × 4.5m Raum des Trackingraums wurde das Trackpad des rechten Controllers mit einer Vorwärtsbewegung in zwei Geschwindigskeitsstufen belegt. Die Bewegungsrichtung wird, wie in der Realität, mittels der Blickrichtung bestimmt. Um kleinere Hindernisse zu überwinden ist die Triggertaste des rechten Controllers mit dem Sprung des Nutzenden belegt. 
+{: style="text-align: justify;"}
+
+**Infos von Madelaine ergänzen**
+**Grafik dazu?**
+
+Neben der klassischen selbstständigen Bewegung gibt es in der VR Szene zwei Trigger, welche die Position der Spieler:in verändern. Hierdurch wird der Spielende von der Scheibe auf Höhe eines Heißluftballons teleportiert, um die vollständige Szene in unterschiedlichen Lichtstimmungen beobachten zu können.
+
 #### Außenbereich
 Das relevant Gebiet wurde in QGIS eingezeichnet und in Blender importiert. Das einfache aber durch BlenderGIS richtig positionierte Polygon wurde daraufhin extrudiert. Damit die Nutzenden nicht aus der Welt fallen können, wurde eine Kollisionsbox um die Scheibe erzeugt. Auf dieser Scheibe wurden drei unterschiedliche amtliche Geodatensätze platziert. Als Hintergrund, der das Gebiet vollständig bedeckt, wurden Daten über den Arten- und Biotopsschutz gewählt[^13]. Aufbauend darauf wurden die Feinkartierung der Straßen mit deren expliziter Nutzung hinzugefügt[^14]. Der Datensatz wurde im Vorfeld leicht modifiziert um auch die Wege innerhalb des Ohlendorff'schen Park darzustellen. Zuletzt wurden die Level of Detail II Daten von Hamburg verarbeitet, wobei die Daten zunächst in CityJSON konvertiert wurden und im Anschluss zugeschnitten wurden[^15]. Die Gebäude wurden ebenfalls entsprechend der attributierten Höhe extrudiert. Anschließend wurde die jeweiligen Modellen orientiert am angestrebten Kartenstil mit neutralen Farben eingefärbt. Die Wirkung des resultierenden Modelles stellt sich wie folgt dar:
 {: style="text-align: justify;"}
@@ -145,7 +155,7 @@ Das relevant Gebiet wurde in QGIS eingezeichnet und in Blender importiert. Das e
 
 Ebenfalls wurden Versuche unternommen, ein digitales Höhenmodell zu integrieren, da die Villa in den Hang hinein gebaut wurde. Jedoch ist die Auflösung der amtlichen Daten für eine VR Anwendung zu gering und die eher geringen Höhenunterschiede sind ohne Überhöhung nicht erkennbar. Gleichzeitig führte eine Integration zu massiven Performanceverlusten.
 {: style="text-align: justify;"}
-Um die Immersion der Nutzenden zu erhöhen, wurden weitere Elemente der realen Umwelt der Applikation hinzugefügt. Hierzu zählen Modelle von Bäumen, Gebüsch, Steine, Autos und Laternen. Die Modelle konnten alle frei verfügbar im Internet gefunden werden und wurden in Blender einzig eingefärbt und/oder durch Streckung, Drehungen oder Expansion leicht modifiziert, um visuelle Variation zwischen bspw. Baumtypen herzustellen. Alle zusätzlichen Elemente wurden nicht in einer realistischen Anzahl dargestellt. Diese Entscheidung resultiert aus Experimenten, die zeigen, dass zu viele Elemente die Nutzenden visuell überfordern und somit keinen Mehrwert bringen. Das resultierende Modell sieht, wie folgt aus: 
+Um die Immersion der Nutzenden zu erhöhen, wurden weitere Elemente der realen Umwelt der Applikation hinzugefügt. Als dominante Elemente wurden Modelle von Bäumen, Gebüsch, Steine, Autos und Laternen der Szene hinzugefügt. Die Modelle konnten alle frei verfügbar im Internet gefunden werden und wurden in Blender einzig eingefärbt und/oder durch Streckung, Drehungen oder Expansion leicht modifiziert, um visuelle Variation zwischen bspw. Baumtypen herzustellen. Alle zusätzlichen Elemente wurden nicht in einer realistischen Anzahl dargestellt. Diese Entscheidung resultiert aus Experimenten, die zeigen, dass zu viele Elemente die Nutzenden visuell überfordern und somit keinen Mehrwert bringen. Das resultierende Modell sieht, wie folgt aus: 
 {: style="text-align: justify;"}
 
 <model-viewer 
@@ -160,7 +170,7 @@ Um die Immersion der Nutzenden zu erhöhen, wurden weitere Elemente der realen U
 </model-viewer>
 *Modell 2: Vollständiger Außenbereich der VR Applikation zur Ohlendorff'schen Villa in Hamburg Volksdorf. Erneut wurde die Villa ausgelassen.*
 
-Abseits der unterschiedlichen Modelle sorgen eine Geräuschkulisse, die Bewegung der Autos und ein Tag-Nacht Rhythmus samt verbundener Lichter für eine höhere Immersion. Visuell am auffälligsten ist der Tag-Nacht Rhythmus. Hierzu wurde der Blueprint des Sun Position Calculators so verändert, dass ein realitätnaher Sonnen und Mondverlauf je nach Position auf der Erde ermöglicht wird. Neben der Definition einer Position auf der Erde lassen sich auch Parameter über die Intensität und Größe, sowie Material der Sterne kontrollieren. Die Hauptbestandteile des Blueprints sind zwei direktionalle Lichter als Sonne und Mond dienen und durch eine Wolkenatmosphäre ergänzt werden. Die Lichter sorgen für die Beleuchtung der Szene zu beiden Tageszeiten und können unter anderem in ihrer Intensität angepasst werden. Die umgebende Atmosphäre sorgt für die Brechung des Lichtes und erzeugt damit eine blaue Himmelsfarbe. Die weiteren Elemente sind primär als Ergänzung und Vervollständigung der Szene zu sehen. Hierzu zählen die sichtbaren Wolken, die Emission von Licht durch den Himmel und der Nebel, welcher dafür sorgt, dass die Drehung außerhalb des Scheibe unsichtbar wird. Die Vielzahl an möglichen Parametern wurde iterativ ausgetestet, wobei auf Basis diese Blueprints eine vollständig andere Stimmung möglich ist.
+Abseits der unterschiedlichen Modelle sorgen eine Geräuschkulisse, die Bewegung der Autos und ein Tag-Nacht Rhythmus samt verbundener Lichter für eine höhere Immersion und spielen gleichzeitig mit den Nutzenden beim betreten der Villa mit gestohlenen Kunstgegenständen. Visuell am auffälligsten ist der Tag-Nacht Rhythmus. Hierzu wurde der Blueprint des Sun Position Calculators so verändert, dass ein realitätnaher Sonnen und Mondverlauf je nach Position auf der Erde ermöglicht wird. Neben der Definition einer Position auf der Erde lassen sich auch Parameter über die Intensität und Größe, sowie Material der Sterne kontrollieren. Die Hauptbestandteile des Blueprints sind zwei direktionalle Lichter als Sonne und Mond dienen und durch eine Wolkenatmosphäre ergänzt werden. Die Lichter sorgen für die Beleuchtung der Szene zu beiden Tageszeiten und können unter anderem in ihrer Intensität angepasst werden. Die umgebende Atmosphäre sorgt für die Brechung des Lichtes und erzeugt damit eine blaue Himmelsfarbe. Die weiteren Elemente sind primär als Ergänzung und Vervollständigung der Szene zu sehen. Hierzu zählen die sichtbaren Wolken, die Emission von Licht durch den Himmel und der Nebel, welcher dafür sorgt, dass die Drehung außerhalb des Scheibe unsichtbar wird. Die Vielzahl an möglichen Parametern wurde iterativ ausgetestet, wobei auf Basis diese Blueprints eine vollständig andere Stimmung möglich ist.
 {: style="text-align: justify;"}
 Im Kontext dieser Implementierung wird auch ermöglicht, unterschiedliche Lichter je nach Tageszeit an und auszuschalten. Diese Funktionalität benötigt durch die Berechnung der Schatten viele Ressourcen und wurde einzig in einem Innenraum, sowie der Straßenbeleuchtung verwendet. Ähnlich dazu wurde ein Material erzeugt, welches auch auf die Tageszeit reagiert und bei den Fahrzeugen dazu führt, dass die Leuchter die Farbe in der Tag und Nacht wechseln. Zwei resultierende Beispiele können hier gezeigt werden:
 {: style="text-align: justify;"}
@@ -178,48 +188,39 @@ Um die hier sichtbaren Fahrzeuge zu bewegen, wurden diese in Blender mittels Rig
 ![Beispiel Bewegung des Fahrzeugs]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
 *Abbildung 7: In der Animation sind drei fahrende Fahrzeuge sichtbar. Der Sportwagen wurde für die Animation an einer ungewöhnlichen Stelle positioniert und fand den Spline automatisiert.*
 
-Zuletzt wurden unterschiedliche Sounds der Umgebung hinzugefügt. Dabei unterscheidet sich die Komplexität der Sounderstellung. Für die sich bewegenden Fahrzeuge wurde relativ einfach ein Motorensound hinzugefügt und überall in der Welt wurden Vögelgeräusche hinterlegt. Die Vogelgeräusche wurden so implementiert, dass jeweils zufällig zwei von acht möglich Sounds kombiniert gespielt werden. Deutlich komplexer sind die adaptiven Windgeräusche. Das Grundkonzept ist, dass sich Windgeräusche je nach Umgebung des VR Pawns in der Lautstärke verändern, sodass auf einer freien Fläche der volle Sound erklingt und in engen Umgebungen deutlich weniger Windgeräusche. Um diesen Effekt zu ermöglichen, wurde eine Actor Component dem VR Pawn hinzugefügt. Innerhalb dieser Komponente wird zunächst ein aus zwei verschiedenen starken Windgeräuschen zusammengesetzter Sound erzeugt. Ausgehend davon wird ein Timer gestartet, der je nach Zeiteinheit eine Anpassung der Windlautstärke vornimmt. Die Anpassungstärke wird dabei durch die Veränderung von emittierten Linien der Komponent ermittelt. Hierzu werden bspw. sechs Linien im den Pawn ausgestrahlt, sobald diese Linie ein Objekt trifft, verändert sich der Wert der Linie. Entsprechend muss die Intensität der Windgeräusche verringert werden, sobald mehrere Linien geringere Werte anzeigen. Nach Ermittlung dieses Wertes findet zunächst eine Interpolation statt, um abrupte Veränderungen zu vermeiden. Dieser interpolierte Wert wird im Anschluss verwendet, um die Lautstärke zu verändern.
+Zuletzt wurden unterschiedliche Sounds der Umgebung hinzugefügt. Dabei unterscheidet sich die Komplexität der Sounderstellung. Für die sich bewegenden Fahrzeuge wurde relativ einfach ein Motorensound hinzugefügt und überall in der Welt wurden Vögelgeräusche hinterlegt. Die Vogelgeräusche wurden so implementiert, dass jeweils zufällig zwei von acht möglich Sounds kombiniert in Wiederholung gespielt werden. Deutlich komplexer sind die adaptiven Windgeräusche. Das Grundkonzept ist, dass sich Windgeräusche je nach Umgebung der VR-Spieler:in in der Lautstärke verändern, sodass auf einer freien Fläche der volle Sound erklingt und in engen Umgebungen deutlich weniger Windgeräusche. Um diesen Effekt zu ermöglichen, wurde eine Actor Component dem VR Pawn hinzugefügt. Innerhalb dieser Komponente wird zunächst ein aus zwei verschiedenen starken Windgeräuschen zusammengesetzter Sound erzeugt. Ausgehend davon wird ein Timer gestartet, der je nach Zeiteinheit eine Anpassung der Windlautstärke vornimmt. Die Anpassungstärke wird dabei durch die Veränderung von emittierten Linien der Komponent ermittelt. Hierzu werden bspw. sechs Linien vom Pawn ausgestrahlt, sobald diese Linie ein Objekt trifft, verändert sich der Wert der Linie. Entsprechend muss die Intensität der Windgeräusche verringert werden, sobald mehrere Linien geringere Werte anzeigen. Nach Ermittlung dieses Wertes findet zunächst eine Interpolation statt, um abrupte Veränderungen zu vermeiden. Dieser interpolierte Wert wird im Anschluss verwendet, um die Lautstärke zu verändern.
 {: style="text-align: justify;"}
 
-*Animation Wind*
-
+![Beispiel Generierung Wind]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/wind_no_Opt.gif)
+*Abbildung 8: Die Animation zeigt die Bewegung des VR-Spielers, welcher sich einer engeren Umgebung nähert. Sichtbar sind ebenfalls die Linien vor der Spieler:in, welche sich bei Näherung an ein Objekt grün färben. Die aufgezeichneten blauen Werte zeigen eine Verringerung der Werte und dadurch auch eine Reduktion der Windgeräusche.*
 
 #### Ohlendorff'sche Villa und Innenbereich
 
-Das vollständig modellierte Modell der Ohlendorff'schen Villa wurde im Anschluss texturiert. Die Textur ist wesentlich für die Immersion, da durch diese eine Simulation der Oberflächenmerkmale, wie Farbe, Muster oder Materialeigenschaften, von Objekt erreicht wird.
+Das vollständig modellierte Modell der Ohlendorff'schen Villa wurde im Anschluss texturiert. Die Textur ist wesentlich für die Immersion, da durch diese eine Simulation der Oberflächenmerkmale, wie Farbe, Muster oder Materialeigenschaften, von Objekt erreicht wird. Um eine ausreichend hohe Performance zu erreichen, ist es im Normalfall nicht möglich bspw. einzelne Mauersteine samt Furchen zu modellieren.
 {: style="text-align: justify;"}
-Die praktische Realisation erfolgte ebenfalls in Blender. Frei verfügbare Texturen, die vielfältige Material- und Oberflächendaten bieten, wurden importiert und in Blenders Shader Editor mithilfe des Principled BSDF Shaders zu einem realistischen Materialsystem kombiniert.
+Die praktische Realisation erfolgte ebenfalls in Blender. Frei verfügbare Texturen, die vielfältige Material- und Oberflächendaten bieten, wurden importiert und in Blenders Shader Editor mithilfe des Principled BSDF Shaders zu einem realistischen Materialsystem kombiniert. Da die importierten Texturen nicht automatisch optimal auf die 3D-Modelle passen, war ein manuelles UV-Mapping notwendig. Dieser Prozess umfasst das UV Unwrapping zur Entfaltung der Oberflächen auf eine zweidimensionale Ebene sowie eine anschließende UV-Optimierung, um Verzerrungen zu vermeiden. Ergänzend wurden verschiedene Mapping-Techniken wie Box Projection Mapping und Manual Projection Painting eingesetzt, um die Texturen präzise auszurichten.
 {: style="text-align: justify;"}
-Da die importierten Texturen nicht automatisch optimal auf die 3D-Modelle passen, war ein manuelles UV-Mapping notwendig. Dieser Prozess umfasst das UV Unwrapping zur Entfaltung der Oberflächen auf eine zweidimensionale Ebene sowie eine anschließende UV-Optimierung, um Verzerrungen zu vermeiden. Ergänzend wurden verschiedene Mapping-Techniken wie Box Projection Mapping und Manual Projection Painting eingesetzt, um die Texturen präzise auszurichten.
-{: style="text-align: justify;"}
-Der Innenbereich unserer VR-Anwendung wird durch eine bewegliche Tür betreten, worauf der Nutzende im Empfangsraum landet. Der Empfangsraum beinhaltet keine weitere Interaktion oder Animation. Im vom Nutzenden rechten Raum wurde ein Kunstraum inklusive Interaktion implementiert. Gezeigt werden insgesamt fünf bedeutende gestohlene Gemälde samt Informationstafeln. Das wertvollste gestohlene Gemälde ist jedoch nicht direkt ausgestellt und muss über eine Zahlenkombination aus einer Truhe "geholt" werden. Um die Zahlenkombination ausfindig zu machen, können die Nutzenden eine Lupe aufnehmen und mittels der Lupe in drei der fünf Bilder eine Zahl finden. Nachdem der Zahlencode in ein Widget eingegeben wurde, öffnet sich die Truhe mit dem sechsten wertvollsten Gemälde. Details zur Implementierung können im Bericht von Madelaine Linnek nachvollzogen werden.
+Der Innenbereich unserer VR-Anwendung wird durch eine bewegliche Tür betreten, worauf der Nutzende im Empfangsraum landet. Der Empfangsraum beinhaltet keine weitere Interaktion oder Animation. Im vom Nutzenden rechten Raum wurde ein Kunstraum inklusive Interaktion implementiert. Gezeigt werden insgesamt fünf bedeutende gestohlene Gemälde samt Informationstafeln. Das wertvollste gestohlene Gemälde ist jedoch nicht direkt ausgestellt und muss über eine Zahlenkombination aus einer Truhe *geholt* werden. Um die Zahlenkombination ausfindig zu machen, können die Nutzenden eine Lupe aufnehmen und mittels der Lupe in drei der fünf Bilder eine Zahl finden. Nachdem der Zahlencode in ein Widget eingegeben wurde, öffnet sich die Truhe mit dem sechsten wertvollsten Gemälde. Details zur Implementierung können im Bericht von **Madelaine Linnek LINK** nachvollzogen werden.
 {: style="text-align: justify;"}
 Im Musikzimmer wurden sieben Instrumente aus unterschiedlichen Regionen der Welt ausgestellt. Die Auswahl der Instrumente reicht von einem Klavier bis zu in Europa unbekannten Instrumenten, wie der Djembe einer westafrikanischen Trommel. Als Interaktion in diesem Raum werden Beispiele des Instrumentes auf Annäherung gespielt. Durch die Kombination aus visueller Betrachtung als auch prägnanten Beispielsequenzen kann die Immersion erhöht werden.
 {: style="text-align: justify;"}
 
+# 4. Fazit  
+Insgesamt konnte die in der Konzeption geplante VR-Anwendung in weiten Teilen erfolgreich umgesetzt werden. Besonders der detailreiche Innenbereich des Hauses sowie der stilisierte Außenbereich tragen zu einem stimmigen Gesamteindruck bei. Neben dem Gesamteindruck sind konnten erfolgreich und zielführend Geodaten verwendet werden. Ebenfalls konnte mit der verwendeten Hardware eine Framerate und folglich eine gute Performance beobachtet werden, welches auf bewusste Entscheidungen in der Konzeption zurückzuführen ist. Zu den positiven Aspekten können sicherlich auch vor den Rahmenbedingungen, wie der fehlend Erfahrungen der Gruppenmitgliedern in 3D Game Engines, sowie der erhöhten Komplexität einer Gruppenarbeit gesehen werden. 
+{: style="text-align: justify;"}
+Bei detailierter Betrachung können jedoch einige Herausforderungen vorgefunden werden. Zu den Aspekten zählen:
+{: style="text-align: justify;"}
+- **Versionskontrolle:** Die Zusammenarbeit mit mehreren Entwickler:innen erfordert eine strukturierte Versionierung. Hier wäre es sinnvoll, in zukünftigen Projekten mehr Zeit in ein konsistentes Versionsmanagement zu investieren, um Fehler, die auftauchen werden, leichter beheben zu können. 
+- **Praktische VR-Tests:** Zwar wurden während der Entwicklung durchgehend Tests der Anwendung mittels der VR Brillen unternommen. Trotz dessen verhielten sich verschiedene Interaktionen und Animationen in Simulation und Spiel unterschiedlich. In weiteren Projekten sollte der Fokus in der Entwicklungsumgebung verbessert werden.  
+- **Außenbereich:** Der Außenbereich entspricht der Konzeptionen und den Vorstellungen der Gruppe. Jedoch wurden keine Experimente mit einer leicht stärker ausgestalteten Welt durchgeführt, um einen Vergleich zu haben und somit eine bewusstere Entscheidung treffen zu können. 
+- **Funktionale Einschränkungen:**  
+  - Tag-Nacht Rhythmus: Die Entscheidung zwei direktionale Lichter (Mond und Sonne) zu verwenden, erzeugt Einschränkungen in Bezug auf die Intensität bzw. die Berechnung des Höhennebels und stellt folglich einen Kompromiss dar. Die Problematik liegt im Fakt, dass beide Lichter versuchen einen Schatten zu berechnen und sich de facto blockieren. Die Ursache – ein Implementierungsfehler oder falsche Einstellungen – konnte bis Projektabgabe nicht aufgefunden werden.  
+  - Windgeräusche: Der Wind wird beim Laden der Szene automatisch aktiviert und kann nur über Parameter abgeschwächt, aber nicht vollständig deaktiviert werden. Diese Tatsache ist der Implementierung über einen eigenen Timer geschuldet, welcher nicht einfach deaktiviert und erneut aktiviert werden kann.   
+  - Interaktions- und Animationsqualität: Einige Interaktionen wirken noch simpel und wenig realitätsnah. Ein Beispiel ist das Musikzimmer, das lediglich Musik abspielt, ohne spürbar auf die Nutzenden zu reagieren.  
 
-# 4. Fazit & Ausblick
-## Performance
-## Kritik
-## Ausblick
+Zusammenfassend wurde mittels des Projektes eine gute Grundlage geschaffen, um in Zukunft und in Verbindung mit den gewonnen Erkenntnissen ausgebaut werden kann. Dabei sind die grundlegend Elemente vorhanden und die weiteren möglichen Schritte können den Immersionsgrad weiter erhöhen und intensiveren.
+{: style="text-align: justify;"}
 
-# Notes
-
-## Animation & Interaktionen
-
-* Teleportation
-* Geräusche im Gebäude
-### Positiv
-* Sehr hohe Frames
-* generell performance statsitikken anführne
-
-### Einschränkungen
-* Wind
-* Nebel
-* Wie landing page & und about?
-* MUSIK fehlt noch
-
-Dies ermöglicht zum einen die Performance der gesamten Anwendung deutlich zu erhöhen und zum anderen einen deutlichen Kontrast zwischen einer detailierten und realistischeren gestalteten Villa und der Umgebung herzustellen[^11]. Ein derartiger Kontrast kann bei den Nutzenden die Aufmerksamkeit erhöhen und somit die Wahrnehmung schärfen. 
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
