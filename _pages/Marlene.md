@@ -171,6 +171,8 @@ Für die Erstellung einer virtuellen Realität, wurde die Unreal Engine 5.X des 
 {: style="text-align: justify;"}
 
 # 5. Entwicklung der VR-Anwendung
+In diesem Kapitel wird auf die konkrete Umsetzung der verschiedenen Arbeitschritte in der Entwicklung unserer VR-Anwendung eingeganen. Dies umfasst die Modellierung, die Texturierung einschließlich Innenraumgestaltung, die Gestaltung der Außenwelt inklusive Beleuchtung und Ambiente sowie die Interaktionen.
+{: style="text-align: justify;"}
 
 ## Modellierung
 Die Modellierung der Villa erfolgte in Blender, wobei die Grundstruktur des Gebäudes bereits vorhanden war (s. Kapitel Daten). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
@@ -209,9 +211,12 @@ Um sicherzustellen, dass die Texturen korrekt ausgerichtet sind, wurden verschie
 *Abbildung 5: In der Animation können unterschiedliche Texturen der Villa betrachtet werden.*
 
 ## Innenraumgestaltung
+Die Innenraumgestaltung umfasst die beiden Räume, die in das 3D-Objekt der Villa modelliert wurden. In dem Kunstzimmer werden verschollenen oder gestohlene Kunstwerke präsentiert und in dem Musikzimmer werden Instrumente aus der ganzen Welt ausgestellt. 
+{: style="text-align: justify;"}
+
 ### Kunstzimmer
 Das Kunstzimmer der Villa wurde mit besonderer Sorgfalt gestaltet, um eine Atmosphäre von Geheimnis und Entdeckung zu schaffen. An den Wänden hängen fünf bedeutende Kunstwerke, die entweder verschollen sind oder es einst waren:
-
+{: style="text-align: justify;"}
 - Fräulein Lieser von Gustav Klimt
 - L'Olivier près de l'Estaque von Georges Braque
 - View of Auvers-sur-Oise von Paul Cézanne
@@ -220,26 +225,36 @@ Das Kunstzimmer der Villa wurde mit besonderer Sorgfalt gestaltet, um eine Atmos
 
 Neben jedem dieser Werke befindet sich ein Poster, das einen kurzen Einblick in die Geschichte des jeweiligen Bildes gibt und so den Besuchern Hintergrundinformationen liefert.
 Zentral im Raum steht ein Untersuchungstisch, auf dem eine Lupe platziert ist. Diese lädt die Besucher dazu ein, die ausgestellten Gemälde genauer zu betrachten. Bei näherer Inspektion entdecken sie auf den fünf Bilder drei kleine Zahlen. Diese Zahlenkombination dient als Code für eine im Raum stehende Truhe. Geben die Besucher den korrekten Code ein, öffnet sich die Truhe, und das sechste Gemälde, The Concert von Johannes Vermeer, erscheint in der Raummitte.
-The Concert gilt als das wertvollste gestohlene Kunstwerk der Welt. Es wurde 1990 aus dem Isabella Stewart Gardner Museum in Boston entwendet und hatte 2015 einen geschätzten Wert von 250 Millionen US-Dollar (Kurkjian, 2015). 
+The Concert gilt als das wertvollste gestohlene Kunstwerk der Welt. Es wurde 1990 aus dem Isabella Stewart Gardner Museum in Boston entwendet und hatte 2015 einen geschätzten Wert von 250 Millionen US-Dollar (Kurkjian, 2015)[^21]. 
 Diese interaktive Gestaltung des Kunstzimmers ermöglicht es den Besuchern, nicht nur die Kunstwerke zu bewundern, sondern auch aktiv an der Entdeckung des verborgenen Meisterwerks teilzunehmen.
+{: style="text-align: justify;"}
 
 ### Musikzimmer
-Das Musikzimmer der Villa wurde so konzipiert, dass es Besucher*innen auf eine akustische Reise durch verschiedene Kulturen und Epochen mitnimmt. Im Mittelpunkt stehen sieben Musikinstrumente aus unterschiedlichen Teilen der Welt:
+Das Musikzimmer der Villa wurde so konzipiert, dass es Besuchende auf eine akustische Reise durch verschiedene Kulturen und Epochen mitnimmt. Im Mittelpunkt stehen sieben Musikinstrumente aus unterschiedlichen Teilen der Welt:
+{: style="text-align: justify;"}
 
-- Klavier – Ein klassisches westliches Tasteninstrument, das seit Jahrhunderten in der Kunst- und Unterhaltungsmusik eine zentrale Rolle spielt.
-- Guqin – Ein traditionelles chinesisches Saiteninstrument mit tiefen kulturellen Wurzeln, das für seine sanften, meditativen Klänge bekannt ist.
-- Balalaika – Ein dreisaitiges Zupfinstrument aus Russland, das durch seinen charakteristischen Klang in der Folkmusik weit verbreitet ist.
-- Djembe – Eine westafrikanische Trommel, die in rituellen und gemeinschaftlichen Kontexten für rhythmische Dynamik sorgt.
-- Dombo – Ein traditionelles Instrument aus Südamerika, das durch seine einzigartigen Klangfarben besticht.
-- Doncamatic – Eine frühe elektromechanische Rhythmusmaschine aus Japan, die in der modernen Musikproduktion große Bedeutung hat.
-- Gitarre – Ein weltweit verbreitetes Saiteninstrument, das in unzähligen Musikstilen von Klassik bis Rock eingesetzt wird.
-
+- **Klavier** – Ein klassisches westliches Tasteninstrument, das seit Jahrhunderten in der Kunst- und Unterhaltungsmusik eine zentrale Rolle spielt.
+- **Guqin** – Ein traditionelles chinesisches Saiteninstrument mit tiefen kulturellen Wurzeln, das für seine sanften, meditativen Klänge bekannt ist.
+- **Balalaika** – Ein dreisaitiges Zupfinstrument aus Russland, das durch seinen charakteristischen Klang in der Folkmusik weit verbreitet ist.
+- **Djembe** – Eine westafrikanische Trommel, die in rituellen und gemeinschaftlichen Kontexten für rhythmische Dynamik sorgt.
+- **Dombo** – Ein traditionelles Instrument aus Südamerika, das durch seine einzigartigen Klangfarben besticht.
+- **Doncamatic** – Eine frühe elektromechanische Rhythmusmaschine aus Japan, die in der modernen Musikproduktion große Bedeutung hat.
+- **Gitarre** – Ein weltweit verbreitetes Saiteninstrument, das in unzähligen Musikstilen von Klassik bis Rock eingesetzt wird.
+{: style="text-align: justify;"}
 Um eine immersive Erfahrung zu schaffen, reagiert der Raum dynamisch auf die Bewegungen der Besucherinnen. Sobald man sich einem der Instrumente nähert, wird eine Klangsequenz abgespielt, die das jeweilige Instrument in einem typischen musikalischen Kontext präsentiert. Dies ermöglicht ein tiefgehendes Eintauchen in verschiedene Klangwelten und schafft eine interaktive Verbindung zwischen den Besucherinnen und den Musikinstrumenten.
 Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver Zugang zu den ausgestellten Instrumenten ermöglicht. Dies verstärkt die Immersion in der virtuellen Umgebung und lädt dazu ein, die klangliche Vielfalt verschiedener Kulturen aktiv zu erleben.
-
-
+{: style="text-align: justify;"}
 
 ## Außenwelt
+### Zusammenfassung: Gestaltung der Außenwelt in der VR-Anwendung  
+Die Außenwelt der VR-Anwendung basiert auf amtlichen Geodaten, die zunächst in QGIS aufbereitet und anschließend in Blender weiterverarbeitet wurden. Dazu gehörten Arten- und Biotopkartierungen, Straßen mit spezifischer Nutzung sowie Level of Detail II (LoD2) Gebäudedaten. Diese Daten wurden angepasst und optimiert, um eine realitätsnahe, aber performante Darstellung in der VR-Umgebung zu ermöglichen. Für die Detailgestaltung der Außenwelt wurden frei verfügbare 3D-Modelle von Bäumen, Laternen, Autos und weiteren Elementen integriert. Diese Modelle wurden in Blender modifiziert, beispielsweise durch Farbänderungen oder leichte Anpassungen der Form, um eine visuelle Vielfalt zu erzeugen, ohne die Performance negativ zu beeinflussen.  
+{: style="text-align: justify;"}
+Ein zentrales Feature der VR-Umgebung ist der dynamische Tag-Nacht-Rhythmus, der mithilfe einer modifizierten Version des Sun Position Calculators aus Unreal Engine umgesetzt wurde. Dieser sorgt für eine realitätsnahe Lichtveränderung im Tagesverlauf, einschließlich einer anpassbaren Himmelsatmosphäre, Sternen, Wolken und der Beleuchtung von Straßenlaternen sowie Innenräumen bei Nacht. Zusätzlich wurde ein adaptives Sounddesign integriert: Während sich Umgebungsgeräusche wie Vogelstimmen zufällig abspielen, reagiert das Windgeräusch dynamisch auf die Umgebung des Nutzenden. Hierfür wird geprüft, wie stark der VR-Pawn von Objekten umgeben ist – in offenen Bereichen ist der Wind lauter, in engen Räumen oder nah an Wänden wird er leiser.  
+{: style="text-align: justify;"}
+Ein weiteres immersives Element ist die Simulation von Fahrzeugbewegungen. Autos wurden mit Rigacar in Blender vorbereitet und anschließend in Unreal Engine mit einem Blueprint ausgestattet, der sie entlang von Splines steuert. Ein Markierungssystem außerhalb des sichtbaren Bereichs sorgt dafür, dass sich die Fahrzeuge logisch verhalten und ein realistischer Verkehrsfluss entsteht.  
+{: style="text-align: justify;"}
+Weiterführende Details zur technischen Umsetzung der Außenwelt können dem Bericht von Jonathan Hecht entnommen werden.
+{: style="text-align: justify;"}
 
 ## Interaktionen
 
@@ -285,13 +300,4 @@ Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver 
 [^18]: Helmholz, P. & Zlatanova, Sisi & Barton, Jack & Aleksandrov, Mitko (2020). GEOINFORMATION FOR DISASTER MANAGEMENT 2020 (Gi4DM2020): PREFACE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. XLIV-3/W1-2020. 1-3. 10.5194/isprs-archives-XLIV-3-W1-2020-1-2020. 
 [^19]: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
 [^20]: Epic Games (2023). Virtual Reality Development with Unreal Engine. Zugriff auf: https://www.unrealengine.com (10. März 2025).
- 
-
-
-
-- Kurkjian, Stephen (2015). *Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist.* New York: PublicAffairs. ISBN 978-1-61039-632-5.
-
-- 
-- Mazuryk, T., & Gervautz, M. (1996). *Virtual Reality—History, applications, technology and future*. Technical Report, TU Wien.
-- Milgram, P., & Kishino, F. (1994). *A Taxonomy of Mixed Reality Visual Displays*. IEICE Transactions on Information and Systems.
-- Slater, M. (2009). *Place illusion and plausibility can lead to realistic behaviour in immersive virtual environments*. Philosophical Transactions of the Royal Society.
+[^21]: Kurkjian, Stephen (2015). Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist. PublicAffairs.
