@@ -102,13 +102,13 @@ Wie in der Darstellung zu erkennen, lässt sich die FBX-Datei in Blender öffnen
 {: style="text-align: justify;"}
 
 <img src="{{ site.baseurl }}/assets/images/Eingang.png" alt="Fehler: Eingangsportal">
-*Bild 1: Fehlerhafte Modellierung Eingangsportal*
+*Abbildung 1: Fehlerhafte Modellierung Eingangsportal*
 
 <img src="{{ site.baseurl }}/assets/images/Fenster.png" alt="Fehler: Fenster">
-*Bild 1: Fehlerhafte Modellierung Fenster*
+*Abbildung 2: Fehlerhafte Modellierung Fenster*
 
 <img src="{{ site.baseurl }}/assets/images/Stuck_Dach.png" alt="Fehler: Dachgesims">
-*Bild 1: Fehlerhafte Modellierung Dachgesims*
+*Abbildung 3: Fehlerhafte Modellierung Dachgesims*
 
 Insgesamt stellen das Modell eine gute Grundlage dar, um damit ein 3D-Objekt zu entwicklen, das für die VR-Anwendung genutzt werden kann, da das große (übergeordnete) Erscheinungbild des Gebäudes mit der Realität übereinstimmt. Gleichzeitig ist noch Modellierungarbeit nötig, um die beschriebenen Mängel des Modell auszubessern, damit die finale VR-Anwendung ein realistisches und immersives Ergebnis erzielt. 
 {: style="text-align: justify;"}
@@ -173,35 +173,40 @@ Für die Erstellung einer virtuellen Realität, wurde die Unreal Engine 5.X des 
 # 5. Entwicklung der VR-Anwendung
 
 ## Modellierung
-Die Modellierung der Villa erfolgte in Blender, wobei bereits die Grundstruktur des Gebäudes vorhanden war (s. Kapitel Daten). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
+Die Modellierung der Villa erfolgte in Blender, wobei die Grundstruktur des Gebäudes bereits vorhanden war (s. Kapitel Daten). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
 Wie bereits im Kapitel Daten beschrieben, wies das 3D-Modell der Ohlendorff'schen Villa einige kleinere Unstimmigkeiten auf. Zunächst wurden Lücken zwischen verschiedenen Objekten, wie beispielsweise zwischen dem Eingangsportal und der Gebäudewand, geschlossen. In einigen Fällen war es ausreichend, die Position der Objekte leicht zu justieren, während an anderen Stellen gezielt Anpassungen an den Geometrien vorgenommen wurden. So wurden etwa die Lücken zwischen Fensterrahmen und Gebäudewand durch das gezielte Verschieben einzelner Vertices sowie durch Anpassungen der Skalierung entlang der Achsen im Modellierungsprogramm behoben.
 Des Weiteren wurden vier Fenster entfernt, die in das Dachmodell integriert worden waren. Die ursprünglich vorhandenen Fenster bestanden aus Volumenkörpern, die lediglich an den jeweiligen Positionen auf dem Dach platziert worden waren, ohne dass entsprechende Öffnungen im Dachmodell selbst existierten. Zudem waren an mehreren Gebäudeseiten die Fensterscheiben als eigenständige Volumenkörper modelliert, was in einigen Fällen dazu führte, dass sich zwei oder mehr überlappende Fensterscheiben an derselben Öffnung befanden. Diese überflüssigen Geometrien wurden entfernt, um eine saubere Modellstruktur zu gewährleisten.
-Darüber hinaus wurde das Dachgesims an der Eingangsseite der Villa überarbeitet. Hierbei wurden Überlappungen zwischen der Gebäudewand und dem Gesims beseitigt, sodass eine konsistente und stimmige Architektur entstand. Zudem wurde im Erdgeschoss eine zusätzliche Innenwand modelliert, wodurch der offene Bereich in eine kleine Eingangshalle und zwei annähernd gleich große Räume unterteilt wurde. Diese dienten später als Kunst- und Musikraum.
+Darüber hinaus wurde das Dachgesims an der Eingangsseite der Villa überarbeitet. Hierbei wurden Überlappungen zwischen der Gebäudewand und dem Gesims beseitigt, sodass eine konsistente und stimmige Architektur entstand. Zudem wurde im Erdgeschoss eine zusätzliche Innenwand modelliert, wodurch der offene Bereich in eine kleine Eingangshalle und zwei annähernd gleich große Räume unterteilt wurden. Diese dienten später als Kunst- und Musikraum.
 Zum Abschluss wurde eine Eingangstreppe hinzugefügt, um den Zugang zur Villa innerhalb der VR-Umgebung zu ermöglichen. Da die Außenwelt konzeptionell auf einer flachen Plattform mit keinen Höhenunterschieden angelegt wurde, war die Schaffung eines angepassten Eingangsbereichs erforderlich. Diese Herausforderung wurde durch die Modellierung der Treppe gelöst.
-
+{: style="text-align: justify;"}
 Aufgrund der begrenzten Projektzeit und der vielfältigen weiteren Aufgaben im Rahmen der VR-Entwicklung wurde entschieden, kleinere Unstimmigkeiten am Modell in Kauf zu nehmen. Dieser pragmatische Ansatz ermöglichte es, sich auf nachfolgende Arbeitsschritte zu konzentrieren und die Modellierung effizient abzuschließen, ohne dass die finalen immersiven Qualitäten der VR-Anwendung erheblich beeinträchtigt wurden. 
+{: style="text-align: justify;"}
 
 ## Texturierung
 Für realistische und immersive VR-Anwendungen sind Texturen von großer Bedeutzung. Durch Texturen werden 3D-Objekten Oberflächenmerkmale wie Farben, Muster und Materialeigenschaften verliehen, wodurch diese Objekte in der VR-Anwendung glaubwürdierg und ansprechender wirken.
-Durch den Einsatz von Techniken wie Texture Mapping, Bumpmapping und Parallax Mapping können Oberflächenstrukturen simuliert werden, die dem Benutzer das Gefühl vermitteln, sich in einer realen Umgebung zu befinden. Durch diese Methoden werden Details wie Rauheit, Glanz oder Unebenheiten dargestellt, ohne dad die Geometrie des Modells verändert werden muss, was sich auch positiv auf die Performacne der VR-Anwendung auswirkt. 
-Texture Mapping ist eine zentrale Technik in der Computergrafik, die es ermöglicht, zweidimensionale Bildinformationen (Texturen) auf dreidimensionale Modelle zu projizieren. In VR-Anwendungen trägt Texture Mapping entscheidend dazu bei, die visuelle Echtheit der VR-Umgebung zu steigern. Durch die präzise Platzierung von Texturen auf 3D-Modellen können spezifische Materialien wie Holz, Metall oder Stein realistisch nachbildet werden. Ein wichtiger Aspekt des Texture Mappings ist das UV-Mapping. Hierbei wird die Oberfläche eines 3D-Modells auf eine zweidimensionale Ebene "abgewickelt", um die Textur passgenau aufzubringen. Dieser Prozess stellt sicher, dass die Textur ohne Verzerrungen oder Unstimmigkeiten auf dem Modell erscheint, was für die visuelle Qualität unerlässlich ist  (Dörner et al., 2019).
-
-Da mit der Modellierung schon eine Einarbitung in Blender erfolgte, haben wir uns entschieden, die Texturierung ebenfalls mit Blender zu machen. Ein großer Vorteil von Blender bei der Textaurierung, dass ein Objekt mehrer Texturen aufweisen kann. Dafür können die einzelnen Faces ausgewählt werden, die einen Volumenkörper bilden und nur diesen eine bestimmte Textur zugewiesen werden. 
+Durch den Einsatz von Techniken wie Texture Mapping, Bumpmapping und Parallax Mapping können Oberflächenstrukturen simuliert werden, die dem Benutzer das Gefühl vermitteln, sich in einer realen Umgebung zu befinden. Durch diese Methoden werden Details wie Rauheit, Glanz oder Unebenheiten dargestellt, ohne das die Geometrie des Modells verändert werden muss, was sich auch positiv auf die Performacne der VR-Anwendung auswirkt. 
+Texture Mapping ist eine zentrale Technik in der Computergrafik, die es ermöglicht, zweidimensionale Bildinformationen (Texturen) auf dreidimensionale Modelle zu projizieren. In VR-Anwendungen trägt Texture Mapping entscheidend dazu bei, die visuelle Echtheit der VR-Umgebung zu steigern. Durch die präzise Platzierung von Texturen auf 3D-Modellen können spezifische Materialien wie Holz, Metall oder Stein realistisch nachbildet werden. Ein wichtiger Aspekt des Texture Mappings ist das UV-Mapping. Hierbei wird die Oberfläche eines 3D-Modells auf eine zweidimensionale Ebene "abgewickelt", um die Textur passgenau aufzubringen. Dieser Prozess stellt sicher, dass die Textur ohne Verzerrungen oder Unstimmigkeiten auf dem Modell erscheint, was für die visuelle Qualität unerlässlich ist  (Dörner et al., 2019)[^15].
+{: style="text-align: justify;"}
+Da mit der Modellierung schon eine Einarbitung in Blender erfolgte, haben wir uns entschieden, die Texturierung ebenfalls mit Blender zu machen. Ein großer Vorteil von Blender bei der Texturierung ist, dass ein Objekt mehrere Texturen aufweisen kann. Dafür können die einzelnen Faces ausgewählt werden, die einen Volumenkörper bilden und nur diesen Faces eine bestimmte Textur zugewiesen werden. 
 Um realitätsnahe Texturen zu schaffen, wurden frei verfügbare Texturen verwendet, die verschiedene Material- und Texturdaten enthielten, die in Blender importiert und gezielt auf 3D-Objekte angewendet wurden. Zu den wichtigsten Texture-Maps, die in diesem Projekt eingesetzt wurden, gehören:
-
-- Color – Die Grundfarbtextur des Materials, welche das visuelle Erscheinungsbild der Oberfläche bestimmt.
-- Normal Map – Enthält Informationen über die feinen Unebenheiten und Oberflächenstrukturen, ohne die Geometrie selbst zu verändern.
-- Roughness Map – Steuert den Reflexionsgrad der Oberfläche, wobei dunklere Bereiche glänzender und hellere matter erscheinen.
-- Metallic Map – Bestimmt, welche Bereiche der Textur metallisch erscheinen und welche nicht.
-
+{: style="text-align: justify;"}
+- **Color Map** – Die Grundfarbtextur des Materials, welche das visuelle Erscheinungsbild der Oberfläche bestimmt.
+- **Normal Map** – Enthält Informationen über die feinen Unebenheiten und Oberflächenstrukturen, ohne die Geometrie selbst zu verändern.
+- **Roughness Map** – Steuert den Reflexionsgrad der Oberfläche, wobei dunklere Bereiche glänzender und hellere matter erscheinen.
+- **Metallic Map** – Bestimmt, welche Bereiche der Textur metallisch erscheinen und welche nicht.
+{: style="text-align: justify;"}
 Diese Texturen wurden in Blender über den Shader Editor in das Materialsystem eingebunden und mit einem Principled BSDF Shader kombiniert, um eine realistische Licht- und Materialinteraktion zu erzeugen.
-
+{: style="text-align: justify;"}
 Da die importierten Texturen nicht automatisch optimal auf die 3D-Geometrie gemappt sind, musste ein manuelles UV-Mapping durchgeführt werden. Dabei wurden folgende Schritte vorgenommen:
-
-- UV Unwrapping – Die Mesh-Oberflächen wurden entfaltet, um eine zweidimensionale Darstellung für die Texturen zu erstellen.
-- UV-Optimierung – Durch das manuelle Verschieben der UV-Inseln in der UV-Editing-Ansicht wurde sichergestellt, dass keine Verzerrungen oder falschen Skalierungen auftraten.
-
+{: style="text-align: justify;"}
+- **UV Unwrapping** – Die Mesh-Oberflächen wurden entfaltet, um eine zweidimensionale Darstellung für die Texturen zu erstellen.
+- **UV-Optimierung** – Durch das manuelle Verschieben der UV-Inseln in der UV-Editing-Ansicht wurde sichergestellt, dass keine Verzerrungen oder falschen Skalierungen auftraten.
+{: style="text-align: justify;"}
 Um sicherzustellen, dass die Texturen korrekt ausgerichtet sind, wurden verschiedene Mapping-Techniken wie Box Projection Mapping und Manual Projection Painting genutzt. Ziel der Texturierung war nicht die exakte Nachbildung der realen Oberflächen der Villa, sondern eine stilisierte, dennoch realistische Darstellung, die sich in das Gesamtkonzept der virtuellen Umgebung einfügt. Die gewählten Texturen sollten den visuellen Kontrakt zur Umgebung unterstreichen und die Villa damit in den Fokus rücken und die narrative Idee des Gesamtkonzepts unterstützen.
+{: style="text-align: justify;"}
+
+![Texturen der Villa]({{ site.url }}{{ site.baseurl }}/assets/images/villa_close_Opt.gif)
+*Abbildung 5: In der Animation können unterschiedliche Texturen der Villa betrachtet werden.*
 
 ## Innenraumgestaltung
 ### Kunstzimmer
@@ -280,6 +285,7 @@ Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver 
 [^18]: Helmholz, P. & Zlatanova, Sisi & Barton, Jack & Aleksandrov, Mitko (2020). GEOINFORMATION FOR DISASTER MANAGEMENT 2020 (Gi4DM2020): PREFACE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. XLIV-3/W1-2020. 1-3. 10.5194/isprs-archives-XLIV-3-W1-2020-1-2020. 
 [^19]: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
 [^20]: Epic Games (2023). Virtual Reality Development with Unreal Engine. Zugriff auf: https://www.unrealengine.com (10. März 2025).
+ 
 
 
 
