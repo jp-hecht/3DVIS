@@ -8,7 +8,7 @@ author_profile: true
 author:
   name     : "Madelaine Linek"
   avatar   : "/assets/images/jph.png"
-  bio      : "My awesome biography constrained to a sentence or two goes here."
+  bio      : 
   location : "Hamburg, USA"
   links:
     - label: "Mastodon"
