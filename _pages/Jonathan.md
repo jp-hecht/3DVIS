@@ -3,6 +3,7 @@ title: "Bericht von Jonathan Hecht"
 permalink: /Jonathan/
 toc: true
 toc_label: "Inhaltsverzeichnis"
+author_profile: true
 author_profile: 
   name: "Jonathan Hecht"
   avatar: "/assets/images/JPH/jph.png"
