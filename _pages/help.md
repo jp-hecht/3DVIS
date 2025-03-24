@@ -53,3 +53,5 @@ Lautstärken prüfen
 * Bilder 
 * (MUsik)
 
+* Marlene Eingangsportal an Wand und Fenster an Vorderseite nochmal anpassen
+* Stufe vlt. nochmal als FBX exportieren und einsetzen
