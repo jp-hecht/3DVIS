@@ -20,6 +20,7 @@ header:
   overlay_image: "/assets/images/JPH/villa_sketch.jpg"
   caption: "Bildquelle: [**ohlendorffsche.de**](https://ohlendorffsche.de/historie/)"
   overlay_filter: 0.5
+  
 ---
 
 # 1. Einleitung
@@ -206,7 +207,7 @@ Im Musikzimmer wurden sieben Instrumente aus unterschiedlichen Regionen der Welt
 {: style="text-align: justify;"}
 
 # 4. Fazit  
-Insgesamt konnte die in der Konzeption geplante VR-Anwendung in weiten Teilen erfolgreich umgesetzt werden. Besonders der detailreiche Innenbereich des Hauses sowie der stilisierte Außenbereich tragen zu einem stimmigen Gesamteindruck bei. Neben dem Gesamteindruck sind konnten erfolgreich und zielführend Geodaten verwendet werden. Ebenfalls konnte mit der verwendeten Hardware eine Framerate und folglich eine gute Performance beobachtet werden, welches auf bewusste Entscheidungen in der Konzeption zurückzuführen ist. Zu den positiven Aspekten können sicherlich auch vor den Rahmenbedingungen, wie der fehlend Erfahrungen der Gruppenmitgliedern in 3D Game Engines, sowie der erhöhten Komplexität einer Gruppenarbeit gesehen werden. 
+Insgesamt konnte die in der Konzeption geplante VR-Anwendung in weiten Teilen erfolgreich umgesetzt werden. Besonders der detailreiche Innenbereich des Hauses sowie der stilisierte Außenbereich tragen zu einem stimmigen Gesamteindruck bei. Neben dem Gesamteindruck sind konnten erfolgreich und zielführend Geodaten verwendet werden. Ebenfalls konnte mit der verwendeten Hardware eine Framerate und folglich die Reduktion der Wahrscheinlichkeit von Motion Sickness erreicht werden, welches auf bewusste Entscheidungen in der Konzeption zurückzuführen ist. In Bezug auf die Performance kann auch angemerkt werden, dass es mit einer Ausnahme (siehe nächster Abschnitt) nur Warn- und Fehlermeldungen gibt, die erwartbar sind und nicht ohen größeren Aufwand gelöst werden können. Zu den positiven Aspekten können des Weiteren auch vor den Rahmenbedingungen, wie der fehlend Erfahrungen der Gruppenmitgliedern in 3D Game Engines, sowie der erhöhten Komplexität einer Gruppenarbeit gesehen werden.
 {: style="text-align: justify;"}
 Bei detailierter Betrachung können jedoch einige Herausforderungen vorgefunden werden. Zu den Aspekten zählen:
 {: style="text-align: justify;"}
