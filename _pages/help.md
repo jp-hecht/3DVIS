@@ -55,3 +55,14 @@ Lautstärken prüfen
 
 * Marlene Eingangsportal an Wand und Fenster an Vorderseite nochmal anpassen
 * Stufe vlt. nochmal als FBX exportieren und einsetzen
+
+# Controller
+* rechter controller
+    * pad laufen berührung ; drücken trackpad schnell lafuen
+    * grab ist grab mit links oder rechgts
+    * trigger submit code rechts
+* rechts controller
+    * trigger springen
+
+
+ tür auf/zu -> links 
