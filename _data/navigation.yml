@@ -11,5 +11,5 @@ main:
     url: /Madelaine/
   - title: "Marlene"
     url: /Marlene/
-  - title: "Hilfe!"
-    url: /help/
+  # - title: "Hilfe!"
+  #   url: /help/
