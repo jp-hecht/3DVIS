@@ -256,8 +256,39 @@ Weiterführende Details zur technischen Umsetzung der Außenwelt können dem Ber
 {: style="text-align: justify;"}
 
 ## Interaktionen
+Ziel der Interaktionen war es, eine intuitive und immersive Nutzung der virteullen Umgebung zu ermöglichen.
+{: style="text-align: justify;"}
+Die Bewegung des Charakters erfolgt über den rechten HTC Vive Controller, wobei die Blickrichtung der Kamera die Laufrichtung bestimmt. Über die Funktion Add Movement Input wird der Richtungsvektor skaliert, der für die Veränderung der Koordinaten des Charakters sorgt. Dieser Mechanismus ermöglicht eine präzise Fortbewegung. Zusätzlich gibt es einen MOVE_FAST-Modus, der durch eine separate Eingabe aktiviert wird und eine schnellere Fortbewegung erlaubt, um die Außenwelt der VR-Anwendung schneller zu erkunden.
+{: style="text-align: justify;"}
+Die Grab-Funktion ermöglicht das Aufnehmen einer Lupe mit beiden Händen. Wird ein Objekt gegriffen, wird die physikalische Simulation deaktiviert, sodass es stabil bleibt und nicht durch äußere Einflüsse bewegt wird. Das Objekt wird dann an die jeweilige Hand des Spielers angehängt, um eine realistische Handhabung zu ermöglichen.
+{: style="text-align: justify;"}
+Weitere Interaktionen basieren auf kollisionsgesteuerten Mechaniken. Dadurch werdend die Zahlen, die auf drei Bildern versteckt sind erst sichtbar, wenn sich der Spieler in die Nähe eines bestimmten Bereichs bewegt. Die Truhe, die ein weiteres gestohlenes Kunstwerk enthält, kann nur durch die Eingabe eines korrekten Codes geöffnet werden. Nach der erfolgreichen Eingabe wird ein akustisches Signal abgespielt, die Truhe öffnet sich und das gestohlene Gemälde wird erscheint in der Truhe.
+{: style="text-align: justify;"}
+Für eine detailliertere Beschreibung dieser Interaktionsmechaniken wird auf den Bericht von Madelaine Linek verwiesen.
 
 # 6. Fazit & Ausblick
+Mit Rückblick auf die Projektarbeit kann festgehalten werden, dass das entwickelte Konzept einer stilisierten 3D-Karte mit Fokus auf die Villa, erfolgreich in der virtuellen Umgebung umgestzt werden konnte. Die geplanten Interaktionsmechaniken, Bewegungssteugen und die Interaktionen der Objekte funktionieren wie vorgesehen, sodass die Anwendung ein immersives Erlebnis bietet.
+{: style="text-align: justify;"}
+Visuell wurde eine ansprechende Darstellung geschaffen, die sowohl stilistisch als auch funktional eine interessant ist. Durch den gezielten Einsatz von Texturen, Lichteffekten und detaillierten 3D-Modellen entstand eine Umgebung, die die Atmosphäre der virtuellen Welt unterstützt und den Nutzer visuell anspricht.  
+{: style="text-align: justify;"}
+Zudem weist die Anwendung eine hohe Performance auf. Trotz der grafischen und interaktiven Komplexität läuft sie flüssig und reagiert präzise auf Nutzereingaben. Lediglich einige erwartbare Warnungen innerhalb der Entwicklungsumgebung traten auf, die jedoch keine negativen Auswirkungen auf die Funktionalität oder Stabilität der Anwendung haben.
+{: style="text-align: justify;"}
+
+Neben dem positiven Fazit zum Erreichen der Konzeptidee, gibt es vielseitige Optimierungsmöglichkeiten, die in zukünftigen Projekten beachtete werden sollten. Erstens würde eine bessere Versionkonteole helfen, Änderunegn effizienter nachzuverfolgen und potenzuelle Fehler fühzeitzig zu erkenne. Außerdem würde es die gleichzeitge Bearbeitung des Projekts durch mehere Personen deutlich vereinfachen. 
+{: style="text-align: justify;"}
+Zweitens liegt noch viel Potenzial in den Blueprints. Dafür wäre eine Einarbeitung in Best Paractice Beispielen und ein einheitliches Setup für die Nutzung von Blueprints sinnvoll. Dies würde die strukturiere Weiterentwickung unterstützen und die Übersichtlichkeit des Codes verbessern. Eventuell würden auch einfache Fehler, die teilweise viel Zeit kosten, so vermieden werden können. Ebenso könnten einige Blueprints weiter verbessert werden, um bestimmte Mechaniken noch effizienter zu gestalten.
+{: style="text-align: justify;"}
+Ein weiterer Bereich mit Verbesserungspotenzial ist das Testen, insbesondere bei der Texturierung. Durch intensivere Tests könnten mögliche Unstimmigkeiten frühzeitig erkannt und die visuelle Qualität weiter optimiert werden. Dies gilt sowohl für den Außenbereich, in dem mögliche stilisitische Anpassungen interessant gewesen wären. Andererseits für die Textur der Villa. Da die Villa in Blender texturiert wurde, war es teilweise umständlch, Texturen schnell zu überprüfen. Und durch die unterschiedlichen Lichtverhältnisse in Blender und Unreal Engine sahen machen Texturen in den beiden Programmen deutlich unterschiedlich aus. 
+{: style="text-align: justify;"}
+Zudem wäre es hilfreich, bessere Informationen für Spielerinnen bereitzustellen, um die Navigation innerhalb der VR-Anwendung zu erleichtern. Dies könnte durch gezielte Hinweise, interaktive Anleitungen oder visuelle Markierungen umgesetzt werden, um eine noch intuitivere Benutzererfahrung zu ermöglichen.
+{: style="text-align: justify;"}
+Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Zeitmanagements. Da für uns alle die Entwicklung einer VR-Anwendung und die dafür notwendigen Softwares neu waren, wäre es hilfreich gewesen mehr Pufferzeiten für unvorhergesehene Herausforderungen einzuplanen. Ebenso wäre es möglich gewesen bereits mit den Blueprints anzufangen, bevor die Texturierung der Villa abgeschlossen war. Damit hätte die Zeit effektiver genutzt werden können und am Ende wäre mehr Zeit übrig geblieben für kleine Details und den finalen Feinschliff.
+{: style="text-align: justify;"}
+
+# Kurze Bedinungsnaleitung der VR-Anwendung
+
+
+
 
 <script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
