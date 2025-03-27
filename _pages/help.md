@@ -55,6 +55,11 @@ Lautstärken prüfen
 
 * Marlene Eingangsportal an Wand und Fenster an Vorderseite nochmal anpassen
 * Stufe vlt. nochmal als FBX exportieren und einsetzen
+* Fenster an der Hinterseite auch verschoben
+* widget ist die ganze Zeit sichtbar
+* Kann man beide türen aufmachen
+* pawn kleiner?
+* 
 
 # Controller
 * rechter controller
