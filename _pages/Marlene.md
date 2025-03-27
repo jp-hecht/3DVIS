@@ -285,8 +285,9 @@ Zudem wäre es hilfreich, bessere Informationen für Spielerinnen bereitzustelle
 Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Zeitmanagements. Da für uns alle die Entwicklung einer VR-Anwendung und die dafür notwendigen Softwares neu waren, wäre es hilfreich gewesen mehr Pufferzeiten für unvorhergesehene Herausforderungen einzuplanen. Ebenso wäre es möglich gewesen bereits mit den Blueprints anzufangen, bevor die Texturierung der Villa abgeschlossen war. Damit hätte die Zeit effektiver genutzt werden können und am Ende wäre mehr Zeit übrig geblieben für kleine Details und den finalen Feinschliff.
 {: style="text-align: justify;"}
 
-# Kurze Bedinungsnaleitung der VR-Anwendung
-
+# 7. Schematische Bedinungsnaleitung der VR-Anwendung
+<img src="{{ site.baseurl }}/assets/images/Kurzanleitung.png" alt="Fehler: Kurzanleitung">
+*Abbildung 1: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 
 
@@ -309,7 +310,7 @@ Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Z
     }
 </style>
 
-# 7. Literatur
+# 8. Literatur
 [^1]: Slater, Mel & Sanchez-Vives, Maria (2016). Enhancing Our Lives with Immersive Virtual Reality. Frontiers in Robotics and AI. 3. 10.3389/frobt.2016.00074. 
 [^2]: Burdea, Grigore & Coiffet, Philippe (2003). Virtual Reality Technology. Presence. 12. 663-664. 10.1162/105474603322955950. 
 [^3]: Wheatstone, Charles (2011). Contributions to the Physiology of Vision.—Part the First. On some remarkable, and hitherto unobserved, Phenomena of Binocular Vision. The Scientific Papers of Sir Charles Wheatstone. Cambridge University Press. pg. 225–283
