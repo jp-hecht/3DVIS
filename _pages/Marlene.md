@@ -268,26 +268,20 @@ Für eine detailliertere Beschreibung dieser Interaktionsmechaniken wird auf den
 
 # 6. Fazit & Ausblick
 Mit Rückblick auf die Projektarbeit kann festgehalten werden, dass das entwickelte Konzept einer stilisierten 3D-Karte mit Fokus auf die Villa, erfolgreich in der virtuellen Umgebung umgestzt werden konnte. Die geplanten Interaktionsmechaniken, Bewegungssteugen und die Interaktionen der Objekte funktionieren wie vorgesehen, sodass die Anwendung ein immersives Erlebnis bietet.
-{: style="text-align: justify;"}
 Visuell wurde eine ansprechende Darstellung geschaffen, die sowohl stilistisch als auch funktional eine interessant ist. Durch den gezielten Einsatz von Texturen, Lichteffekten und detaillierten 3D-Modellen entstand eine Umgebung, die die Atmosphäre der virtuellen Welt unterstützt und den Nutzer visuell anspricht.  
-{: style="text-align: justify;"}
 Zudem weist die Anwendung eine hohe Performance auf. Trotz der grafischen und interaktiven Komplexität läuft sie flüssig und reagiert präzise auf Nutzereingaben. Lediglich einige erwartbare Warnungen innerhalb der Entwicklungsumgebung traten auf, die jedoch keine negativen Auswirkungen auf die Funktionalität oder Stabilität der Anwendung haben.
 {: style="text-align: justify;"}
 
 Neben dem positiven Fazit zum Erreichen der Konzeptidee, gibt es vielseitige Optimierungsmöglichkeiten, die in zukünftigen Projekten beachtete werden sollten. Erstens würde eine bessere Versionkonteole helfen, Änderunegn effizienter nachzuverfolgen und potenzuelle Fehler fühzeitzig zu erkenne. Außerdem würde es die gleichzeitge Bearbeitung des Projekts durch mehere Personen deutlich vereinfachen. 
-{: style="text-align: justify;"}
 Zweitens liegt noch viel Potenzial in den Blueprints. Dafür wäre eine Einarbeitung in Best Paractice Beispielen und ein einheitliches Setup für die Nutzung von Blueprints sinnvoll. Dies würde die strukturiere Weiterentwickung unterstützen und die Übersichtlichkeit des Codes verbessern. Eventuell würden auch einfache Fehler, die teilweise viel Zeit kosten, so vermieden werden können. Ebenso könnten einige Blueprints weiter verbessert werden, um bestimmte Mechaniken noch effizienter zu gestalten.
-{: style="text-align: justify;"}
 Ein weiterer Bereich mit Verbesserungspotenzial ist das Testen, insbesondere bei der Texturierung. Durch intensivere Tests könnten mögliche Unstimmigkeiten frühzeitig erkannt und die visuelle Qualität weiter optimiert werden. Dies gilt sowohl für den Außenbereich, in dem mögliche stilisitische Anpassungen interessant gewesen wären. Andererseits für die Textur der Villa. Da die Villa in Blender texturiert wurde, war es teilweise umständlch, Texturen schnell zu überprüfen. Und durch die unterschiedlichen Lichtverhältnisse in Blender und Unreal Engine sahen machen Texturen in den beiden Programmen deutlich unterschiedlich aus. 
-{: style="text-align: justify;"}
 Zudem wäre es hilfreich, bessere Informationen für Spielerinnen bereitzustellen, um die Navigation innerhalb der VR-Anwendung zu erleichtern. Dies könnte durch gezielte Hinweise, interaktive Anleitungen oder visuelle Markierungen umgesetzt werden, um eine noch intuitivere Benutzererfahrung zu ermöglichen.
-{: style="text-align: justify;"}
 Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Zeitmanagements. Da für uns alle die Entwicklung einer VR-Anwendung und die dafür notwendigen Softwares neu waren, wäre es hilfreich gewesen mehr Pufferzeiten für unvorhergesehene Herausforderungen einzuplanen. Ebenso wäre es möglich gewesen bereits mit den Blueprints anzufangen, bevor die Texturierung der Villa abgeschlossen war. Damit hätte die Zeit effektiver genutzt werden können und am Ende wäre mehr Zeit übrig geblieben für kleine Details und den finalen Feinschliff.
 {: style="text-align: justify;"}
 
 # 7. Schematische Bedinungsnaleitung der VR-Anwendung
 <img src="{{ site.baseurl }}/assets/images/Kurzanleitung.png" alt="Fehler: Kurzanleitung">
-*Abbildung 1: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
+*Abbildung 6: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 
 
