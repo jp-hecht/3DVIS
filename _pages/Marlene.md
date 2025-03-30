@@ -1,12 +1,12 @@
 ---
-title: "Bericht von Marlene"
+title: "Bericht von Marlene Arnold"
 permalink: /Marlene/
 toc: true
 toc_label: "Inhaltsverzeichnis"
 author_profile: true
 author:
   name     : "Marlene Arnold"
-  avatar   : "/assets/images/jph.png"
+  avatar   : "/assets/images/MWA/profile_picture.png"
   bio      : "M.Sc. Geodäsie und Geoinformatik"
   location : "Hamburg, Germany"
   links:
@@ -101,13 +101,13 @@ Die zur Verfügung gestellten Daten für das Modell der Ohlendorff'schen Villa e
 Wie in der Darstellung zu erkennen, lässt sich die FBX-Datei in Blender öffnen und betrachten. Auf den ersten Blick wirkt das Modell passend und mit der Realität übereinstimmend. Auch im Vergleich mit den Fotos, lässt sich das Modell als zutreffend bewerten. Bei näherer Betrachtung fällt jedoch auf, dass das Modell an einigen Stellen unsauber ist. Zum Beispiel ist zwischen Eingangsportal und Hauswand eine nicht unerhebliche Lücke. Außerdem sind die Fenster an der westlichen Hauswand nicht passend in die Aussparungen der Hauswand eingefügt worden, so sind auch hier Lücken zwischen Hauswand und Fensterrahmen zu finden. Ein weiteres Beispiel für die Mängel der Modellierung ist das Dachgesims an der Nordseite des Gebäudes, welches nicht die Verzierungen wie an der anderen Seiten besitzt, und zusätzlich, vermutlich durch die Überlagerungen mehrerer Objekte, ein Flackern aufweist.
 {: style="text-align: justify;"}
 
-<img src="{{ site.baseurl }}/assets/images/Eingang.png" alt="Fehler: Eingangsportal">
+<img src="{{ site.baseurl }}/assets/images/MWA/Eingang.png" alt="Fehler: Eingangsportal">
 *Abbildung 1: Fehlerhafte Modellierung Eingangsportal*
 
-<img src="{{ site.baseurl }}/assets/images/Fenster.png" alt="Fehler: Fenster">
+<img src="{{ site.baseurl }}/assets/images/MWA/Fenster.png" alt="Fehler: Fenster">
 *Abbildung 2: Fehlerhafte Modellierung Fenster*
 
-<img src="{{ site.baseurl }}/assets/images/Stuck_Dach.png" alt="Fehler: Dachgesims">
+<img src="{{ site.baseurl }}/assets/images/MWA/Stuck_Dach.png" alt="Fehler: Dachgesims">
 *Abbildung 3: Fehlerhafte Modellierung Dachgesims*
 
 Insgesamt stellen das Modell eine gute Grundlage dar, um damit ein 3D-Objekt zu entwickeln, das für die VR-Anwendung genutzt werden kann, da das große (übergeordnete) Erscheinungsbild des Gebäudes mit der Realität übereinstimmt. Gleichzeitig ist noch Modellierungsarbeit nötig, um die beschriebenen Mängel des Modelles auszubessern, damit die finale VR-Anwendung ein realistisches und immersives Ergebnis erzielt. 
@@ -207,7 +207,7 @@ Da die importierten Texturen nicht automatisch optimal auf die 3D-Geometrie gema
 Um sicherzustellen, dass die Texturen korrekt ausgerichtet sind, wurden verschiedene Mapping-Techniken wie Box Projection Mapping und Manual Projection Painting genutzt. Ziel der Texturierung war nicht die exakte Nachbildung der realen Oberflächen der Villa, sondern eine stilisierte, dennoch realistische Darstellung, die sich in das Gesamtkonzept der virtuellen Umgebung einfügt. Die gewählten Texturen sollten den visuellen Kontrakt zur Umgebung unterstreichen und die Villa damit in den Fokus rücken und die narrative Idee des Gesamtkonzepts unterstützen.
 {: style="text-align: justify;"}
 
-![Texturen der Villa]({{ site.url }}{{ site.baseurl }}/assets/images/villa_close_Opt.gif)
+![Texturen der Villa]({{ site.url }}{{ site.baseurl }}/assets/images/MWA/villa_close_Opt.gif)
 *Abbildung 5: In der Animation können unterschiedliche Texturen der Villa betrachtet werden.*
 
 ## Innenraumgestaltung
@@ -229,6 +229,9 @@ The Concert gilt als das wertvollste gestohlene Kunstwerk der Welt. Es wurde 199
 Diese interaktive Gestaltung des Kunstzimmers ermöglicht es den Besuchern, nicht nur die Kunstwerke zu bewundern, sondern auch aktiv an der Entdeckung des verborgenen Meisterwerks teilzunehmen.
 {: style="text-align: justify;"}
 
+![Bilck ins Kunstzimmer]({{ site.url }}{{ site.baseurl }}/assets/images/MWA/kunst_opt.gif)
+*Abbildung 6: 360° Schwenk durch das Kunstzimmer.*
+
 ### Musikzimmer
 Das Musikzimmer der Villa wurde so konzipiert, dass es Besuchende auf eine akustische Reise durch verschiedene Kulturen und Epochen mitnimmt. Im Mittelpunkt stehen sieben Musikinstrumente aus unterschiedlichen Teilen der Welt:
 {: style="text-align: justify;"}
@@ -244,6 +247,9 @@ Das Musikzimmer der Villa wurde so konzipiert, dass es Besuchende auf eine akust
 Um eine immersive Erfahrung zu schaffen, reagiert der Raum dynamisch auf die Bewegungen der Besucherinnen. Sobald man sich einem der Instrumente nähert, wird eine Klangsequenz abgespielt, die das jeweilige Instrument in einem typischen musikalischen Kontext präsentiert. Dies ermöglicht ein tiefgehendes Eintauchen in verschiedene Klangwelten.
 Durch diese Gestaltung wird nicht nur ein visueller, sondern auch ein auditiver Zugang zu den ausgestellten Instrumenten ermöglicht. Dies verstärkt die Immersion in der virtuellen Umgebung und lädt dazu ein, die klangliche Vielfalt verschiedener Kulturen aktiv zu erleben.
 {: style="text-align: justify;"}
+
+![Blick ins Musikzimmer]({{ site.url }}{{ site.baseurl }}/assets/images/MWA/music_opt.gif)
+*Abbildung 7: 360° Schwenk durch das Musikzimmer.*
 
 ## Außenwelt
 Die Außenwelt der VR-Anwendung basiert auf amtlichen Geodaten, die zunächst in QGIS aufbereitet und anschließend in Blender weiterverarbeitet wurden. Dazu gehörten Arten- und Biotopkartierungen, Straßen mit spezifischer Nutzung sowie Level of Detail II (LoD2) Gebäudedaten. Diese Daten wurden angepasst und optimiert, um eine realitätsnahe, aber performante Darstellung in der VR-Umgebung zu ermöglichen. Für die Detailgestaltung der Außenwelt wurden frei verfügbare 3D-Modelle von Bäumen, Laternen, Autos und weiteren Elementen integriert. Diese Modelle wurden in Blender modifiziert, beispielsweise durch Farbänderungen oder leichte Anpassungen der Form, um eine visuelle Vielfalt zu erzeugen, ohne die Performance negativ zu beeinflussen.  
@@ -281,8 +287,8 @@ Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Z
 {: style="text-align: justify;"}
 
 # 7. Schematische Bedinungsnaleitung der VR-Anwendung
-<img src="{{ site.baseurl }}/assets/images/Kurzanleitung.png" alt="Fehler: Kurzanleitung">
-*Abbildung 6: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
+<img src="{{ site.baseurl }}/assets/images/MWA/Kurzanleitung.png" alt="Fehler: Kurzanleitung">
+*Abbildung 8: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 
 
