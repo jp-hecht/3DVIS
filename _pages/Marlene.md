@@ -16,7 +16,7 @@ author:
 
 excerpt: "Ohlendorff’sche Villa - Vom Modell zur VR-Visualisierung"
 header:
-  overlay_image: "/assets/images/MWA/Logo_ohelndorffsche.png"
+  overlay_image: "/assets/images/MWA/logo_ohlendorffsche.png"
   caption: "Bildquelle: [**ohlendorffsche.de**](https://ohlendorffsche.de/)"
   overlay_filter: 0.5
 
