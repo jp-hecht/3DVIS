@@ -15,9 +15,11 @@ author:
       url: "https://github.com/marlene-winny"
 
 
-excerpt: "Ohlendorff’sche Villa - Vom Model zur VR-Visualisierung"
+excerpt: "Ohlendorff’sche Villa - Vom Modell zur VR-Visualisierung"
 header:
-  overlay_color: "#333"
+  overlay_image: "/assets/images/MWA/Logo_ohlendorffsche.png"
+  caption: "Bildquelle: [**ohlendorffsche.de**](https://ohlendorffsche.de/)"
+  overlay_filter: 0.5
 
 ---
 
