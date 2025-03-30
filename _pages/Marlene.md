@@ -6,7 +6,6 @@ toc_label: "Inhaltsverzeichnis"
 author_profile: true
 author:
   name     : "Marlene Arnold"
-  avatar   : "/assets/images/MWA/profile_picture.jpg"
   bio      : "M.Sc. Geodäsie und Geoinformatik"
   location : "Hamburg, Germany"
   links:
