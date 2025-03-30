@@ -6,7 +6,7 @@ toc_label: "Inhaltsverzeichnis"
 author_profile: true
 author:
   name     : "Marlene Arnold"
-  avatar   : "/assets/images/MWA/profile_picture.png"
+  avatar   : "/assets/images/MWA/profile_picture.jpg"
   bio      : "M.Sc. Geodäsie und Geoinformatik"
   location : "Hamburg, Germany"
   links:
@@ -23,8 +23,6 @@ header:
 
 ---
 
-
-[//]: # ()
 # 1. Einleitung
 In den letzten Jahrzehnten hat die Idee von Virtueller Realität (VR) an Bedeutung gewonnen und ist von einem wissenschaftlichen Konzept zu einer weit verbreiteten Technologie gewachsen. Inzwischen erlaubten spezialisierte Geräte wie VR-Headset und dazugehörigen Steuerungselementen ein immersives Erleben digitaler Welten. Die Bedeutung dieser Technologie wächst kontinuierlich und findet Anwendung in einer Vielzahl von Bereichen, darunter Medizin, Bildung, Industrie und Unterhaltung (Slater & Sanchez-Vives, 2016)[^1]. Im Rahmen des Kursen 3D-Visualisierung, sollen die Studierenden ihre Kenntnisse in der Modellierung und dreidimensionalen Visualisierung von Geodaten ausbauen. Ziel ist dabei die interaktive Begehung eines Gebäudes, das in eine ebenfalls modellierte und gestaltete Umwelt eingebettet ist. Der Vorteil einer 3D-Visualisierung von Geodaten liegt in der realitätsnahen Darstellung komplexer räumlicher Strukturen und erweitert die Analysemöglichkeiten in Bereichen wie Stadtplanung, Umweltmonitoring und Geowissenschaften. Für Geoinformatik-Studierende ist es daher vorteilhaft, sich mit diesen Technologien auseinander zu setzen, um eine Grundlage für fundierte Entscheidungen zu bieten.
 {: style="text-align: justify;"}
