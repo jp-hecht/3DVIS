@@ -125,11 +125,11 @@ Die aufbereiteten Modelle wurden im Anschluss in [Unreal Engine 5.X](https://www
 Das System der HTC Vive Pro setzt sich neben dem HMD aus zwei Motion-Controllern und zwei Tracking Sensoren zusammen. Mittels des Trackings kann das HMD, sowie die Motion-Controller im Raum verortet werden und ermöglichen die freie Bewegung einem Raum von ungefähr  4.5m × 4.5m. Mittels der Controller kann mit der VR Welt in Interaktion getreten werden. Ergänzend dazu sind im HMD ein Näherungssensor, ein Beschleunigungssensor und ein Gyroskop verbaut. Neben dem Display existieren Lautsprecher sowie haptische Rückmeldungen durch die Controller[^17].
 {: style="text-align: justify;"}
 
-### Implementierung
+# 4. Implementierung
 In den folgenden Abschnitten werden die unterschiedlichen Schritte und Details zur Implementierung der Konzeption genauer erläutert. Dabei wird von der Interaktion mit der Welt über die Objekten im Außenbereich in den Innenbereich gearbeitet.
 {: style="text-align: justify;"}
 
-#### Bewegung
+## Bewegung
 Um in Interaktion mit der VR Welt zu treten, wurden die Tasten des Controllers mit unterschiedlichen Funktionalitäten belegt. Neben der intuitiven freien Bewegung im 4.5m × 4.5m Raum des Trackingraums wurde das Trackpad des rechten Controllers mit einer Vorwärtsbewegung in zwei Geschwindigkeitsstufen belegt. Die Bewegungsrichtung wird, wie in der Realität, mittels der Blickrichtung bestimmt. Um kleinere Hindernisse zu überwinden, ist die Triggertaste des rechten Controllers mit dem Sprung des Nutzenden belegt. 
 {: style="text-align: justify;"}
 
@@ -138,7 +138,7 @@ Um in Interaktion mit der VR Welt zu treten, wurden die Tasten des Controllers m
 
 Neben der klassischen selbständigen Bewegung gibt es in der VR-Szene zwei Trigger, welche die Position der Spieler:in verändern. Hierdurch wird der Spielende von der Scheibe auf Höhe eines Heißluftballons teleportiert, um die vollständige Szene in unterschiedlichen Lichtstimmungen beobachten zu können.
 
-#### Außenbereich
+## Außenbereich
 Das relevant Gebiet wurde in QGIS eingezeichnet und in Blender importiert. Das einfache aber durch BlenderGIS richtig positionierte Polygon wurde daraufhin extrudiert. Damit die Nutzenden nicht aus der Welt fallen können, wurde eine Kollisionsbox um die Scheibe erzeugt. Auf dieser Scheibe wurden drei unterschiedliche amtliche Geodatensätze platziert. Als Hintergrund, der das Gebiet vollständig bedeckt, wurden Daten über den Arten- und Biotopschutz gewählt[^13]. Aufbauend darauf wurden die Feinkartierung der Straßen mit deren expliziter Nutzung hinzugefügt[^14]. Der Datensatz wurde im Vorfeld leicht modifiziert um auch die Wege innerhalb des Ohlendorff'schen Park darzustellen. Zuletzt wurden die Level of Detail I Daten von Hamburg verarbeitet, wobei die Daten zunächst in CityJSON konvertiert wurden und im Anschluss zugeschnitten wurden[^15]. Die Gebäude wurden ebenfalls entsprechend der attributierten Höhe extrudiert. Anschließend wurde die jeweiligen Modellen orientiert am angestrebten Kartenstil mit neutralen Farben eingefärbt. Die Wirkung des resultierenden Modelles stellt sich wie folgt dar:
 {: style="text-align: justify;"}
 
@@ -195,7 +195,7 @@ Zuletzt wurden unterschiedliche Sounds der Umgebung hinzugefügt. Dabei untersch
 ![Beispiel Generierung Wind]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/wind_no_Opt.gif)
 *Abbildung 8: Die Animation zeigt die Bewegung des VR-Spielers, welcher sich einer engeren Umgebung nähert. Sichtbar sind ebenfalls die Linien vor der Spieler:in, welche sich bei Annäherung an ein Objekt grün färben. Die aufgezeichneten blauen Werte zeigen eine Verringerung der Werte und dadurch auch eine Reduktion der Windgeräusche.*
 
-#### Ohlendorff'sche Villa und Innenbereich
+## Ohlendorff'sche Villa und Innenbereich
 
 Das vollständig modellierte Modell der Ohlendorff'schen Villa wurde im Anschluss texturiert. Die Textur ist wesentlich für die Immersion, da durch diese eine Simulation der Oberflächenmerkmale, wie Farbe, Muster oder Materialeigenschaften, von Objekt erreicht wird. Um eine ausreichend hohe Performance zu erreichen, ist es im Normalfall nicht möglich, bspw. einzelne Mauersteine samt Furchen zu modellieren.
 {: style="text-align: justify;"}
@@ -208,7 +208,7 @@ Der Innenbereich unserer VR-Anwendung wird durch eine bewegliche interaktive Tü
 Im Musikzimmer wurden sieben Instrumente aus unterschiedlichen Regionen der Welt ausgestellt. Die Auswahl der Instrumente reicht von einem Klavier bis zu in Europa unbekannten Instrumenten, wie der Djembe einer westafrikanischen Trommel. Als Interaktion in diesem Raum werden Beispielssoundsequenzen des Instrumentes auf Annäherung gespielt. Durch die Kombination aus visueller Betrachtung als auch prägnanten Musikbeispiel kann eine Verbindung zu virtuellen Welt hergestellt werden.
 {: style="text-align: justify;"}
 
-# 4. Fazit  
+# 5. Fazit  
 Insgesamt konnte die in der Konzeption geplante VR-Anwendung in weiten Teilen erfolgreich umgesetzt werden. Besonders der detailreiche Innenbereich des Hauses sowie der stilisierte Außenbereich tragen zu einem stimmigen Gesamteindruck bei. Neben dem Gesamteindruck konnten erfolgreich und zielführend Geodaten verwendet werden. Ebenfalls konnte mit der verwendeten Hardware eine Framerate und folglich die Reduktion der Wahrscheinlichkeit von Motion Sickness erreicht werden, was auf bewusste Entscheidungen in der Konzeption zurückzuführen ist. In Bezug auf die Performance kann auch angemerkt werden, dass es mit einer Ausnahme nur Warn- und Fehlermeldungen gibt, die erwartbar sind und nicht ohen größeren Aufwand gelöst werden können. Zu den positiven Aspekten können. Dies kann innerhalb der Rahmenbedingungen, wie die fehlenden Erfahrungen der Gruppenmitgliedern in 3D Game Engines oder der Modellierung, sowie die erhöhte Komplexität einer Gruppenarbeit eingeordnet werden.
 {: style="text-align: justify;"}
 Bei  detaillierter Betrachtung können jedoch einige Herausforderungen vorgefunden werden. Zu den Aspekten zählen:
