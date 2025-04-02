@@ -227,6 +227,8 @@ Zusammenfassend wurde mittels des Projektes eine gute Grundlage geschaffen, um i
 {: style="text-align: justify;"}
 
 
+<!-- <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0"></script> -->
+
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />

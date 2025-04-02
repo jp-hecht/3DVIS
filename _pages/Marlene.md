@@ -290,8 +290,8 @@ Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Z
 *Abbildung 8: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 
-
-<script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
+<!-- <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0"></script> -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
