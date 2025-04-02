@@ -35,7 +35,7 @@ Bevor jedoch tiefer in das Thema, sowie das studentische Projekt eingegangen wir
 {: style="text-align: justify;"}
 > VR leverages immersive technologies to simulate interactive virtual environments or virtual worlds with which users become subjectively involved and in which they feel physically present[^5]
 {: #def}
-Basierend auf diesem Verständnis wird im folgenden Bericht zunächst das reale Objekt beschrieben, sowie die Entscheidung des Modelles begründet. Im Anschluss folgt die Konzeption unserer VR Anwendung, ergänzende theoretische Überlegungen zur Anwendung und die verwendete Hard- und Software. Nachdem die Voraussetzungen festgelegt wurden, wird die Umsetzung konkretisiert, sowie die Limitierungen samt Fazit aufgezeigt. Innerhalb dieses Berichtes wird insbesondere die Entstehung des Außenbereiches, samt aller dazugehörigen Elemente, aufgegriffen. Andere Bereiche, wie beispielsweise die Texturierung des Gebäudes, werden überblicksartig erläutert, aber detaillierter in den beiden anderen Berichten ((Marlene Arnold)[https://jp-hecht.github.io/3DVIS/Marlene], (Madelaine Linek)[https://jp-hecht.github.io/3DVIS/Madelaine/]) der Gruppenarbeit aufgegriffen.
+Basierend auf diesem Verständnis wird im folgenden Bericht zunächst das reale Objekt beschrieben, sowie die Entscheidung des Modelles begründet. Im Anschluss folgt die Konzeption unserer VR Anwendung, ergänzende theoretische Überlegungen zur Anwendung und die verwendete Hard- und Software. Nachdem die Voraussetzungen festgelegt wurden, wird die Umsetzung konkretisiert, sowie die Limitierungen samt Fazit aufgezeigt. Innerhalb dieses Berichtes wird insbesondere die Entstehung des Außenbereiches, samt aller dazugehörigen Elemente, aufgegriffen. Andere Bereiche, wie beispielsweise die Texturierung des Gebäudes, werden überblicksartig erläutert, aber detaillierter in den beiden anderen Berichten ([Marlene Arnold](https://jp-hecht.github.io/3DVIS/Marlene), [Madelaine Linek](https://jp-hecht.github.io/3DVIS/Madelaine/)) der Gruppenarbeit aufgegriffen.
 {: style="text-align: justify;"}
 
 # 2. Ohlendorff'sche Villa
@@ -227,7 +227,7 @@ Zusammenfassend wurde mittels des Projektes eine gute Grundlage geschaffen, um i
 {: style="text-align: justify;"}
 
 
-<script type="module" src="https://unpkg.com/@google/model-viewer@latest"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@latest"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
