@@ -130,13 +130,15 @@ In den folgenden Abschnitten werden die unterschiedlichen Schritte und Details z
 {: style="text-align: justify;"}
 
 ## Bewegung
-Um in Interaktion mit der VR Welt zu treten, wurden die Tasten des Controllers mit unterschiedlichen Funktionalitäten belegt. Neben der intuitiven freien Bewegung im 4.5m × 4.5m Raum des Trackingraums wurde das Trackpad des rechten Controllers mit einer Vorwärtsbewegung in zwei Geschwindigkeitsstufen belegt. Die Bewegungsrichtung wird, wie in der Realität, mittels der Blickrichtung bestimmt. Um kleinere Hindernisse zu überwinden, ist die Triggertaste des rechten Controllers mit dem Sprung des Nutzenden belegt. 
+Um in Interaktion mit der VR Welt zu treten, wurden die Tasten des Controllers mit unterschiedlichen Funktionalitäten belegt. Neben der intuitiven freien Bewegung im 4.5m × 4.5m Raum des Trackingraums wurde das Trackpad des rechten Controllers mit einer Vorwärtsbewegung in zwei Geschwindigkeitsstufen belegt. Die Bewegungsrichtung wird, wie in der Realität, mittels der Blickrichtung bestimmt. Um kleinere Hindernisse zu überwinden, ist die Triggertaste des rechten Controllers mit dem Sprung des Nutzenden belegt. Neben der klassischen selbständigen Bewegung gibt es in der VR-Szene zwei Trigger, welche die Position der Spieler:in verändern. Hierdurch wird der Spielende von der Scheibe auf Höhe eines Heißluftballons teleportiert, um die vollständige Szene in unterschiedlichen Lichtstimmungen beobachten zu können.
+{: style="text-align: justify;"}
+Wenn der rechte Controller mit der Bewegungssteuerung des VR Pawns belegt ist, wird der linke Controller verwendet, um in Interaktion mit der Welt zu treten. So kann die Lupe über die Griffe aufgehoben werden, die Eingabe im Widget mittels des Triggers getätigt werden oder die Tür durchs Trackpad geöffnet werden.
+{: style="text-align: justify;"}
+Zusammenfassend ist die Tastenbelegung, wie folgt festgelegt wurden:
 {: style="text-align: justify;"}
 
-**Infos von Madelaine ergänzen**
-**Grafik dazu &rarr; Marlene!**
-
-Neben der klassischen selbständigen Bewegung gibt es in der VR-Szene zwei Trigger, welche die Position der Spieler:in verändern. Hierdurch wird der Spielende von der Scheibe auf Höhe eines Heißluftballons teleportiert, um die vollständige Szene in unterschiedlichen Lichtstimmungen beobachten zu können.
+![Bedienungsanleitung]({{ site.baseurl }}/assets/images/MWA/Kurzanleitung.png)
+*Abbildung 5: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 ## Außenbereich
 Das relevant Gebiet wurde in QGIS eingezeichnet und in Blender importiert. Das einfache aber durch BlenderGIS richtig positionierte Polygon wurde daraufhin extrudiert. Damit die Nutzenden nicht aus der Welt fallen können, wurde eine Kollisionsbox um die Scheibe erzeugt. Auf dieser Scheibe wurden drei unterschiedliche amtliche Geodatensätze platziert. Als Hintergrund, der das Gebiet vollständig bedeckt, wurden Daten über den Arten- und Biotopschutz gewählt[^13]. Aufbauend darauf wurden die Feinkartierung der Straßen mit deren expliziter Nutzung hinzugefügt[^14]. Der Datensatz wurde im Vorfeld leicht modifiziert um auch die Wege innerhalb des Ohlendorff'schen Park darzustellen. Zuletzt wurden die Level of Detail I Daten von Hamburg verarbeitet, wobei die Daten zunächst in CityJSON konvertiert wurden und im Anschluss zugeschnitten wurden[^15]. Die Gebäude wurden ebenfalls entsprechend der attributierten Höhe extrudiert. Anschließend wurde die jeweiligen Modellen orientiert am angestrebten Kartenstil mit neutralen Farben eingefärbt. Die Wirkung des resultierenden Modelles stellt sich wie folgt dar:
@@ -177,23 +179,23 @@ Im Kontext dieser Implementierung wird auch ermöglicht, unterschiedliche Lichte
 {: style="text-align: justify;"}
 
 ![Beispiel Tag-Nacht]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Island_Day_Night_Opt.gif)
-*Abbildung 5: Überblick eines Tag-Nacht-Rhythmuses über die ganze Insel. Neben der Veränderung des Lichtes lässt sich bereits die Bewegung der Fahrzeuge erkennen.*
+*Abbildung 6: Überblick eines Tag-Nacht-Rhythmuses über die ganze Insel. Neben der Veränderung des Lichtes lässt sich bereits die Bewegung der Fahrzeuge erkennen.*
 {: #haus}
 
 ![Beispiel Tag-Nacht]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Haus_Day_Night_Opt.gif)
-*Abbildung 6: Detailaufnahme des Tag-Nacht Rhythmuses inklusive der sichtbaren Veränderung der Innenbeleuchtung*
+*Abbildung 7: Detailaufnahme des Tag-Nacht Rhythmuses inklusive der sichtbaren Veränderung der Innenbeleuchtung*
 
 Um die hier sichtbaren Fahrzeuge zu bewegen, wurden diese in Blender mittels Rigacar vorbereitet, sodass aus einem statischen Netz ein Skelettnetz erzeugt wurde. Hierdurch wurden die Größe vereinheitlicht, die einzelnen Räder bewegbar gemacht und der Drehpunkt für den späteren Blueprint aufbereitet. In der Theorie ist es mit einem solchen Fahrzeug möglich, dass ein Actor einsteigen und fahren kann. Dem jeweiligen Fahrzeug wurde ein Blueprint hinzugefügt, der die Fahrzeuge auf einem Spline bewegen lässt und diesen vorher selbständig auffindet. Insgesamt wurde je ein Spline für jede Fahrtrichtung implementiert. Außerhalb der Scheibe sind Markierungen gesetzt, welche die jeweiligen Fahrzeuge erkennen, auf eine Liste schreiben und sichtbar oder unsichtbar machen, je nachdem ob diese bereits auf der Liste existieren. Grundlegend versucht die Komponente, sobald der Spline gefunden wurde, zunächst die Position auf dem Spline zu bestimmen. Daraufhin sucht die Komponent ausgehend von der Front des Akteurs die nächste Zielposition und bewegt anschließend das Fahrzeug Richtung des Zieles. Dieser Prozess wiederholt sich, bis der Prozess gestoppt würde. Das Ergebnis stellt sich, wie folgt dar: 
 {: style="text-align: justify;"}
 
 ![Beispiel Bewegung des Fahrzeugs]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/Car_Move_Opt.gif)
-*Abbildung 7: In der Animation sind drei fahrende Fahrzeuge sichtbar. Der Sportwagen wurde für die Animation an einer ungewöhnlichen Stelle positioniert und fand den Spline automatisiert.*
+*Abbildung 8: In der Animation sind drei fahrende Fahrzeuge sichtbar. Der Sportwagen wurde für die Animation an einer ungewöhnlichen Stelle positioniert und fand den Spline automatisiert.*
 
 Zuletzt wurden unterschiedliche Sounds der Umgebung hinzugefügt. Dabei unterscheidet sich die Komplexität der Sounderstellung. Für die sich bewegenden Fahrzeuge wurde relativ einfach ein Motorensound hinzugefügt und überall in der Welt wurden Vogelgeräusche hinterlegt. Die Vogelgeräusche wurden so implementiert, dass jeweils zufällig zwei von acht möglich Sounds kombiniert in Wiederholung gespielt werden. Deutlich komplexer sind die adaptiven Windgeräusche. Das Grundkonzept ist, dass sich Windgeräusche je nach Umgebung der VR-Spieler:in in der Lautstärke verändern, sodass auf einer freien Fläche der volle Sound erklingt und in engen Umgebungen deutlich weniger Windgeräusche. Um diesen Effekt zu ermöglichen, wurde eine Actor Component dem VR Pawn hinzugefügt. Innerhalb dieser Komponente wird zunächst ein aus zwei verschiedenen starken Windgeräuschen zusammengesetzter Sound erzeugt. Ausgehend davon wird ein Timer gestartet, der je nach Zeiteinheit eine Anpassung der Windlautstärke vornimmt. Die Anpassungstärke wird dabei durch die Veränderung von emittierten Linien der Komponent ermittelt. Hierzu werden bspw. sechs Linien vom Pawn ausgestrahlt, sobald diese Linie ein Objekt trifft, verändert sich der Wert der Linie. Entsprechend muss die Intensität der Windgeräusche verringert werden, sobald mehrere Linien geringere Werte anzeigen. Nach Ermittlung dieses Wertes findet zunächst eine Interpolation statt, um abrupte Veränderungen zu vermeiden. Dieser interpolierte Wert wird im Anschluss verwendet, um die Lautstärke zu verändern.
 {: style="text-align: justify;"}
 
 ![Beispiel Generierung Wind]({{ site.url }}{{ site.baseurl }}/assets/images/JPH/wind_no_Opt.gif)
-*Abbildung 8: Die Animation zeigt die Bewegung des VR-Spielers, welcher sich einer engeren Umgebung nähert. Sichtbar sind ebenfalls die Linien vor der Spieler:in, welche sich bei Annäherung an ein Objekt grün färben. Die aufgezeichneten blauen Werte zeigen eine Verringerung der Werte und dadurch auch eine Reduktion der Windgeräusche.*
+*Abbildung 9: Die Animation zeigt die Bewegung des VR-Spielers, welcher sich einer engeren Umgebung nähert. Sichtbar sind ebenfalls die Linien vor der Spieler:in, welche sich bei Annäherung an ein Objekt grün färben. Die aufgezeichneten blauen Werte zeigen eine Verringerung der Werte und dadurch auch eine Reduktion der Windgeräusche.*
 
 ## Ohlendorff'sche Villa und Innenbereich
 
@@ -203,7 +205,7 @@ Die praktische Realisierung erfolgte ebenfalls in Blender. Frei verfügbare Text
 {: style="text-align: justify;"}
 Der Innenbereich unserer VR-Anwendung wird durch eine bewegliche interaktive Tür betreten, worauf der Nutzende im Empfangsraum landet. Der Empfangsraum beinhaltet keine weitere Interaktion oder Animation. Im vom Nutzenden rechten Raum wurde ein Kunstraum inklusive Interaktion implementiert. Gezeigt werden insgesamt fünf bedeutende gestohlene Gemälde samt Informationstafeln. Das wertvollste gestohlene Gemälde ist jedoch nicht direkt ausgestellt und muss über eine Zahlenkombination aus einer Truhe *geholt* werden. Um die Zahlenkombination ausfindig zu machen, können die Nutzenden eine Lupe aufnehmen und mittels der Lupe in drei der fünf Bilder eine Zahl finden. Nachdem der Zahlencode in ein Widget eingegeben wurde, öffnet sich die Truhe mit dem sechsten wertvollsten Gemälde. Details zur Implementierung können im Bericht von [Madelaine Linek](https://jp-hecht.github.io/3DVIS/Madelaine/) nachvollzogen werden. Das Ergebnis gestaltet sich, wie folgt:
 ![Bilck ins Kunstzimmer]({{ site.url }}{{ site.baseurl }}/assets/images/MWA/kunst_opt.gif)
-*Abbildung 9: VR Aufnahme des Kunstzimmers.*
+*Abbildung 10: VR Aufnahme des Kunstzimmers.*
 {: style="text-align: justify;"}
 Im Musikzimmer wurden sieben Instrumente aus unterschiedlichen Regionen der Welt ausgestellt. Die Auswahl der Instrumente reicht von einem Klavier bis zu in Europa unbekannten Instrumenten, wie der Djembe einer westafrikanischen Trommel. Als Interaktion in diesem Raum werden Beispielssoundsequenzen des Instrumentes auf Annäherung gespielt. Durch die Kombination aus visueller Betrachtung als auch prägnanten Musikbeispiel kann eine Verbindung zu virtuellen Welt hergestellt werden.
 {: style="text-align: justify;"}
