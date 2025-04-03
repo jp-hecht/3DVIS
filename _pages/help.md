@@ -25,41 +25,34 @@ permalink: /help/
 
 ## TODO
 * [X] Schilder läschen
-* Nummer versteckjen
-* bilder tauschen um bild in mitte richtig ist
-* sichtbar/unsichtbar
-* Positionierung
-* Türknauf
-* Türposition
-* Geräusch truhe auf
-* Bildtauschen in der MItte &rarr; via material und export von anderen
+* [X] bilder tauschen um bild in mitte richtig ist
+* [X] sichtbar/unsichtbar
+* [X] Türknauf
+* [X] Türposition
+* [X] Bildtauschen in der MItte &rarr; via material und export von anderen
+* [X] Kamerafahrt
+* [X] Eingang
+* [X] Bilder 
+* [X] (MUsik)
+* [X] Marlene Eingangsportal an Wand und Fenster an Vorderseite nochmal anpassen
+* [X] Stufe vlt. nochmal als FBX exportieren und einsetzen
+* [X] Fenster an der Hinterseite auch verschoben
+* [X] Kann man beide türen aufmachen
+* [X] pawn kleiner?
+* [X] widget ist die ganze Zeit sichtbar
+* TASTENBELEGUNG CHECKEN
+* [X] Teleportation (Debug)
+* [X] Wind; Lautstärke
+* [X] Zurück zum Haus + Musik
+* [X] BP_Sky_Sphere
+* [X] Wind_AC
+* [X] Lautstärken prüfen
+* [X] Geräusch truhe auf
+* [X] Positionierung
+* [X] Nummer versteckjen
 
-
-* Zurück zum Haus + Musik
-* jeder macht seinen folien teil der schon eingeteilt ist
-* Marlene bereit thema eins und zwei vor damit wir drüber diskutieren können
-
-
-
-* BP_Sky_Sphere
-* Wind_AC
-Lautstärken prüfen
-
-
-* Kamerafahrt
-* Teleportation (Debug)
-* Wind; Lautstärke 
-* Eingang
-* Bilder 
-* (MUsik)
-
-* Marlene Eingangsportal an Wand und Fenster an Vorderseite nochmal anpassen
-* Stufe vlt. nochmal als FBX exportieren und einsetzen
-* Fenster an der Hinterseite auch verschoben
-* widget ist die ganze Zeit sichtbar
-* Kann man beide türen aufmachen
-* pawn kleiner?
-* 
+print truhe öffnen löschen
+submit vs grab
 
 # Controller
 * rechter controller
