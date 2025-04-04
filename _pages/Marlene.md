@@ -276,7 +276,7 @@ Für eine detailliertere Beschreibung dieser Interaktionsmechaniken wird auf den
 ## Schematische Bedinungsnaleitung der VR-Anwendung
 Die nachfolgende Graphik gibt eine Übersicht über die Belegung der Controllertasten in unserem Projekt. Die Idee hinter der Belegung ist, dass der rechte Controller für die Steuerung der Bewegung zuständig ist und der linke Controller für die anderen Interaktionen genutzt wird.
 {: style="text-align: justify;"}
-<img src="{{ site.baseurl }}/assets/images/MWA/Kontrollerbelegung.png" alt="Fehler: Kontrollerbelegung">
+<img src="{{ site.baseurl }}/assets/images/MWA/Kontollerbelegung.png" alt="Fehler: Kontrollerbelegung">
 *Abbildung 8: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 # 6. Fazit & Ausblick
