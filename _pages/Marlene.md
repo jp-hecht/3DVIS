@@ -49,7 +49,7 @@ Die Einsatzmöglichkeiten der VR-Technologie sind vielfältig und reichen von me
 {: style="text-align: justify;"}
 Die Virtuelle Realität hat sich von einem experimentellen Konzept zu einer vielfältig genutzten Technologie in diversen Anwendungsbereichen entwickelt. Wie die vorangegangene Entwicklung zeigt, wird aufgrund der Weiterentwicklung von Hardware und Software auch zukünftig Fortschritte bei den VR-Systemen zu verzeichnen sein. Insbesondere die Integration von VR mit anderen Technologien wie Augmented Reality (AR) und Künstlicher Intelligenz (KI) wird neue Möglichkeiten eröffnen (Knoll & Stieglitz, 2022)[^12]. 
 {: style="text-align: justify;"}
-Ausgehend von dieser grundlegenden Einführung in das Themenfeld der Virtuellen Realität wird im folgenden Bericht die konkrete Umsetzung des Projekts erläutert. Dabei wird als erst auf das gewählte 3D-Modell eingegangen, bevor das Konzept und die narrative Idee unseres Projekts vorgestellt wird. Daraufhin werden Modellierung und Texturierung genau beleuchtet, die verstärkt in diesem Bericht behandelt werden. Es folgt die Umsetzung innerhalb einer Game Engine, inklusive der Gestaltung der Außenwelt und der Interaktionen. Diese Kapitel werden jedoch ausführlicher in den Berichten von Jonathan Hecht und Madelaine Linek behandelt. Schlussendlich werden noch die Herausforderungen und Limitationen beleuchtet sowie ein Fazit gezogen. 
+Ausgehend von dieser grundlegenden Einführung in das Themenfeld der Virtuellen Realität wird im folgenden Bericht die konkrete Umsetzung des Projekts erläutert. Dabei wird als erst auf das gewählte 3D-Modell eingegangen, bevor das Konzept und die narrative Idee unseres Projekts vorgestellt wird. Daraufhin werden Modellierung und Texturierung genau beleuchtet, die verstärkt in diesem Bericht behandelt werden. Es folgt die Umsetzung innerhalb einer Game Engine, inklusive der Gestaltung der Außenwelt und der Interaktionen. Diese Kapitel werden jedoch ausführlicher in den Berichten von [Jonathan Hecht](https://jp-hecht.github.io/3DVIS/Jonathan/) und [Madelaine Linek](https://jp-hecht.github.io/3DVIS/Madelaine/) behandelt. Schlussendlich werden noch die Herausforderungen und Limitationen beleuchtet sowie ein Fazit gezogen. 
 {: style="text-align: justify;"}
 
 # 2. Objekt
@@ -174,7 +174,7 @@ In diesem Kapitel wird auf die konkrete Umsetzung der verschiedenen Arbeitsschri
 {: style="text-align: justify;"}
 
 ## Modellierung
-Die Modellierung der Villa erfolgte in Blender, wobei die Grundstruktur des Gebäudes bereits vorhanden war (s. Kapitel Daten). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
+Die Modellierung der Villa erfolgte in Blender, wobei die Grundstruktur des Gebäudes bereits vorhanden war ([Daten](https://jp-hecht.github.io/3DVIS/Marlene/#daten)). Der Fokus der weiteren Arbeit lag daher auf der Behebung kleinerer Unstimmigkeiten sowie der Verfeinerung der Geometrie, um ein möglichst realistisches Modell zu schaffen.
 Wie bereits im Kapitel Daten beschrieben, wies das 3D-Modell der Ohlendorff'schen Villa einige kleinere Unstimmigkeiten auf. Zunächst wurden Lücken zwischen verschiedenen Geometrien, wie beispielsweise zwischen dem Eingangsportal und der Gebäudewand, geschlossen. In einigen Fällen war es ausreichend, die Position der Geometrien leicht zu justieren, während an anderen Stellen gezielt Anpassungen an den Geometrien vorgenommen wurden. So wurden etwa die Lücken zwischen Fensterrahmen und Gebäudewand durch das gezielte Verschieben einzelner Vertices sowie durch Anpassungen der Skalierung entlang der Achsen im Modellierungsprogramm behoben.
 Des Weiteren wurden vier Fenster entfernt, die in das Dachmodell integriert worden waren. Die ursprünglich vorhandenen Fenster bestanden aus Volumenkörpern, die lediglich an den jeweiligen Positionen auf dem Dach platziert worden waren, ohne dass entsprechende Öffnungen im Dachmodell selbst existierten. Zudem waren an mehreren Gebäudeseiten die Fensterscheiben als eigenständige Volumenkörper modelliert, was in einigen Fällen dazu führte, dass sich zwei oder mehr überlappende Fensterscheiben an derselben Öffnung befanden. Diese überflüssigen Geometrien wurden entfernt, um eine saubere Modellstruktur zu gewährleisten.
 Darüber hinaus wurde das Dachgesims an der Eingangsseite der Villa überarbeitet. Hierbei wurden Überlappungen zwischen der Gebäudewand und dem Gesims beseitigt, sodass eine konsistente und stimmige Architektur entstand. Zudem wurde im Erdgeschoss eine zusätzliche Innenwand modelliert, wodurch der offene Bereich in eine kleine Eingangshalle und zwei annähernd gleich große Räume unterteilt wurden. Diese dienten später als Kunst- und Musikraum.
@@ -257,7 +257,8 @@ Ein zentrales Feature der VR-Umgebung ist der dynamische Tag-Nacht-Rhythmus, der
 {: style="text-align: justify;"}
 Ein weiteres immersives Element ist die Simulation von Fahrzeugbewegungen. Autos wurden mit Rigacar in Blender vorbereitet und anschließend in Unreal Engine mit einem Blueprint ausgestattet, der sie entlang von Splines steuert. Ein Markierungssystem außerhalb des sichtbaren Bereichs sorgt dafür, dass sich die Fahrzeuge logisch verhalten und ein realistischer Verkehrsfluss entsteht.  
 {: style="text-align: justify;"}
-Weiterführende Details zur technischen Umsetzung der Außenwelt können dem Bericht von Jonathan Hecht entnommen werden.
+Zusätzlich wurde noch die Möglichkeit zur Teleportation geschaffen. Wenn sich der Spieler in der Nähe des kleinen Heißluftballons (im Park hinter der Villa) befindet, dann wird er zum Heißluftballon teleportiert und kann die Szene aus einer ganz neuen Perspektive wahrnehmen. Zurück kommt der Spieler, wenn er in der Nähe es kleinen Hauses ist, das sich neben dem großen Heißluftballon befindet. 
+Weiterführende Details zur technischen Umsetzung der Außenwelt können dem Bericht von [Jonathan Hecht](https://jp-hecht.github.io/3DVIS/Jonathan/#außenbereich) entnommen werden.
 {: style="text-align: justify;"}
 
 ## Interaktionen
@@ -269,8 +270,13 @@ Die Grab-Funktion ermöglicht das Aufnehmen einer Lupe mit beiden Händen. Wird 
 {: style="text-align: justify;"}
 Weitere Interaktionen basieren auf kollisionsgesteuerten Mechaniken. Beispielsweise werdend die Zahlen, die auf drei Bildern versteckt sind, erst sichtbar, wenn sich der Spieler in die Nähe eines bestimmten Bereichs bewegt. Die Truhe, die ein weiteres gestohlenes Kunstwerk enthält, kann nur durch die Eingabe eines korrekten Codes geöffnet werden. Nach der erfolgreichen Eingabe wird ein akustisches Signal abgespielt, die Truhe öffnet sich und das gestohlene Gemälde wird erscheint in der Truhe.
 {: style="text-align: justify;"}
-Für eine detailliertere Beschreibung dieser Interaktionsmechaniken wird auf den Bericht von Madelaine Linek verwiesen.
+Für eine detailliertere Beschreibung dieser Interaktionsmechaniken wird auf den Bericht von [Madelaine Linek](https://jp-hecht.github.io/3DVIS/Madelaine/) verwiesen.
 {: style="text-align: justify;"}
+
+## Schematische Bedinungsnaleitung der VR-Anwendung
+Die nachfolgende Graphik gibt eine Übersicht über die Belegung der Controllertasten in unserem Projekt. Die Idee hinter der Belegung ist, dass der rechte Controller für die Steuerung der Bewegung zuständig ist und der linke Controller für die anderen Interaktionen genutzt wird.
+<img src="{{ site.baseurl }}/assets/images/MWA/Kontrollerbelegung.png" alt="Fehler: Kontrollerbelegung">
+*Abbildung 8: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 # 6. Fazit & Ausblick
 Mit Rückblick auf die Projektarbeit kann festgehalten werden, dass das entwickelte Konzept einer stilisierten 3D-Karte, mit Fokus auf die Villa, erfolgreich in der virtuellen Umgebung umgesetzt werden konnte. Die geplanten Interaktionsmechaniken, Bewegungssteuerungen und die Interaktionen der Objekte funktionieren wie vorgesehen, sodass die Anwendung ein immersives Erlebnis bietet.
@@ -284,10 +290,6 @@ Ein weiterer Bereich mit Verbesserungspotenzial ist das Testen, insbesondere bei
 Zudem wäre es hilfreich, bessere Informationen für Spielerinnen bereitzustellen, um die Navigation innerhalb der VR-Anwendung zu erleichtern. Dies könnte durch gezielte Hinweise, interaktive Anleitungen oder visuelle Markierungen umgesetzt werden, um eine noch intuitivere Benutzererfahrung zu ermöglichen.
 Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Zeitmanagements. Da für uns alle die Entwicklung einer VR-Anwendung und die dafür notwendigen Softwares neu waren, wäre es hilfreich gewesen, mehr Pufferzeiten für unvorhergesehene Herausforderungen einzuplanen. Ebenso wäre es möglich gewesen, bereits mit den Blueprints anzufangen, bevor die Texturierung der Villa abgeschlossen war. Damit hätte die Zeit effektiver genutzt werden können und am Ende wäre mehr Zeit übrig geblieben für kleine Details und den finalen Feinschliff.
 {: style="text-align: justify;"}
-
-# 7. Schematische Bedinungsnaleitung der VR-Anwendung
-<img src="{{ site.baseurl }}/assets/images/MWA/Kurzanleitung.png" alt="Fehler: Kurzanleitung">
-*Abbildung 8: Belegung der Controller-Tasten für Interaktionen in der VR-Anwendung*
 
 
 <!-- <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0"></script> -->
@@ -310,25 +312,25 @@ Ein wichtiger Lernpunkt aus dem Projekt ist die Bedeutung eines strukturierten Z
     }
 </style>
 
-# 8. Literatur
+# 7. Literatur
 [^1]: Slater, Mel & Sanchez-Vives, Maria (2016). Enhancing Our Lives with Immersive Virtual Reality. Frontiers in Robotics and AI. 3. 10.3389/frobt.2016.00074. 
 [^2]: Burdea, Grigore & Coiffet, Philippe (2003). Virtual Reality Technology. Presence. 12. 663-664. 10.1162/105474603322955950. 
-[^3]: Wheatstone, Charles (2011). Contributions to the Physiology of Vision.—Part the First. On some remarkable, and hitherto unobserved, Phenomena of Binocular Vision. The Scientific Papers of Sir Charles Wheatstone. Cambridge University Press. pg. 225–283
-[^4]: Sutherland, Ivan E. (1998). A head-mounted three dimensional display. Seminal graphics: pioneering efforts that shaped the field. Association for Computing Machinery Vol. 1, pg. 295–302. https://doi.org/10.1145/280811.281016
+[^3]: Wheatstone, Charles (2011). Contributions to the Physiology of Vision.—Part the First. On some remarkable, and hitherto unobserved, Phenomena of Binocular Vision. The Scientific Papers of Sir Charles Wheatstone. Cambridge University Press. 225–283
+[^4]: Sutherland, Ivan E. (1998). A head-mounted three dimensional display. Seminal graphics: pioneering efforts that shaped the field. Association for Computing Machinery. 1. 295–302. 10.1145/280811.281016
 [^5]: Grasnick, Armin (2020). Grundlagen der virtuellen Realität: Von der Entdeckung der Perspektive bis zur VR-Brille. Springer Verlag. 10.1007/978-3-662-60785-5. 
 [^6]: LaValle, Steven. M. (2017). Virtual Reality. Cambridge University Press.
 [^7]: Rizzo, Albert & Koenig, Sebastian (2017). Is Clinical Virtual Reality Ready for Primetime?. Neuropsychology. 31. 10.1037/neu0000405. 
-[^8]: Freina, Laura & Ott, Michela (2015). A Literature Review on Immersive Virtual Reality in Education: State Of The Art and Perspectives. 10.12753/2066-026X-15-020. 
+[^8]: Freina, Laura & Ott, Michela (2015). A Literature Review on Immersive Virtual Reality in Education: State Of The Art and Perspectives. Conference: eLearning and Software for Education. 10.12753/2066-026X-15-020. 
 [^9]: Whyte, Jennifer & Bouchlaghem, Nouran & Thorpe, Antony & Mccaffer, Ronald (2000). From CAD to Virtual reality: Modelling approaches, data exchange and interactive 3d building design tools. Automation in Construction. 10. 43-55. 10.1016/S0926-5805(99)00012-6.
-[^10]: Zyda, Michael (2005). From Visual Simulation to Virtual Reality to Games. Computer. 38. 25 - 32. 10.1109/MC.2005.297. 
+[^10]: Zyda, Michael (2005). From Visual Simulation to Virtual Reality to Games. Computer. 38. 25-32. 10.1109/MC.2005.297. 
 [^11]: Gonçalves, Raquel & Pedrozo, Ana & Coutinho, Evandro & Figueira, Ivan & Ventura, Paula (2012). Efficacy of Virtual Reality Exposure Therapy in the Treatment of PTSD: A Systematic Review. PloS one. 7. e48469. 10.1371/journal.pone.0048469. 
 [^12]: Knoll, Matthias & Stieglitz, Stefan (2022). Augmented Reality und Virtual Reality – Einsatz im Kontext von Arbeit, Forschung und LehreAugmented Reality and Virtual Reality in the Context of Work, Research and Teaching. HMD Praxis der Wirtschaftsinformatik. 59. 10.1365/s40702-022-00840-5. 
 [^13]: *Die Ohlendorff'sche Villa* (o.J.) Zugriff auf: https://ohlendorffsche.de/historie/ (6. März 2025).
 [^14]: Hermann, Simeon (2019). Prozedurale Generierung von 3D-Stadtmodellen (Bachelorarbeit). Koblenz. (Zur Erlangung des Grades Bachelor of Science (B.Sc.) im Studiengang Computervisualistik).
-[^15]: Dörner, Ralf & Broll, Wolfgang & Grimm, Paul & Jung, Bernhard (2019). Virtual und Augmented Reality (VR/AR) (2. Auflage). Springer Verlag. [10.1007/978-3-642-28903-3. ](https://doi.org/10.1007/978-3-662-58861-1)
-[^16]: Jobst, Markus & Germanchis, Timothy (2007). The Employment of 3D in Cartography — An Overview. 10.1007/978-3-540-36651-5_15. 
-[^17]: Kraak, Menno-Jan & Ormeling, Ferjan (2013). Cartography: Visualization of Geospatial Data. Routledge.
+[^15]: Dörner, Ralf & Broll, Wolfgang & Grimm, Paul & Jung, Bernhard (2019). Virtual und Augmented Reality (VR/AR) (2. Auflage). Springer Verlag. 10.1007/978-3-662-58861-1
+[^16]: Jobst, Markus & Germanchis, Timothy (2007). The Employment of 3D in Cartography — An Overview. Multimedia Cartography. 217-228. 10.1007/978-3-540-36651-5_15. 
+[^17]: Kraak, Menno-Jan & Ormeling, Ferjan (2013). Cartography: Visualization of Geospatial Data. Routledge. 10.4324/9781315847184
 [^18]: Helmholz, P. & Zlatanova, Sisi & Barton, Jack & Aleksandrov, Mitko (2020). GEOINFORMATION FOR DISASTER MANAGEMENT 2020 (Gi4DM2020): PREFACE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences. XLIV-3/W1-2020. 1-3. 10.5194/isprs-archives-XLIV-3-W1-2020-1-2020. 
-[^19]: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. 
+[^19]: Luebke, D. & Reddy, M. & Cohen, Jonathan & Varshney, Amitabh & Watson, Benjamin & Huebner, R. (2002). Level of Detail for 3D Graphics. Morgan Kaufmann Publishers Inc.
 [^20]: Epic Games (2023). Virtual Reality Development with Unreal Engine. Zugriff auf: https://www.unrealengine.com (10. März 2025).
 [^21]: Kurkjian, Stephen (2015). Master Thieves: The Boston Gangsters Who Pulled Off the World's Greatest Art Heist. PublicAffairs.
