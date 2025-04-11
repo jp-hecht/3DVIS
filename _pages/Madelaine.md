@@ -84,12 +84,12 @@ Die nächste Interaktion ist der Türmechanismus. Dabei handelt es sich um Türe
 Der DoOnce-Knoten wird zur Steuerung dieses Vorgangs verwendet. Er sorgt dafür, dass der Öffnungsvorgang nur einmal durchgeführt wird, auch wenn die Taste mehrmals gedrückt wird. Dadurch wird verhindert, dass die Animation erneut abgespielt wird oder sich der Zustand der Tür ungewollt ändert. Die Tür wird mit Hilfe einer Zeitachse bewegt, die eine sanfte und kontrollierte Drehung um eine Achse ermöglicht. Diese Struktur schafft eine realistische und interaktive Tür, die häufig in Ego- oder VR-Umgebungen eingesetzt wird.<br><br>
 
 ## <strong>Tastenbelegung</strong><br>
-HTC Vive (Abb.3) verwendet spezielle Eingabegeräte, wie z. B. Vive-Controller, um die Interaktionen des Benutzers in der virtuellen Umgebung zu steuern. Hier ist eine kurze Zusammenfassung der Bedienelemente in der Szene:<br>
-- VIVE (Y) - Geschwindigkeit ändern: Die Y-Taste auf dem Controller steuert die Gehgeschwindigkeit des Spielers und ermöglicht es ihm, zwischen schnellem und langsamem Gehen zu wechseln.<br>
-- VIVE (R)- Trigger - Springen: Der rechte Trigger (R) wird zum Springen verwendet. Wenn man diesen Auslöser drückst, springt der Spieler in einer virtuellen Umgebung.<br>
-- VIVE (L)- Trigger - Tür öffnen: Der linke Trigger (L) wird verwendet, um eine Tür zu öffnen, indem der Spieler den Trigger drückt, um eine Tür in der virtuellen Welt zu öffnen.<br>
-- VIVE-Griff (L) - Lupengriff: Dies wurde verwendet, um eine Lupe zu greifen.<br>
-- VIVE-Griff (R) Schlag-Widget: Der rechte Griff (R) des VIVE-Controllers wird verwendet, um das Widget zu treffen.<br><br>
+HTC Vive (Abbildung 3) verwendet spezielle Eingabegeräte, wie die Vive-Controller, um die Interaktion des Benutzers in der virtuellen Umgebung zu steuern. Hier ist eine kurze Zusammenfassung der Bedienelemente im Spiel: 
+- VIVE (R) - Bewegung: Die Y-Taste auf dem Controller steuert die Bewegung im Spiel. Um das schnelle Gehen zu aktivieren, braucht man den VIVE (R) Track. <br>
+- VIVE (R) - Trigger - Springen: Der rechte Auslöser (R) wird zum Springen verwendet. Wenn dies  gedrückt wird, springt der Spieler in der virtuellen Umgebung.<br>
+- VIVE (L) - Trigger - Open Door: Der linke Auslöser (L) wird verwendet, um die Tür zu öffnen, indem der Spieler den Trigger drückt.<br>
+- VIVE Griff (L) -  Wird verwendet, um die Lupe zu greifen.<br>
+- VIVE Menu (R) - Hit Widget: Der rechte Griff (R) des VIVE-Controllers wird verwendet, um das Widget zu treffen.<br><br>
 
 ![image](https://github.com/user-attachments/assets/2acf729e-4a84-44ea-a21b-4d9f6f789870)<br>
 Abb.3 HTC-Vive Controller<br><br>
