@@ -109,7 +109,6 @@ Die verwendeten Entwicklungstools - Blender und Unreal Engine - waren effiziente
 Abschließend lässt sich festhalten, dass die Verbindung von immersiver Technologie und kulturhistorischem Inhalt ein großes Potenzial für zukünftige Bildungs- und Vermittlungsformate birgt – vorausgesetzt, Gestaltung, Technik und Inhalt greifen so ineinander, wie es im vorliegenden Projekt gelungen ist.
 
   
-### Literatur
 
 ### Literatur
 
