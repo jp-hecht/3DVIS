@@ -1,24 +1,30 @@
+---
 title: "Bericht von Madelaine"
 permalink: /Madelaine/
 toc: true
 toc_label: "Inhaltsverzeichnis"
 author_profile: true
 
+
 location: "Hamburg, Germany"
 
-excerpt: "Ohlendorff’schen Villa - präsentiert in VR"
+excerpt: "Ohlendorff’schen Villa - Die Umgebung einer VR-Anwendung"
 
 author:
   name     : "Madelaine Linek"
-  bio      : "M.Sc. Geodäsie und Geoinformatik"
+  bio: "M.Sc. Geodäsie und Geoinformatik"
   avatar   : "/assets/images/jph.png"
   location : "Hamburg"
 
+
+excerpt: „Ohlendorff’schen Villa - präsentiert in VR“.
 header:
-  overlay_image: "https://villa-volksdorf.de/wp-content/uploads/2021/03/IMG_5725.jpg"
-  caption: "Bildquelle: [**villa-volksdorf.de**](https://villa-volksdorf.de/)"
+  overlay_image: "/assets/images/JPH/villa_sketch.jpg"  
+  caption: "Bildquelle: [**ohlendorffsche.de**](https://ohlendorffsche.de/die-ohlendorffsche-villa/)"
   overlay_filter: 0.5
   overlay_color: "#333"
+
+---
 
 # <strong>1. Einleitung</strong><br>
 Virtuelle Realität (VR) ist eine Technologie, die es den Nutzern ermöglicht, in computergenerierte Umgebungen einzutauchen und mit ihnen zu interagieren, und zwar auf eine Weise, die eine realistische räumliche Erfahrung simuliert. Obwohl VR ursprünglich hauptsächlich mit dem Bereich der Unterhaltung in Verbindung gebracht wurde, wird sie zunehmend in den Bereichen Bildung, Museen und Kulturerbe eingesetzt. Laut einer Studie, veröffentlicht in Frontiers in Virtual Reality, trägt VR insbesondere zur Vermittlung von kulturellem Erbe und lokalem Wissen bei, indem sie beispielsweise immaterielle Kulturgüter wie traditionelle Handwerkskunst und darstellende Künste aufzeichnet und rekonstruiert [^1]. Mit fortgeschrittener Technologie ermöglicht sie insbesondere die Rekonstruktion historischer Räume und die immersive Präsentation von architektonischen Objekten und schafft damit neue Möglichkeiten der Wissensvermittlung und historischen Interpretation.<br><br>
