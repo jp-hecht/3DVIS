@@ -113,25 +113,15 @@ Abschließend lässt sich festhalten, dass die Verbindung von immersiver Technol
 ### Literatur
 
 [^1]: Zhao, Y., Li, Y., Dai, T., Sedini, C., Wu, X., Jiang, W., Li, J., Zhu, K., Zhai, B., Li, M., & Ray, L. C. (2025). *Virtual reality in heritage education for enhanced learning experience: A mini-review and design considerations*. Frontiers in Virtual Reality, 6. https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2025.1560594
-
 [^2]: Ohlendorffsche Villa. (2019). *Ohlendorffsche Villa: Vom Ortsamt zur Stiftung*. Hamburger Abendblatt. https://ohlendorffsche.de/wp-content/uploads/2019/05/Ohlendorffsche-Villa-vom-Ortsamt-zur-Stiftung-Hamburger-Abendblatt.pdf
-
 [^3]: Slater, M., Steed, A., & Usoh, M. (2013). *Being there together: Experiments on presence in virtual environments*. https://publicationslist.org/data/melslater/ref-233/beingthere%202013.pdf
-
 [^4]: Bailey, J. O. (2017). *Perceptual and social realism in virtual reality: The effect of immersion on children’s psychological responses*. https://purl.stanford.edu/pn714rr1906
-
 [^5]: Jenewein, K., & Hundt, D. (2009). *Wahrnehmung und Lernen in virtueller Realität – Psychologische Korrelate und exemplarisches Forschungsdesign*. https://www.ingenieurpaedagogik.ovgu.de/ingenieurpaedagogik_media/Downloads/Arbeitsberichte/Forschungsbericht_67_IBBP_OVGU.pdf
-
 [^6]: Malim, T. (1994). *Cognitive processes: Attention, perception, memory, thinking and language*.
-
 [^7]: Universität Hamburg. (2009). *WUZ 41*. https://epub.sub.uni-hamburg.de/epub/volltexte/2013/23672/pdf/WUZ_41_Mai_2009.pdf
-
 [^8]: Ohlendorffsche Villa. (n.d.). *Die Ohlendorffsche Villa*. https://ohlendorffsche.de/die-ohlendorffsche-villa/
-
 [^9]: Unreal Engine. (2018). *What is Unreal Engine 4*. https://www.unrealengine.com/en-US/what-is-unreal-engine-4
-
 [^10]: Göbel, E., Korwisi, K., Bartl, A., Latoschik, M. E., & Hennecke, M. (2023). *Algorithmen erleben in Virtual Reality*. https://dl.gi.de/server/api/core/bitstreams/1fc78c13-34de-4b3e-940e-ddee736a85c7/content
-
 [^11]: Unreal Engine documentation. (n.d.). *Unreal Engine 5.5 Documentation*. https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-5-documentation
 
 
