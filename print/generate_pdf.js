@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const url = 'https://jp-hecht.github.io/3DVIS/Jonathan/'; // 👉 Deine Seite hier eintragen
+  const url = 'https://jp-hecht.github.io/3DVIS/Marlene/'; // 👉 Deine Seite hier eintragen
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
@@ -90,7 +90,7 @@ const puppeteer = require('puppeteer');
 
   // PDF generieren
   await page.pdf({
-    path: 'output_final.pdf',
+    path: 'marlene.pdf',
     format: 'A4',
     printBackground: true,
     margin: {
