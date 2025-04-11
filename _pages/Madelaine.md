@@ -131,7 +131,7 @@ https://www.ingenieurpaedagogik.ovgu.de/ingenieurpaedagogik_media/Downloads/Arbe
 
 [^8]: Ohlendorffsche Villa. (n.d.). Die Ohlendorffsche Villa. https://ohlendorffsche.de/die-ohlendorffsche-villa/
 
-[^9]: Unreal Engine (2018). Unreal engine. Retrieved from Unreal Engine: https://www. unrealengine. com/en-US/what-is-unreal-engine-4.
+[^9]: Unreal Engine (2018). Unreal engine. Retrieved from Unreal Engine: https://www.unrealengine. com/en-US/what-is-unreal-engine-4.
 
 [^10]: Göbel, E., Korwisi, K., Bartl, A., Latoschik, M. E., & Hennecke, M. (2023). Algorithmen erleben in Virtual Reality. Rettrieved from: https://dl.gi.de/server/api/core/bitstreams/1fc78c13-34de-4b3e-940e-ddee736a85c7/content
 
