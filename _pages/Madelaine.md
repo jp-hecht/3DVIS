@@ -116,15 +116,14 @@ Abschließend lässt sich festhalten, dass die Verbindung von immersiver Technol
 [^2]: Ohlendorffsche Villa. (2019). Ohlendorffsche Villa: Vom Ortsamt zur Stiftung. Hamburger Abendblatt. https://ohlendorffsche.de/wp-content/uploads/2019/05/Ohlendorffsche-Villa-vom-Ortsamt-zur-Stiftung-Hamburger-Abendblatt.pdf
 
 [^3]: Slater, M., Steed, A., & Usoh, M. (2013). Being there together: Experiments on presence in virtual 
-environments. Retrieved from https://publicationslist.org/data/melslater/ref-233/beingthere%202013.pdf
+environments. https://publicationslist.org/data/melslater/ref-233/beingthere%202013.pdf
 
 [^4]: Bailey, J. O. (2017). Perceptual and social realism in virtual reality: The effect of immersion on children’s 
-psychological responses. Retrieved from https://purl.stanford.edu/pn714rr1906
+psychological responses.  https://purl.stanford.edu/pn714rr1906
 
 [^5]: Jenewein, K., & Hundt, D. (2009). Wahrnehmung und Lernen in virtueller Realität – Psychologische 
-Korrelate und exemplarisches Forschungsdesign. Retrieved from 
-https://www.ingenieurpaedagogik.ovgu.de/ingenieurpaedagogik_media/Downloads/Arbeitsberichte/Fors
- chungsbericht_67_IBBP_OVGU.pdf 
+Korrelate und exemplarisches Forschungsdesign. 
+https://www.ingenieurpaedagogik.ovgu.de/ingenieurpaedagogik_media/Downloads/Arbeitsberichte/Forschungsbericht_67_IBBP_OVGU.pdf 
 
 [^6]: Malim, T. (1994). Cognitive processes: attention, perception, memory, thinking and language.
 
