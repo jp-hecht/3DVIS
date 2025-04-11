@@ -71,14 +71,19 @@ Die in Blueprint implementierte Grab-Technik ermöglicht dem Spieler die Interak
 
 Als nächster Schritt wurden Blueprints für die Bilder im Kunstzimmer erstellt. In diesem Teil der Logik wird die kollisionsbasierte Interaktion in einer virtuellen Umgebung implementiert. Ausgangspunkt ist das Ereignis „On Component Begin Overlap“, das ausgelöst wird, sobald ein anderes Objekt den im Plan definierten Kollisionsbereich überlappt. Dies ermöglicht eine ereignisgesteuerte Reaktion auf den Zutritt eines anderen Akteurs in den definierten Bereich. Ein weiterer Knoten sorgt dafür, dass die weitere Logik nur dann ausgeführt wird, wenn das überlappende Objekt tatsächlich ein VR-Akteur ist. Dies dient sowohl der Typprüfung als auch der Zugriffskontrolle, da es verhindert, dass andere Objekte die Aktion auslösen. Besteht der Versuch, wird das vordefinierte Element der Szene, das als ‚'Versteckte Zahl‘' markiert ist, sichtbar. Die Sichtbarkeit wird über den Knoten ‚'Set Visibility‘' geändert, wobei die Sichtbarkeit explizit auf ‚'True‘' gesetzt wird.<br><br>
 
-Nachdem der Spieler mithilfe der Lupe versteckte Hinweise entdeckt hat, kann ein Code eingegeben werden, um eine Truhe zu öffnen. Die Eingabe erfolgt über ein UI-Widget, das durch Zahlen-Buttons schrittweise einen Code zusammensetzt. Dieser wird beim Drücken des „Submit“-Buttons verarbeitet und mit dem in der Truhe gespeicherten Code verglichen. Im Blueprint BP_Truhe wird daraufhin über einen Branch-Node geprüft, ob der Code korrekt ist. Bei Erfolg wird die Truhe über eine Timeline geöffnet, indem der Deckel (Pivot Deckel) über eine relative Rotation animiert wird. Zusätzlich ertönt ein Soundeffekt zur akustischen Rückmeldung.<br><br>
+Nachdem der Spieler mithilfe der Lupe versteckte Hinweise entdeckt hat, kann ein Code eingegeben werden, um eine Truhe zu öffnen (Abb 2.). Die Eingabe erfolgt über ein UI-Widget, das durch Zahlen-Buttons schrittweise einen Code zusammensetzt. Dieser wird beim Drücken des „Submit“-Buttons verarbeitet und mit dem in der Truhe gespeicherten Code verglichen. Im Blueprint BP_Truhe wird daraufhin über einen Branch-Node geprüft, ob der Code korrekt ist. Bei Erfolg wird die Truhe über eine Timeline geöffnet, indem der Deckel (Pivot Deckel) über eine relative Rotation animiert wird. Zusätzlich ertönt ein Soundeffekt zur akustischen Rückmeldung.<br><br>
+
+![image](https://github.com/user-attachments/assets/feb597c1-d2be-4045-86d2-20a0b69151f6)
+
+Abb.2 Truhe
+
 
 Die nächste Interaktion ist der Türmechanismus. Dabei handelt es sich um Türen, die sich nicht automatisch öffnen, sondern durch eine gezielte Interaktion des Spielers aktiviert werden. Die Türen öffnen sich nur, wenn sich der Spieler innerhalb eines bestimmten Kollisionsfeldes befindet und eine bestimmte Taste gedrückt wird.<br>
 
 Der DoOnce-Knoten wird zur Steuerung dieses Vorgangs verwendet. Er sorgt dafür, dass der Öffnungsvorgang nur einmal durchgeführt wird, auch wenn die Taste mehrmals gedrückt wird. Dadurch wird verhindert, dass die Animation erneut abgespielt wird oder sich der Zustand der Tür ungewollt ändert. Die Tür wird mit Hilfe einer Zeitachse bewegt, die eine sanfte und kontrollierte Drehung um eine Achse ermöglicht. Diese Struktur schafft eine realistische und interaktive Tür, die häufig in Ego- oder VR-Umgebungen eingesetzt wird.<br><br>
 
 ## <strong>Tastenbelegung</strong><br>
-HTC Vive (Abb.2) verwendet spezielle Eingabegeräte, wie z. B. Vive-Controller, um die Interaktionen des Benutzers in der virtuellen Umgebung zu steuern. Hier ist eine kurze Zusammenfassung der Bedienelemente in der Szene:<br>
+HTC Vive (Abb.3) verwendet spezielle Eingabegeräte, wie z. B. Vive-Controller, um die Interaktionen des Benutzers in der virtuellen Umgebung zu steuern. Hier ist eine kurze Zusammenfassung der Bedienelemente in der Szene:<br>
 - VIVE (Y) - Geschwindigkeit ändern: Die Y-Taste auf dem Controller steuert die Gehgeschwindigkeit des Spielers und ermöglicht es ihm, zwischen schnellem und langsamem Gehen zu wechseln.<br>
 - VIVE (R)- Trigger - Springen: Der rechte Trigger (R) wird zum Springen verwendet. Wenn du diesen Auslöser drückst, springt der Spieler in einer virtuellen Umgebung.<br>
 - VIVE (L)- Trigger - Tür öffnen: Der linke Trigger (L) wird verwendet, um eine Tür zu öffnen, indem der Spieler den Trigger drückt, um eine Tür in der virtuellen Welt zu öffnen.<br>
@@ -86,7 +91,7 @@ HTC Vive (Abb.2) verwendet spezielle Eingabegeräte, wie z. B. Vive-Controller, 
 - VIVE-Griff (R) Schlag-Widget: Der rechte Griff (R) des VIVE-Controllers wird verwendet, um das Widget zu treffen oder mit interaktiven Elementen in der virtuellen Welt zu interagieren.<br><br>
 
 ![image](https://github.com/user-attachments/assets/2acf729e-4a84-44ea-a21b-4d9f6f789870)<br>
-Abb.2 HTC-Vive Controller<br><br>
+Abb.3 HTC-Vive Controller<br><br>
 
 # <strong>7. Ansätze zur praktischen Umsetzung von VR-Elementen</strong><br>
 Die Umsetzung von Virtual-Reality-Elementen in einem interaktiven Spiel- oder Lernkontext stellt sowohl technische als auch gestalterische Herausforderungen dar. Dabei spielen besonders die Immersion, intuitive Bedienung und Interaktionslogik eine zentrale Rolle. Diese Eigenschaften sind nicht nur wichtig für die Benutzerzufriedenheit, sondern haben auch einen erheblichen Einfluss auf die Effektivität der virtuellen Umgebung in Bezug auf das Lernen. Goebel et. al. (2024) betont, dass algorithmisches Denken unerlässlich ist, um sich in einer zunehmend digitalen Welt aktiv bewegen zu können. Interaktive Spielumgebungen können dabei helfen, ein tieferes Verständnis für Algorithmen zu entwickeln. Die virtuelle Realität (VR) macht es möglich, diesen Lernprozess durch intensives Eintauchen besonders wirkungsvoll zu erleben. Die resultierende Erfahrung kann emotionale Reaktionen verstärken. Dies wiederum wirkt sich positiv auf die Aufmerksamkeit und Motivation der Schüler aus [^10]. In diesem Projekt wurden verschiedene Ansätze gewählt, um diese Anforderungen mit Hilfe der Unreal Engine praktisch umzusetzen.<br>
@@ -121,7 +126,7 @@ Korrelate und exemplarisches Forschungsdesign. Retrieved from
 https://www.ingenieurpaedagogik.ovgu.de/ingenieurpaedagogik_media/Downloads/Arbeitsberichte/Fors
  chungsbericht_67_IBBP_OVGU.pdf 
 
-[^6]:
+[^6]: Malim, T. (1994). Cognitive processes: attention, perception, memory, thinking and language.
 
 [^7]: Universität Hamburg. (2009). Retrieved from: https://epub.sub.uni-hamburg.de/epub/volltexte/2013/23672/pdf/WUZ_41_Mai_2009.pdf
 
