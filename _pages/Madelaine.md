@@ -5,19 +5,22 @@ toc: true
 toc_label: "Inhaltsverzeichnis"
 author_profile: true
 
+bio: "M.Sc. Geodäsie und Geoinformatik"
+location: "Hamburg, Germany"
+
+excerpt: "Ohlendorff’schen Villa - Die Umgebung einer VR-Anwendung"
+
 author:
   name     : "Madelaine Linek"
   avatar   : "/assets/images/jph.png"
   location : "Hamburg"
-  links:
-    
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jp-hecht"
 
 
-excerpt: "This post should display a **header with a solid background color**, if the theme supports it."
+excerpt: "Die Ohlendorff’sche Villa – ein historisches Gebäude im Herzen von Hamburg-Volksdorf in VR."
 header:
+  overlay_image: "/assets/images/JPH/villa_sketch.jpg"  
+  caption: "Bildquelle: [**ohlendorffsche.de**](https://ohlendorffsche.de/die-ohlendorffsche-villa/)"
+  overlay_filter: 0.5
   overlay_color: "#333"
 
 ---
